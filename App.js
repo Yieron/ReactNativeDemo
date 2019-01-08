@@ -2,12 +2,14 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
+ * 此为项目的初始状态
+ * 2019.1.8
  * @format
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
