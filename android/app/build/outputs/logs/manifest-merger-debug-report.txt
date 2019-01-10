@@ -1,140 +1,150 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bb4cce7864c1febfa270375043a9b27f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/f7ca3363ed1a99067e489ae5450d72db/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ccd7cd93df1ec58d3b19c016fb81d4c5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1187fcfe366b4327f96e447dc3109c39/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/553b46d5eb514aea3c854db8495a3bbd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/d7a35eed043481aa06ffbf1330f9cb55/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/00ecc7ba7d467abb1c2ca78a2e71bc06/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/29c75ab1faf52fd74c9ccb2fa1a91303/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/4e396a176a1c008fbfaa386360085858/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/937dd8c15c701cb6ba5e95693e24176b/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/ebbf95748d6a09aeb5e0806226300090/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/a4b9f0f2a5efb386b76ff87aab5a3dab/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/95829ad2b2499a426fb41047becaddd9/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r174650] /Users/yindong/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/d4b7e3feef5031f9b2fe48c3677886e1/AndroidManifest.xml:1:1-3:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8ff3b3906e0dfa7ade016e26f424fdf6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5f85556bba5509ba98796743d1878f46/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/257dbbc457b1468f920dd24d42759e84/AndroidManifest.xml:2:1-9:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/207b8daf190c57c6958a695147d9ae0d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5d15471c27e164f929a70837860bc0b9/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:2:1-11:12
+MERGED from [cn.sharesdk:OneKeyShare:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/OneKeyShare-3.4.1.aar/3c1fc4ff6928710272f2f526bfb0d525/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd085b7b88e117089ca2d075e6b77435/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/71c66385e3256c5e06584239e752aa8b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9aae010a42510f8c00bdd7be236339e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ab9e8dbd6478c6fdeea9f91614777c69/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b0245b185eb1b208fe489a553851c323/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/00c4d416052f9d79ea15a5374ab05e6d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3c07862e3bd82a75847b7e1e46d02e25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/1693a11f8083c27ca59de103a4d0c770/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/7152f5b6ceb5ac44986580be77fa2a06/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/97c9d65e457ea4cc9010ef28fd989b95/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/9e5f1341e8dd4fda632b17dca1808c46/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/17b682461122ae0047a0962a0ed65c0e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/18185dd40eb42399323a236a2e00120b/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/yindong/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/52842817ca8057d18ef2c4131749270b/AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/948d74379c3e790bd12e03c226909ced/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9f1b3f3ae0d8b6a7d921e1c9235fa3b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/43f1e4712d389e11e2cd2dc4807a4550/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b7bd54a2c80bcb21a4d362c12059ee2a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/baa011e5a4dc725f3df6f0d84ba8bcad/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 	package
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:2:5-34
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:2:5-51
 	android:versionCode
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:11:5-78
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:6:5-78
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:5:22-75
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:6:22-75
 application
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:7:5-24:19
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/95829ad2b2499a426fb41047becaddd9/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/95829ad2b2499a426fb41047becaddd9/AndroidManifest.xml:11:5-20
-MERGED from [org.webkit:android-jsc:r174650] /Users/yindong/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/d4b7e3feef5031f9b2fe48c3677886e1/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/yindong/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/d4b7e3feef5031f9b2fe48c3677886e1/AndroidManifest.xml:2:3-17
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/18185dd40eb42399323a236a2e00120b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/18185dd40eb42399323a236a2e00120b/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/yindong/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/52842817ca8057d18ef2c4131749270b/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/yindong/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/52842817ca8057d18ef2c4131749270b/AndroidManifest.xml:2:3-17
 	android:label
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:12:9-41
 	android:icon
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:10:7-41
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:10:9-36
 	android:theme
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:12:7-38
-	android:name
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:8:7-38
-activity#com.ReactNativeDemo.MainActivity
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:13:7-22:18
-	android:label
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:15:9-41
-	android:windowSoftInputMode
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:17:9-51
-	android:configChanges
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:16:9-79
-	android:name
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:13:9-40
+	tools:replace
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:14:9-37
+	android:name
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:9:9-40
+activity#com.ReactNativeDemo.MainActivity
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:15:9-24:20
+	android:label
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:18:13-45
+	android:windowSoftInputMode
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:19:13-55
+	android:configChanges
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:17:13-83
+	android:name
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:25:9-86
 	android:name
-		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:25:19-83
 uses-sdk
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/29cc1d53c228e7d6702e2158ca7e006a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bb4cce7864c1febfa270375043a9b27f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bb4cce7864c1febfa270375043a9b27f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/f7ca3363ed1a99067e489ae5450d72db/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/f7ca3363ed1a99067e489ae5450d72db/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ccd7cd93df1ec58d3b19c016fb81d4c5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/ccd7cd93df1ec58d3b19c016fb81d4c5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1187fcfe366b4327f96e447dc3109c39/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/1187fcfe366b4327f96e447dc3109c39/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/553b46d5eb514aea3c854db8495a3bbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/553b46d5eb514aea3c854db8495a3bbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/d7a35eed043481aa06ffbf1330f9cb55/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/d7a35eed043481aa06ffbf1330f9cb55/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/00ecc7ba7d467abb1c2ca78a2e71bc06/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/00ecc7ba7d467abb1c2ca78a2e71bc06/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/29c75ab1faf52fd74c9ccb2fa1a91303/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/29c75ab1faf52fd74c9ccb2fa1a91303/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/4e396a176a1c008fbfaa386360085858/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/4e396a176a1c008fbfaa386360085858/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/937dd8c15c701cb6ba5e95693e24176b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/937dd8c15c701cb6ba5e95693e24176b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/ebbf95748d6a09aeb5e0806226300090/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/ebbf95748d6a09aeb5e0806226300090/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/a4b9f0f2a5efb386b76ff87aab5a3dab/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/a4b9f0f2a5efb386b76ff87aab5a3dab/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/95829ad2b2499a426fb41047becaddd9/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/95829ad2b2499a426fb41047becaddd9/AndroidManifest.xml:7:5-9:41
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8ff3b3906e0dfa7ade016e26f424fdf6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8ff3b3906e0dfa7ade016e26f424fdf6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5f85556bba5509ba98796743d1878f46/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5f85556bba5509ba98796743d1878f46/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/257dbbc457b1468f920dd24d42759e84/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/257dbbc457b1468f920dd24d42759e84/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/207b8daf190c57c6958a695147d9ae0d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/207b8daf190c57c6958a695147d9ae0d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5d15471c27e164f929a70837860bc0b9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/5d15471c27e164f929a70837860bc0b9/AndroidManifest.xml:20:5-44
+MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.sharesdk:OneKeyShare:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/OneKeyShare-3.4.1.aar/3c1fc4ff6928710272f2f526bfb0d525/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.sharesdk:OneKeyShare:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/OneKeyShare-3.4.1.aar/3c1fc4ff6928710272f2f526bfb0d525/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd085b7b88e117089ca2d075e6b77435/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd085b7b88e117089ca2d075e6b77435/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/71c66385e3256c5e06584239e752aa8b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/71c66385e3256c5e06584239e752aa8b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9aae010a42510f8c00bdd7be236339e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9aae010a42510f8c00bdd7be236339e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ab9e8dbd6478c6fdeea9f91614777c69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ab9e8dbd6478c6fdeea9f91614777c69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b0245b185eb1b208fe489a553851c323/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b0245b185eb1b208fe489a553851c323/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/00c4d416052f9d79ea15a5374ab05e6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/00c4d416052f9d79ea15a5374ab05e6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3c07862e3bd82a75847b7e1e46d02e25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3c07862e3bd82a75847b7e1e46d02e25/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/1693a11f8083c27ca59de103a4d0c770/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/1693a11f8083c27ca59de103a4d0c770/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/7152f5b6ceb5ac44986580be77fa2a06/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/7152f5b6ceb5ac44986580be77fa2a06/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/97c9d65e457ea4cc9010ef28fd989b95/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/97c9d65e457ea4cc9010ef28fd989b95/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/9e5f1341e8dd4fda632b17dca1808c46/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/9e5f1341e8dd4fda632b17dca1808c46/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/17b682461122ae0047a0962a0ed65c0e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/17b682461122ae0047a0962a0ed65c0e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/18185dd40eb42399323a236a2e00120b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/18185dd40eb42399323a236a2e00120b/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/948d74379c3e790bd12e03c226909ced/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/948d74379c3e790bd12e03c226909ced/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9f1b3f3ae0d8b6a7d921e1c9235fa3b1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9f1b3f3ae0d8b6a7d921e1c9235fa3b1/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/43f1e4712d389e11e2cd2dc4807a4550/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/43f1e4712d389e11e2cd2dc4807a4550/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b7bd54a2c80bcb21a4d362c12059ee2a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b7bd54a2c80bcb21a4d362c12059ee2a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/baa011e5a4dc725f3df6f0d84ba8bcad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/baa011e5a4dc725f3df6f0d84ba8bcad/AndroidManifest.xml:20:5-44
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -146,8 +156,8 @@ INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
