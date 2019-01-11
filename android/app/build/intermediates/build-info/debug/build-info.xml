@@ -5,23 +5,26 @@
     build-mode="FULL"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1547110050668"
+    timestamp="1547197396077"
     token="3251711151825995914"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="3013" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="398" />
     <task
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
@@ -56,16 +59,16 @@
         location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
         location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1547110050668"
+        timestamp="1547197396077"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
@@ -98,9 +101,6 @@
             type="SPLIT" />
         <artifact
             location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
             location="/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
