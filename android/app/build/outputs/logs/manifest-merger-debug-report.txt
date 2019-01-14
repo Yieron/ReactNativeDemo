@@ -4,6 +4,7 @@ ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/mai
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-update] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-update/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
 MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:2:1-11:12
 MERGED from [cn.sharesdk:OneKeyShare:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/OneKeyShare-3.4.1.aar/3c1fc4ff6928710272f2f526bfb0d525/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:2:1-15:12
@@ -103,6 +104,8 @@ uses-sdk
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-update] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-update/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-update] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-update/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:7:5-9:41
 MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:7:5-9:41
 MERGED from [cn.sharesdk:OneKeyShare:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/OneKeyShare-3.4.1.aar/3c1fc4ff6928710272f2f526bfb0d525/AndroidManifest.xml:7:5-9:41
