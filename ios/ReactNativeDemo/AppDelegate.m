@@ -21,8 +21,8 @@
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   #else
   // 非DEBUG情况下启用热更新
-//    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-  jsCodeLocation=[RCTHotUpdate bundleURL];
+    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+    jsCodeLocation=[RCTHotUpdate bundleURL];
 
   #endif
 

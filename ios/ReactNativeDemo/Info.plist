@@ -56,7 +56,7 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSAppTransportSecurity</key>
+	<!-- <key>NSAppTransportSecurity</key>
 	<dict>
     <key>NSExceptionDomains</key>
     <dict>
@@ -67,7 +67,7 @@
             <key>NSExceptionAllowsInsecureHTTPLoads</key>
             <true/>
         </dict>
-   </dict>
-</dict>
+    </dict>
+	</dict> -->
 </dict>
 </plist>
