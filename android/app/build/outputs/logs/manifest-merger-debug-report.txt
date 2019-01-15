@@ -4,11 +4,19 @@ ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/mai
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:appcenter-crashes] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter-crashes/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:appcenter-analytics] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter-analytics/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:appcenter] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-17:12
 MERGED from [:react-native-update] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-update/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
 MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:2:1-11:12
 MERGED from [cn.sharesdk:OneKeyShare:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/OneKeyShare-3.4.1.aar/3c1fc4ff6928710272f2f526bfb0d525/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd085b7b88e117089ca2d075e6b77435/AndroidManifest.xml:17:1-22:12
+MERGED from [com.microsoft.appcenter:appcenter-crashes:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-crashes-1.11.0.aar/1bc6bc48a1652167817156d1ebb66e99/AndroidManifest.xml:2:1-11:12
+MERGED from [com.microsoft.appcenter.reactnative:appcenter-react-native:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-react-native-1.11.0.aar/7dd94db3aabddf679a7d47374257dcfe/AndroidManifest.xml:2:1-11:12
+MERGED from [com.microsoft.appcenter:appcenter-analytics:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-analytics-1.11.0.aar/51715e12975079d2cd9c0b58a7cd0507/AndroidManifest.xml:2:1-11:12
+MERGED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/71c66385e3256c5e06584239e752aa8b/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9aae010a42510f8c00bdd7be236339e5/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ab9e8dbd6478c6fdeea9f91614777c69/AndroidManifest.xml:17:1-22:12
@@ -48,6 +56,10 @@ INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-67
+MERGED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:11:5-67
+MERGED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
@@ -58,6 +70,8 @@ MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/cach
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:6:22-75
 application
 ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:5-15:19
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:5-15:19
 MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/18185dd40eb42399323a236a2e00120b/AndroidManifest.xml:11:5-20
@@ -98,12 +112,22 @@ ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/mai
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:25:9-86
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:9-86
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:14:9-86
 	android:name
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:25:19-83
 uses-sdk
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
+MERGED from [:appcenter-crashes] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter-crashes/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:appcenter-crashes] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter-crashes/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:appcenter-analytics] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter-analytics/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:appcenter-analytics] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter-analytics/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:appcenter] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:appcenter] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/appcenter/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-code-push] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/android/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-update] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-update/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-update] /Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-update/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [cn.sharesdk:ShareSDK:3.4.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/ShareSDK-3.4.1.aar/36708eeac401000fbd00233eb6fab68d/AndroidManifest.xml:7:5-9:41
@@ -114,6 +138,14 @@ MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/cach
 MERGED from [com.facebook.react:react-native:0.57.8] /Users/yindong/.gradle/caches/transforms-1/files-1.1/react-native-0.57.8.aar/b347aa702ea6bdc74677ca0e715ace4c/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd085b7b88e117089ca2d075e6b77435/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/dd085b7b88e117089ca2d075e6b77435/AndroidManifest.xml:20:5-44
+MERGED from [com.microsoft.appcenter:appcenter-crashes:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-crashes-1.11.0.aar/1bc6bc48a1652167817156d1ebb66e99/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter-crashes:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-crashes-1.11.0.aar/1bc6bc48a1652167817156d1ebb66e99/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter.reactnative:appcenter-react-native:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-react-native-1.11.0.aar/7dd94db3aabddf679a7d47374257dcfe/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter.reactnative:appcenter-react-native:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-react-native-1.11.0.aar/7dd94db3aabddf679a7d47374257dcfe/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter-analytics:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-analytics-1.11.0.aar/51715e12975079d2cd9c0b58a7cd0507/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter-analytics:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-analytics-1.11.0.aar/51715e12975079d2cd9c0b58a7cd0507/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:7:5-9:41
+MERGED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/71c66385e3256c5e06584239e752aa8b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/71c66385e3256c5e06584239e752aa8b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/yindong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/9aae010a42510f8c00bdd7be236339e5/AndroidManifest.xml:20:5-44
@@ -158,6 +190,10 @@ INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [com.microsoft.appcenter:appcenter:1.11.0] /Users/yindong/.gradle/caches/transforms-1/files-1.1/appcenter-1.11.0.aar/81a1fb9e093791b3d24024c018068963/AndroidManifest.xml:12:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
