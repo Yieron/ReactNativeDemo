@@ -48,7 +48,6 @@
 		D719F7DC21EC202D003915C8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D719F7DB21EC202D003915C8 /* libz.tbd */; };
 		D719F7DE21EC203C003915C8 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D719F7DD21EC203C003915C8 /* libbz2.1.0.tbd */; };
 		D73C5D8921EDD53800747B76 /* libRCTHotUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D73C5D8821EDD51200747B76 /* libRCTHotUpdate.a */; };
-		D79AF0AB21EDB3C400D89BF3 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BAF18321ED9029005C214B /* libCodePush.a */; };
 		FDAEF6ED3A056EC5A7D97CDD /* libPods-ReactNativeDemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7636D55C18261BBF48A3DAF5 /* libPods-ReactNativeDemo-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -354,20 +353,6 @@
 			remoteGlobalIDString = 91C5EFFF1C76ECA90037E727;
 			remoteInfo = RCTHotUpdate;
 		};
-		D79AF07921EDB3B900D89BF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7BAF17A21ED9029005C214B /* CodePush.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D79AF07321EDB3A400D89BF3;
-			remoteInfo = "CodePush-tvOS";
-		};
-		D7BAF18221ED9029005C214B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D7BAF17A21ED9029005C214B /* CodePush.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = CodePush;
-		};
 		D7C65B2C21ED828D0011B999 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D7C65B1E21ED828D0011B999 /* Pods.xcodeproj */;
@@ -448,7 +433,6 @@
 		D719F7DB21EC202D003915C8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D719F7DD21EC203C003915C8 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		D73C5D8321EDD51200747B76 /* RCTHotUpdate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTHotUpdate.xcodeproj; path = "../node_modules/react-native-update/ios/RCTHotUpdate.xcodeproj"; sourceTree = "<group>"; };
-		D7BAF17A21ED9029005C214B /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		D7C65B1E21ED828D0011B999 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		D9936F9092F04155AA7E6C88 /* AppCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "ReactNativeDemo/AppCenter-Config.plist"; sourceTree = "<group>"; };
 		DDF8EECC218C6F0E62E4C215 /* Pods-ReactNativeDemo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeDemo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeDemo-tvOS/Pods-ReactNativeDemo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -470,7 +454,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73C5D8921EDD53800747B76 /* libRCTHotUpdate.a in Frameworks */,
-				D79AF0AB21EDB3C400D89BF3 /* libCodePush.a in Frameworks */,
 				D719F7DE21EC203C003915C8 /* libbz2.1.0.tbd in Frameworks */,
 				D719F7DC21EC202D003915C8 /* libz.tbd in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -672,7 +655,6 @@
 			isa = PBXGroup;
 			children = (
 				D73C5D8321EDD51200747B76 /* RCTHotUpdate.xcodeproj */,
-				D7BAF17A21ED9029005C214B /* CodePush.xcodeproj */,
 				D7C65B1E21ED828D0011B999 /* Pods.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -800,15 +782,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7BAF17B21ED9029005C214B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D7BAF18321ED9029005C214B /* libCodePush.a */,
-				D79AF07A21EDB3B900D89BF3 /* libCodePush.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D7C65B1F21ED828D0011B999 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -912,6 +885,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = TM54CB3H47;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -946,10 +922,6 @@
 				{
 					ProductGroup = D7268B8521EC7FF200BE4E35 /* Products */;
 					ProjectRef = C582E20FA9E34D7C8358FEB1 /* AppCenterReactNativeCrashes.xcodeproj */;
-				},
-				{
-					ProductGroup = D7BAF17B21ED9029005C214B /* Products */;
-					ProjectRef = D7BAF17A21ED9029005C214B /* CodePush.xcodeproj */;
 				},
 				{
 					ProductGroup = D7C65B1F21ED828D0011B999 /* Products */;
@@ -1306,21 +1278,6 @@
 			remoteRef = D73C5D8721EDD51200747B76 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D79AF07A21EDB3B900D89BF3 /* libCodePush.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			name = libCodePush.a;
-			path = "/Users/yindong/ReactNativeProject/ReactNativeDemo/node_modules/react-native-code-push/ios/build/Debug-appletvos/libCodePush.a";
-			remoteRef = D79AF07921EDB3B900D89BF3 /* PBXContainerItemProxy */;
-			sourceTree = "<absolute>";
-		};
-		D7BAF18321ED9029005C214B /* libCodePush.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCodePush.a;
-			remoteRef = D7BAF18221ED9029005C214B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		D7C65B2D21ED828D0011B999 /* libPods-ReactNativeDemo.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1649,6 +1606,7 @@
 				CODEPUSH_KEY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = TM54CB3H47;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-update/ios/RCTHotUpdate/**",
@@ -1656,6 +1614,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-update/ios",
 				);
 				INFOPLIST_FILE = ReactNativeDemo/Info.plist;
@@ -1678,6 +1637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODEPUSH_KEY = 5e49a62cc93ea6fcd7deb0fb289139245f9ddb4a;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TM54CB3H47;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-update/ios/RCTHotUpdate/**",
@@ -1685,6 +1645,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-update/ios",
 				);
 				INFOPLIST_FILE = ReactNativeDemo/Info.plist;
@@ -2030,6 +1991,7 @@
 				CODEPUSH_KEY = 5e49a62cc93ea6fcd7deb0fb289139245f9ddb4a;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = TM54CB3H47;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-update/ios/RCTHotUpdate/**",
@@ -2037,6 +1999,7 @@
 					"$(SRCROOT)/../node_modules/appcenter/ios/AppCenterReactNative",
 					"$(SRCROOT)/../node_modules/appcenter-analytics/ios/AppCenterReactNativeAnalytics",
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-update/ios",
 				);
 				INFOPLIST_FILE = ReactNativeDemo/Info.plist;

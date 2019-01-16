@@ -100,6 +100,8 @@ export default class App extends Component<Props> {
             <Text style={styles.instructions}>
               点击这里检查更新
           </Text>
+          <Text style={styles.instructions}>This is my first codepush!</Text>
+
           </TouchableOpacity>
           <Text style={styles.instructions}>{instructions}</Text>
 
@@ -112,6 +114,8 @@ export default class App extends Component<Props> {
     //   .then(info => {
     //   })
   }
+
+
 }
 
 const styles = StyleSheet.create({
