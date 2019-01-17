@@ -28,4 +28,3 @@ Android Studio
 a ：file not found
 
 删除nodeModule，重新npm install
-
