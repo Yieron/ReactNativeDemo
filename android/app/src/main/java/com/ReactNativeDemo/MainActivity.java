@@ -5,8 +5,13 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 
 import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactRootView;
+import com.microsoft.codepush.react.CodePush;
 
 public class MainActivity extends ReactActivity {
+    private ReactRootView mReactRootView;
+    private ReactInstanceManager mReactInstanceManager;
 
     /**
      * Returns the name of the main component registered from JavaScript.
@@ -20,6 +25,17 @@ public class MainActivity extends ReactActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
+        mReactInstanceManager = ReactInstanceManager.builder()
+                // ...
+                // Add CodePush package
+                .addPackage(new CodePush("deployment-key-here", getApplicationContext(), BuildConfig.DEBUG))
+                // Get the JS Bundle File via CodePush
+                .setJSBundleFile(CodePush.getJSBundleFile())
+                // ...
 
+                .build();
+        mReactRootView.startReactApplication(mReactInstanceManager, "MyReactNativeApp", null);
+
+        setContentView(mReactRootView);
     }
 }
