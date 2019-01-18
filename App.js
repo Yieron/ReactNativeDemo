@@ -21,6 +21,16 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
+
+const deploymentStagingKey = Platform.select({
+  ios: 'chmiVoyvC_u96KdsfYc-5Bw2x4bq4a24f70d-accd-4d8a-8209-ae5e2e68a948',
+  android: 'ZPE_RQiwfQUAJipupv_AHoU-yhB64a24f70d-accd-4d8a-8209-ae5e2e68a948',
+})
+
+const deploymentProductionKey = Platform.select({
+  ios: 'hms4KFZxXIE39lFjdW3vsYMpvue24a24f70d-accd-4d8a-8209-ae5e2e68a948',
+  android: '_w-Jxi7v2M4y_Cfz3NItAZkwPbdf4a24f70d-accd-4d8a-8209-ae5e2e68a948',
+})
 type Props = {};
 
 export default class App extends Component<Props> {
@@ -36,10 +46,7 @@ export default class App extends Component<Props> {
       updateDialog: true,
       installMode: codePush.InstallMode.IMMEDIATE,
       mandatoryInstallMode: codePush.InstallMode.IMMEDIATE,
-      //iOS Staging
-      // deploymentKey: 'chmiVoyvC_u96KdsfYc-5Bw2x4bq4a24f70d-accd-4d8a-8209-ae5e2e68a948',
-      //android Staging
-      deploymentKey:'ZPE_RQiwfQUAJipupv_AHoU-yhB64a24f70d-accd-4d8a-8209-ae5e2e68a948',
+      deploymentKey: deploymentStagingKey,
     });
   };
 
