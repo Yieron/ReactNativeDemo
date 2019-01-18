@@ -11,26 +11,9 @@
 import React, { Component } from 'react';
 import {
   Platform, StyleSheet, Text, View,
-  AppRegistry,
-  Alert,
   TouchableOpacity,
-  Linking,
-  ScrollView,
 } from 'react-native';
-import _updateConfig from './update.json';
-const { appKey } = _updateConfig[Platform.OS];
-
-import {
-  isFirstTime,
-  isRolledBack,
-  packageVersion,
-  currentVersion,
-  checkUpdate,
-  downloadUpdate,
-  switchVersion,
-  switchVersionLater,
-  markSuccess,
-} from 'react-native-update';
+import codePush from "react-native-code-push";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -38,84 +21,40 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
 type Props = {};
+
 export default class App extends Component<Props> {
   componentWillMount() {
-    if (isFirstTime) {
-      Alert.alert('提示', '这是当前版本第一次启动,是否要模拟启动失败?失败将回滚到上一版本', [
-        { text: '是', onPress: () => { throw new Error('模拟启动失败,请重启应用') } },
-        { text: '否', onPress: () => { markSuccess() } },
-      ]);
-    } else if (isRolledBack) {
-      Alert.alert('提示', '刚刚更新失败了,版本被回滚.');
-    }
+
   }
 
-  doUpdate = info => {
-    downloadUpdate(info).then(hash => {
-      Alert.alert('提示', '下载完毕,是否重启应用?', [
-        { text: '是', onPress: () => { switchVersion(hash); } },
-        { text: '否', },
-        { text: '下次启动时', onPress: () => { switchVersionLater(hash); } },
-      ]);
-    }).catch(err => {
-      Alert.alert('提示', '更新失败.');
-    });
-  };
+  checkUpdateCodePush = () => {
+    console.log('YINDONG');
+    codePush.notifyApplicationReady();
 
-  checkUpdate = () => {
-    checkUpdate(appKey).then(info => {
-      if (info.expired) {
-        Alert.alert('提示', '您的应用版本已更新,请前往应用商店下载新的版本', [
-          { text: '确定', onPress: () => { info.downloadUrl && Linking.openURL(info.downloadUrl) } },
-        ]);
-      } else if (info.upToDate) {
-        Alert.alert('提示', '您的应用版本已是最新.');
-      } else {
-        Alert.alert('提示', '检查到新的版本' + info.name + ',是否下载?\n' + info.description, [
-          { text: '是', onPress: () => { this.doUpdate(info) } },
-          { text: '否', },
-        ]);
-      }
-    }).catch(err => {
-      Alert.alert('提示', '更新失败.');
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
     });
+
   };
 
   render() {
     return (
-        <View style={styles.container}>
-          <Text style={styles.welcome}>Welcome to React Native!</Text>
-          <Text style={styles.instructions}>To get started, edit App.js</Text>
-          <Text style={styles.welcome}>
-            欢迎使用热更新服务
-        </Text>
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.instructions}>This is my first codepush!</Text>
+        <TouchableOpacity onPress={this.checkUpdateCodePush}>
           <Text style={styles.instructions}>
-            这是版本一 {'\n'}
-            当前包版本号: {packageVersion}{'\n'}
-            当前版本Hash: {currentVersion || '(空)'}{'\n'}
+            点击这里检查更新CodePush
           </Text>
-          <TouchableOpacity onPress={this.checkUpdate}>
-            <Text style={styles.instructions}>
-              点击这里检查更新
-          </Text>
-          <Text style={styles.instructions}>This is my first codepush!</Text>
+        </TouchableOpacity>
+        <Text style={styles.instructions}>{instructions}</Text>
 
-          </TouchableOpacity>
-          <Text style={styles.instructions}>{instructions}</Text>
-
-        </View>
+      </View>
     );
   }
-
-  componentDidMount() {
-    // _checkUpdate(appKey)
-    //   .then(info => {
-    //   })
-  }
-
-
 }
 
 const styles = StyleSheet.create({

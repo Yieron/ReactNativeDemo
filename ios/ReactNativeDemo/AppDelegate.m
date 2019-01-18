@@ -13,7 +13,6 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import "RCTHotUpdate.h"
 
 @implementation AppDelegate
 
@@ -31,7 +30,6 @@
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   #else
   // 非DEBUG情况下启用热更新
-    jsCodeLocation=[RCTHotUpdate bundleURL];
     jsCodeLocation = [CodePush bundleURL];
 
   #endif
