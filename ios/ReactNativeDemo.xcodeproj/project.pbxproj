@@ -1562,7 +1562,7 @@
 			baseConfigurationReference = 3AF04F37E7BBDE77E16C2055 /* Pods-ReactNativeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODEPUSH_KEY = "";
+				CODEPUSH_KEY = "chmiVoyvC_u96KdsfYc-5Bw2x4bq4a24f70d-accd-4d8a-8209-ae5e2e68a948";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = TM54CB3H47;

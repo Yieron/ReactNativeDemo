@@ -34,9 +34,13 @@ export default class App extends Component<Props> {
 
     codePush.sync({
       updateDialog: true,
-      installMode: codePush.InstallMode.IMMEDIATE
+      installMode: codePush.InstallMode.IMMEDIATE,
+      mandatoryInstallMode: codePush.InstallMode.IMMEDIATE,
+      //iOS Staging
+      // deploymentKey: 'chmiVoyvC_u96KdsfYc-5Bw2x4bq4a24f70d-accd-4d8a-8209-ae5e2e68a948',
+      //android Staging
+      deploymentKey:'ZPE_RQiwfQUAJipupv_AHoU-yhB64a24f70d-accd-4d8a-8209-ae5e2e68a948',
     });
-
   };
 
   render() {

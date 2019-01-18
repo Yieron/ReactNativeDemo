@@ -29,7 +29,7 @@
   #ifdef DEBUG
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   #else
-  // 非DEBUG情况下启用热更新
+  // 非DEBUG情况下启用热更新codePush
     jsCodeLocation = [CodePush bundleURL];
 
   #endif
