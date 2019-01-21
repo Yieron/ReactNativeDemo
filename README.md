@@ -28,3 +28,13 @@ Android Studio
 a ：file not found
 
 删除nodeModule，重新npm install
+
+已完成DONE：
+codePush  1月16-1月18  Android iOS均已集成OK
+
+正在做DOING：
+Android与RN交互
+
+将要做TODO:
+集成redux
+集成react-native-navigation
