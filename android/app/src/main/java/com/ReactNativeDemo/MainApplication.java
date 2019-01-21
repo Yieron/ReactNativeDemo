@@ -37,8 +37,9 @@ public class MainApplication extends Application implements ReactApplication {
                     Staging: ZPE_RQiwfQUAJipupv_AHoU-yhB64a24f70d-accd-4d8a-8209-ae5e2e68a948
                      */
                     new CodePush("ZPE_RQiwfQUAJipupv_AHoU-yhB64a24f70d-accd-4d8a-8209-ae5e2e68a948",
-                            getApplicationContext(), BuildConfig.DEBUG)//Staging Deployment Key
+                            getApplicationContext(), BuildConfig.DEBUG),//Staging Deployment Key
 //                    new CodePush(BuildConfig.CODEPUSH_KEY, MainApplication.this, BuildConfig.DEBUG), // Add/change this line.
+                    new MyReactPackage()
             );
         }
 

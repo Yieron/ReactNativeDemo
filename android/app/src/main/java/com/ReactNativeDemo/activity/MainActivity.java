@@ -1,9 +1,10 @@
-package com.ReactNativeDemo;
+package com.ReactNativeDemo.activity;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 
+import com.ReactNativeDemo.BuildConfig;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;

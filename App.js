@@ -11,9 +11,15 @@
 import React, { Component } from 'react';
 import {
   Platform, StyleSheet, Text, View,
-  TouchableOpacity,
+  TouchableOpacity, TouchableNativeFeedback, TouchableHighlight,
+  NativeModules,
 } from 'react-native';
 import codePush from "react-native-code-push";
+
+const Touch = Platform.select({
+  ios: TouchableHighlight,
+  android: TouchableNativeFeedback,
+})
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -50,6 +56,34 @@ export default class App extends Component<Props> {
     });
   };
 
+  showToast = () => {
+    NativeModules.ToastModule.rnCallNativeShowToast('RN与安卓混合开发');
+  };
+
+  showToastPromise = () => {
+    NativeModules.ToastModule.rnCallNative_promise('promise方式RN与Android混合开发')
+      .then(
+        (msg) => {
+          console.log('promise收到消息:' + msg);
+        }
+      ).catch(
+        (err) => {
+          console.log(err);
+        }
+      )
+  };
+
+  measureLayout = () => {
+    NativeModules.ToastModule.measureLayout(
+      (msg) => {
+        console.log('YINDONG_msg',msg);
+      },
+      (x, y, width, height) => {
+        console.log('x坐标:' + x + 'y坐标:' + y + '高:' + height + '宽' + width);
+
+      })
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -62,7 +96,24 @@ export default class App extends Component<Props> {
           </Text>
         </TouchableOpacity>
         <Text style={styles.instructions}>{instructions}</Text>
-
+        <Touch onPress={this.showToast}
+          background={TouchableNativeFeedback.SelectableBackground()}>
+          <Text style={styles.instructions}>
+            点击这里显示Toast
+          </Text>
+        </Touch>
+        <Touch onPress={this.showToastPromise}
+          background={TouchableNativeFeedback.SelectableBackground()}>
+          <Text style={styles.instructions}>
+            点击这里显示Toast__Promise
+          </Text>
+        </Touch>
+        <Touch onPress={this.measureLayout}
+          background={TouchableNativeFeedback.SelectableBackground()}>
+          <Text style={styles.instructions}>
+            点击测量measureLayout
+          </Text>
+        </Touch>
       </View>
     );
   }
