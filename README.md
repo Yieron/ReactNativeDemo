@@ -29,6 +29,8 @@ a ：file not found
 
 删除nodeModule，重新npm install
 
+## 项目进度
+
 已完成DONE：
 codePush  1月16-1月18  Android iOS均已集成OK
 
