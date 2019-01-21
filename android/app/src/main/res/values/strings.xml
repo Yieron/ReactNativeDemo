@@ -5,4 +5,5 @@
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true">ALWAYS_SEND</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true">ALWAYS_SEND</string>
     <string name="android_to_rn">AndroidToRN</string>
+    <string name="sendEvent">安卓发送事件到RN</string>
 </resources>

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ReactNativeDemo.MyNativeModule;
 import com.ReactNativeDemo.R;
 
 public class AndroidToRNActivity extends AppCompatActivity {
@@ -16,5 +17,9 @@ public class AndroidToRNActivity extends AppCompatActivity {
 
     public void onBack(View view) {
         finish();
+    }
+
+    public void sendEventToRN(View view){
+        MyNativeModule.sendEvent("YieronEventName");
     }
 }

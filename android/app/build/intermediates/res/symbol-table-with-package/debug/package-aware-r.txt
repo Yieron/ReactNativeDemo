@@ -806,6 +806,7 @@ id beginning
 id blocking
 id bottom
 id btn_android_to_rn
+id btn_send_event_to_rn
 id buttonPanel
 id catalyst_redbox_title
 id center
@@ -1062,6 +1063,7 @@ string link_description
 string reactNativeCodePush_androidDeploymentKey
 string search_description
 string search_menu_title
+string sendEvent
 string share
 string ssdk_accountkit
 string ssdk_alipay

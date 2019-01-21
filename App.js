@@ -12,7 +12,7 @@ import React, { Component } from 'react';
 import {
   Platform, StyleSheet, Text, View,
   TouchableOpacity, TouchableNativeFeedback, TouchableHighlight,
-  NativeModules,
+  NativeModules,DeviceEventEmitter,
 } from 'react-native';
 import codePush from "react-native-code-push";
 
@@ -41,7 +41,10 @@ type Props = {};
 
 export default class App extends Component<Props> {
   componentWillMount() {
-
+    DeviceEventEmitter.addListener('YieronEventName', 
+    (e) => {
+      console.log("接收到通知YieronEventName");
+    });
   }
 
   checkUpdateCodePush = () => {
@@ -76,11 +79,10 @@ export default class App extends Component<Props> {
   measureLayout = () => {
     NativeModules.ToastModule.measureLayout(
       (msg) => {
-        console.log('YINDONG_msg',msg);
+        console.log('YINDONG_msg', msg);
       },
       (x, y, width, height) => {
         console.log('x坐标:' + x + 'y坐标:' + y + '高:' + height + '宽' + width);
-
       })
   };
 
@@ -116,6 +118,10 @@ export default class App extends Component<Props> {
         </Touch>
       </View>
     );
+  }
+
+  componentWillUnmount(){
+    DeviceEventEmitter.removeListener();
   }
 }
 
