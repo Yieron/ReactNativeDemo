@@ -1,5 +1,7 @@
 package com.ReactNativeDemo;
 
+import com.ReactNativeDemo.Module.TakePhotoModule;
+import com.ReactNativeDemo.Module.ToastModule;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -13,7 +15,8 @@ public class MyReactPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new MyNativeModule(reactContext));
+        modules.add(new ToastModule(reactContext));
+        modules.add(new TakePhotoModule(reactContext));
         return modules;
     }
 
@@ -21,4 +24,5 @@ public class MyReactPackage implements ReactPackage {
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
+
 }

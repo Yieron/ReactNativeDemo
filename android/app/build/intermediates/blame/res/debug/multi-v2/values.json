@@ -150,11 +150,9 @@
                 {
                     "source": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,7,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,4,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,452,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,47,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,495,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "968,969,970,971,999,1002,1003",

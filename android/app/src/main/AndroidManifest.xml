@@ -13,7 +13,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".activity.AndroidToRNActivity"></activity>
+        <activity android:name=".activity.PhotoSelectActivity"></activity>
+        <activity android:name=".activity.AndroidToRNActivity" />
         <activity
             android:name=".activity.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"

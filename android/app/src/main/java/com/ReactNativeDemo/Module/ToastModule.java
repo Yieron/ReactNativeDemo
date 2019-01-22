@@ -1,4 +1,4 @@
-package com.ReactNativeDemo;
+package com.ReactNativeDemo.Module;
 
 import android.content.Intent;
 import android.widget.Toast;
@@ -17,10 +17,10 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.uimanager.IllegalViewOperationException;
 
-public class MyNativeModule extends ReactContextBaseJavaModule {
+public class ToastModule extends ReactContextBaseJavaModule {
     private static ReactApplicationContext mContext;
 
-    public MyNativeModule(ReactApplicationContext reactContext) {
+    public ToastModule(ReactApplicationContext reactContext) {
         super(reactContext);
         mContext = reactContext;
     }
@@ -79,6 +79,26 @@ public class MyNativeModule extends ReactContextBaseJavaModule {
         Toast.makeText(mContext, "已收到数组数据", Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * RN调用Native的方法
+     * Callback方式回调
+     */
+    @ReactMethod
+    public void rnCallNativeFromCallback(String param, Callback callback) {
+        String a = "啧啧啧：" + param;
+        if (callback != null)
+            callback.invoke(a);
+    }
+
+    /**
+     * RN调用Native的方法
+     * Promise方式回调
+     */
+    @ReactMethod
+    public void rnCallNativeFromPromise(String msg, Promise promise) {
+        String result = "啧啧啧：" + msg;
+        promise.resolve(result);
+    }
     //*******************************原生向RN回调数据*****************************
 
     /**
@@ -146,6 +166,4 @@ public class MyNativeModule extends ReactContextBaseJavaModule {
         String dataToRN  ="这是发给RN的字符串";
         mContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit(eventName,dataToRN);
     }
-
-
 }

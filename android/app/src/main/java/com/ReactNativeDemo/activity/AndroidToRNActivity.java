@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.ReactNativeDemo.MyNativeModule;
+import com.ReactNativeDemo.Module.ToastModule;
 import com.ReactNativeDemo.R;
 
 public class AndroidToRNActivity extends AppCompatActivity {
@@ -20,6 +20,6 @@ public class AndroidToRNActivity extends AppCompatActivity {
     }
 
     public void sendEventToRN(View view){
-        MyNativeModule.sendEvent("YieronEventName");
+        ToastModule.sendEvent("YieronEventName");
     }
 }

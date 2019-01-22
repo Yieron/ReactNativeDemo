@@ -981,6 +981,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_android_to_rn
+layout activity_photo_select
 layout dev_loading_view
 layout fps_view
 layout notification_action

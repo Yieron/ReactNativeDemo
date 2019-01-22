@@ -12,9 +12,10 @@ import React, { Component } from 'react';
 import {
   Platform, StyleSheet, Text, View,
   TouchableOpacity, TouchableNativeFeedback, TouchableHighlight,
-  NativeModules,DeviceEventEmitter,
+  NativeModules, DeviceEventEmitter, ToastAndroid
 } from 'react-native';
 import codePush from "react-native-code-push";
+import { createStore } from 'redux';
 
 const Touch = Platform.select({
   ios: TouchableHighlight,
@@ -41,14 +42,49 @@ type Props = {};
 
 export default class App extends Component<Props> {
   componentWillMount() {
-    DeviceEventEmitter.addListener('YieronEventName', 
-    (e) => {
-      console.log("接收到通知YieronEventName");
-    });
+    DeviceEventEmitter.addListener('YieronEventName',
+      (dataToRN) => {
+        console.log("接收到通知YieronEventName:", dataToRN);
+      });
+
+    function counter(state = 0, action) {
+      switch (action.type) {
+        case 'INCREMENT':
+          return state + 1;
+        case 'DECREMENT':
+          return state - 1;
+        default:
+          return state;
+      }
+    }
+    let store = createStore(counter);
+    console.log('YINDONG_store',store);
+    store.subscribe(() =>
+      console.log('YINDONG1', store.getState())
+    );
+    store.dispatch({ type: 'INCREMENT' });
+    store.subscribe(() =>
+      console.log('YINDONG2', store.getState())
+    );
+    store.dispatch({ type: 'INCREMENT' });
+    store.subscribe(() =>
+      console.log('YINDONG3', store.getState())
+    );
+    store.dispatch({ type: 'INCREMENT' });
+    store.subscribe(() =>
+      console.log('YINDONG4', store.getState())
+    );
+    store.dispatch({ type: 'INCREMENT' });
+    store.subscribe(() =>
+      console.log('YINDONG5', store.getState())
+    );
+    store.dispatch({ type: 'INCREMENT' });
+    store.subscribe(() =>
+      console.log('YINDONG6', store.getState())
+    );
   }
 
   checkUpdateCodePush = () => {
-    console.log('YINDONG');
     codePush.notifyApplicationReady();
 
     codePush.sync({
@@ -86,6 +122,26 @@ export default class App extends Component<Props> {
       })
   };
 
+  /**
+    * Callback 通信方式
+    */
+  callbackComm(msg) {
+    NativeModules.ToastModule.rnCallNativeFromCallback(msg, (result) => {
+      ToastAndroid.show("CallBack收到消息:" + result, ToastAndroid.SHORT);
+    })
+  }
+
+  /**
+  * Promise 通信方式
+  */
+  promiseComm(msg) {
+    NativeModules.ToastModule.rnCallNativeFromPromise(msg).then(
+      (result) => {
+        ToastAndroid.show("Promise收到消息:" + result, ToastAndroid.SHORT)
+      }
+    ).catch((error) => { console.log(error) });
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -116,11 +172,25 @@ export default class App extends Component<Props> {
             点击测量measureLayout
           </Text>
         </Touch>
+        <TouchableOpacity onPress={() => {
+          NativeModules.TakePhotoModule.selectPhoto();
+        }}>
+          <Text style={styles.welcome}>
+            跳转到原生拍照或相册
+          </Text>
+        </TouchableOpacity>
+
+        <Text style={styles.welcome} onPress={this.callbackComm.bind(this, '你好啊，android')}>
+          Callback通信方式
+        </Text>
+        <Text style={styles.welcome} onPress={this.promiseComm.bind(this, '你好啊，android')}>
+          Promise通信方式
+        </Text>
       </View>
     );
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     DeviceEventEmitter.removeListener();
   }
 }
