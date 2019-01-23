@@ -806,6 +806,7 @@ id beginning
 id blocking
 id bottom
 id btn_android_to_rn
+id btn_faceing_camera
 id btn_send_event_to_rn
 id buttonPanel
 id catalyst_redbox_title
@@ -1058,6 +1059,7 @@ string catalyst_remotedbg_message
 string catalyst_report_button
 string catalyst_settings
 string catalyst_settings_title
+string facing_camera
 string image_button_description
 string image_description
 string link_description

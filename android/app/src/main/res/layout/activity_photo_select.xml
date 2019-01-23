@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".activity.PhotoSelectActivity">
 
+    <Button
+        android:id="@+id/btn_faceing_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/facing_camera"
+        android:onClick="showFacingCamera"
+        />
+
 </android.support.constraint.ConstraintLayout>
