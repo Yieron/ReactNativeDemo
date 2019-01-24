@@ -180,5 +180,6 @@
     <orderEntry type="library" name="Gradle: com.mob:MobCommons:2019.0122.0008@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.soloader:soloader:0.5.1@aar" level="project" />
     <orderEntry type="module" module-name="react-native-code-push" />
+    <orderEntry type="module" module-name="react-native-code-push" />
   </component>
 </module>

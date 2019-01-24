@@ -58,7 +58,7 @@ export default class App extends Component<Props> {
       }
     }
     let store = createStore(counter);
-    console.log('YINDONG_store',store);
+    console.log('YINDONG_store', store);
     store.subscribe(() =>
       console.log('YINDONG1', store.getState())
     );
