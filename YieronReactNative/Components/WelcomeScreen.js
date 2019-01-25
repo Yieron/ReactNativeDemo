@@ -12,7 +12,8 @@ import React, { Component } from 'react';
 import {
   Platform, StyleSheet, Text, View,
   TouchableOpacity, TouchableNativeFeedback, TouchableHighlight,
-  NativeModules, DeviceEventEmitter, ToastAndroid
+  NativeModules, DeviceEventEmitter, ToastAndroid, Button,
+
 } from 'react-native';
 import codePush from "react-native-code-push";
 import { createStore } from 'redux';
@@ -41,8 +42,13 @@ const deploymentProductionKey = Platform.select({
 type Props = {};
 
 export default class WelcomeScreen extends Component<Props> {
-  static navigationOptions = {
-    title: 'Welcome',
+  static navigationOptions = ({ navigation }) => {
+    console.log('YINDONG:navigation', navigation);
+    console.log('YINDONG:navigation.getParam()', navigation.getParam('otherParam', 'A Nested Welcome Screen'));
+
+    return {
+      title: navigation.getParam('otherParam', 'A Nested Welcome Screen'),
+    };
   };
 
   componentWillMount() {
@@ -190,6 +196,11 @@ export default class WelcomeScreen extends Component<Props> {
         <Text style={styles.welcome} onPress={this.promiseComm.bind(this, '你好啊，android')}>
           Promise通信方式
         </Text>
+
+        <Button
+          title="Update the title"
+          onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })}
+        />
       </View>
     );
   }

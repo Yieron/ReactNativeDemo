@@ -14,9 +14,30 @@ const AppNavigator = createStackNavigator(
             screen: WelcomeScreen
         }
     },
+
+    //**********************************************************
+    //**********************************************************
+    // 跨页面共享通用的 navigationOptions
+    // 如果界面中配置了，那么界面上的defaultNavigationOptions会覆盖这里的。
+    // 优先界面的。
     {
-        initialRouteName: "Home"
-    }
+        initialRouteName: "Home",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'Home!',
+        },
+    },
+
+    //**********************************************************
+    //**********************************************************
 );
 
 const TabNavigator = createBottomTabNavigator(
