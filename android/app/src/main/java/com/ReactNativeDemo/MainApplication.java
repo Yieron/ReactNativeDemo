@@ -3,11 +3,13 @@ package com.ReactNativeDemo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.microsoft.codepush.react.CodePush;
+import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.microsoft.codepush.react.CodePush;
 import com.mob.MobSDK;
 
 import java.util.Arrays;
@@ -31,6 +33,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
+            new AppCenterReactNativePackage(MainApplication.this),
+            new RNGestureHandlerPackage(),
                     /*
                     Deployment Key
                     Production:_w-Jxi7v2M4y_Cfz3NItAZkwPbdf4a24f70d-accd-4d8a-8209-ae5e2e68a948

@@ -192,6 +192,9 @@ MobSDK {
 }
 
 dependencies {
+    compile project(':react-native-code-push')
+    compile project(':appcenter')
+    compile project(':react-native-gesture-handler')
     implementation project(':react-native-code-push')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
