@@ -55,6 +55,10 @@ export default class App extends React.Component {
         console.log('YINDONG:AppNavigator', AppNavigator);
         console.log('YINDONG:TabNavigator', TabNavigator);
 
-        return <AppContainer />;
+        return <AppContainer
+            ref={nav => {
+                this.navigator = nav;
+            }}
+        />;
     }
 }

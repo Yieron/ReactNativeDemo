@@ -3,17 +3,37 @@ import {
     View,
     Text,
     Button,
+    Platform,
 } from "react-native";
+import LogoTitle from "./LogoTitle";
 
 export default class HomeScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Home',
+    static navigationOptions = ({ navigation }) => {
+        return {
+            // title: 'Home',
+            /**
+             * 您可以通过navigationOptions中的headerLeft和headerRight属性在标题栏中设置按钮。
+             * 后退按钮可以通过headerLeft完全自定义，
+             * 但是如果你只想更改标题或图片，
+             * 那么还有其他navigationOptions 
+             * headerBackTitle，headerTruncatedBackTitle和headerBackImage
+             */
+            headerTitle: <LogoTitle />,
+            headerRight: (
+                <Button
+                    onPress={() => alert('This is a button!')}
+                    title="Button"
+                    color={Platform.OS === 'ios' ? '#fff' : null}
+                />
+            ),
+            headerBackTitle:'返回',
+            headerTruncatedBackTitle:'',
+        }
     };
 
     render() {
         return (
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                <Text>Home Screen</Text>
                 <Button
                     title="Go to Welcome"
                     onPress={() => {

@@ -42,12 +42,21 @@ const deploymentProductionKey = Platform.select({
 type Props = {};
 
 export default class WelcomeScreen extends Component<Props> {
-  static navigationOptions = ({ navigation }) => {
-    console.log('YINDONG:navigation', navigation);
-    console.log('YINDONG:navigation.getParam()', navigation.getParam('otherParam', 'A Nested Welcome Screen'));
+
+  /**
+   * 反转传入的背景和色彩
+   * 白色字体红色背景 ----> 反转成 ----> 红色字体白色背景
+   */
+  static navigationOptions = ({ navigation, navigationOptions }) => {
+    const { params } = navigation.state;
 
     return {
-      title: navigation.getParam('otherParam', 'A Nested Welcome Screen'),
+      title: params ? params.otherParam : 'A Nested Details Screen',
+      /* These values are used instead of the shared configuration! */
+      headerStyle: {
+        backgroundColor: navigationOptions.headerTintColor,
+      },
+      headerTintColor: navigationOptions.headerStyle.backgroundColor,
     };
   };
 
