@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import { createStackNavigator, createAppContainer, createBottomTabNavigator } from "react-navigation";
 import HomeScreen from './YieronReactNative/Components/HomeScreen';
 import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
+import ModalScreen from './YieronReactNative/Components/ModalScreen';
 
 const AppNavigator = createStackNavigator(
     {
@@ -40,6 +41,24 @@ const AppNavigator = createStackNavigator(
     //**********************************************************
 );
 
+/**
+ * 创建一个modal堆栈
+ */
+const RootStack = createStackNavigator(
+    {
+        Main: {
+            screen: AppNavigator,
+        },
+        MyModal: {
+            screen: ModalScreen,
+        },
+    },
+    {
+        mode: 'modal',
+        headerMode: 'none',
+    }
+);
+
 const TabNavigator = createBottomTabNavigator(
     {
         Settings: WelcomeScreen,
@@ -56,6 +75,7 @@ export default class App extends React.Component {
         console.log('YINDONG:TabNavigator', TabNavigator);
 
         return <AppContainer
+            uriPrefix="/app"
             ref={nav => {
                 this.navigator = nav;
             }}

@@ -35,17 +35,17 @@ export default class HomeScreen extends React.Component {
         return (
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <Button
-                    title="Go to Welcome"
+                    title="Go to Welcome push"
                     onPress={() => {
                         console.log('YINDONG:push')
                         this.props.navigation.push('Welcome')
                     }}
                 />
                 <Button
-                    title="Go to Home"
+                    title="Go to Welcome navigate"
                     onPress={() => {
                         console.log('YINDONG:navigate')
-                        this.props.navigation.navigate('Home')
+                        this.props.navigation.navigate('Welcome')
                     }}
                 />
                 <Button
@@ -53,6 +53,13 @@ export default class HomeScreen extends React.Component {
                     onPress={() => {
                         console.log('YINDONG:goBack')
                         this.props.navigation.goBack()
+                    }}
+                />
+                <Button
+                    title="Show Modal"
+                    onPress={() => {
+                        console.log('YINDONG:showModal')
+                        this.props.navigation.push('MyModal')
                     }}
                 />
             </View>);

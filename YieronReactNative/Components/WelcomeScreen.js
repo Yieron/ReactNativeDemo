@@ -210,6 +210,10 @@ export default class WelcomeScreen extends Component<Props> {
           title="Update the title"
           onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })}
         />
+        <Button
+          title="Go to Home"
+          onPress={() => this.props.navigation.push('Home')}
+        />
       </View>
     );
   }
