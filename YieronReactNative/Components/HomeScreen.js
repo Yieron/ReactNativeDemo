@@ -62,6 +62,13 @@ export default class HomeScreen extends React.Component {
                         this.props.navigation.push('MyModal')
                     }}
                 />
+                <Button
+                    title="Go to Settings"
+                    onPress={() => {
+                        console.log('YINDONG:showModal')
+                        this.props.navigation.push('Setting')
+                    }}
+                />
             </View>);
     }
 }

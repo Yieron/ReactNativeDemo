@@ -1,9 +1,13 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { createStackNavigator, createAppContainer, createBottomTabNavigator } from "react-navigation";
+import {
+    createStackNavigator, createAppContainer, createBottomTabNavigator,
+    createDrawerNavigator, createSwitchNavigator
+} from "react-navigation";
 import HomeScreen from './YieronReactNative/Components/HomeScreen';
 import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
 import ModalScreen from './YieronReactNative/Components/ModalScreen';
+import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
 
 const AppNavigator = createStackNavigator(
     {
@@ -13,6 +17,9 @@ const AppNavigator = createStackNavigator(
         },
         Welcome: {
             screen: WelcomeScreen
+        },
+        Setting: {
+            screen: SettingsScreen
         }
     },
 
@@ -61,10 +68,69 @@ const RootStack = createStackNavigator(
 
 const TabNavigator = createBottomTabNavigator(
     {
-        Settings: WelcomeScreen,
+        Welcome: WelcomeScreen,
         Home: HomeScreen,
-    }
+    },
+    {
+        initialRouteName: "Home",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'Home!',
+        },
+    },
 );
+
+const DrawerNavigator = createDrawerNavigator(
+    {
+        Welcome: WelcomeScreen,
+        Home: HomeScreen,
+    },
+    {
+        initialRouteName: "Home",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'Home!',
+        },
+    },
+)
+
+const SwitchNavigator = createSwitchNavigator(
+    {
+        Welcome: WelcomeScreen,
+        Home: HomeScreen,
+    },
+    {
+        initialRouteName: "Home",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'Home!',
+        },
+    },
+)
 
 const AppContainer = createAppContainer(AppNavigator);
 
