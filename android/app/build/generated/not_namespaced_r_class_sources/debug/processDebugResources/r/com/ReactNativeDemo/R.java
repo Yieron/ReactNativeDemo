@@ -1789,7 +1789,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -3525,8 +3525,10 @@ public final class R {
     public static final int support_simple_spinner_dropdown_item=0x7f0a002b;
   }
   public static final class mipmap {
-    public static final int ic_launcher=0x7f0b0000;
-    public static final int ic_launcher_round=0x7f0b0001;
+    public static final int android=0x7f0b0000;
+    public static final int ic_launcher=0x7f0b0001;
+    public static final int ic_launcher_round=0x7f0b0002;
+    public static final int rn=0x7f0b0003;
   }
   public static final class string {
     public static final int CODE_PUSH_APK_BUILD_TIME=0x7f0c0000;
@@ -8239,7 +8241,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
