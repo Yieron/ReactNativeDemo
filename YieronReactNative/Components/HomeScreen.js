@@ -69,6 +69,13 @@ export default class HomeScreen extends React.Component {
                         this.props.navigation.push('Setting')
                     }}
                 />
+                <Button
+                    title="Go to iphoneXSupportScreen navigate"
+                    onPress={() => {
+                        console.log('YINDONG:navigate')
+                        this.props.navigation.navigate('iphoneXSupport')
+                    }}
+                />
             </View>);
     }
 }

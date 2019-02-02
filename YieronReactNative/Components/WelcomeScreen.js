@@ -17,6 +17,7 @@ import {
 } from 'react-native';
 import codePush from "react-native-code-push";
 import { createStore } from 'redux';
+import {SafeAreaView} from 'react-navigation';
 
 const Touch = Platform.select({
   ios: TouchableHighlight,
@@ -163,58 +164,62 @@ export default class WelcomeScreen extends Component<Props> {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>This is my first codepush!</Text>
-        <TouchableOpacity onPress={this.checkUpdateCodePush}>
-          <Text style={styles.instructions}>
-            点击这里检查更新CodePush
-          </Text>
-        </TouchableOpacity>
-        <Text style={styles.instructions}>{instructions}</Text>
-        <Touch onPress={this.showToast}
-          background={TouchableNativeFeedback.SelectableBackground()}>
-          <Text style={styles.instructions}>
-            点击这里显示Toast
-          </Text>
-        </Touch>
-        <Touch onPress={this.showToastPromise}
-          background={TouchableNativeFeedback.SelectableBackground()}>
-          <Text style={styles.instructions}>
-            点击这里显示Toast__Promise
-          </Text>
-        </Touch>
-        <Touch onPress={this.measureLayout}
-          background={TouchableNativeFeedback.SelectableBackground()}>
-          <Text style={styles.instructions}>
-            点击测量measureLayout
-          </Text>
-        </Touch>
-        <TouchableOpacity onPress={() => {
-          NativeModules.TakePhotoModule.selectPhoto();
-        }}>
-          <Text style={styles.welcome}>
-            跳转到原生拍照或相册
-          </Text>
-        </TouchableOpacity>
+      <SafeAreaView style={styles.container}>
 
-        <Text style={styles.welcome} onPress={this.callbackComm.bind(this, '你好啊，android')}>
-          Callback通信方式
+        <View style={styles.container}>
+          <Text style={styles.welcome}>Welcome to React Native!</Text>
+          <Text style={styles.instructions}>To get started, edit App.js</Text>
+          <Text style={styles.instructions}>This is my first codepush!</Text>
+          <TouchableOpacity onPress={this.checkUpdateCodePush}>
+            <Text style={styles.instructions}>
+              点击这里检查更新CodePush
+          </Text>
+          </TouchableOpacity>
+          <Text style={styles.instructions}>{instructions}</Text>
+          <Touch onPress={this.showToast}
+            background={TouchableNativeFeedback.SelectableBackground()}>
+            <Text style={styles.instructions}>
+              点击这里显示Toast
+          </Text>
+          </Touch>
+          <Touch onPress={this.showToastPromise}
+            background={TouchableNativeFeedback.SelectableBackground()}>
+            <Text style={styles.instructions}>
+              点击这里显示Toast__Promise
+          </Text>
+          </Touch>
+          <Touch onPress={this.measureLayout}
+            background={TouchableNativeFeedback.SelectableBackground()}>
+            <Text style={styles.instructions}>
+              点击测量measureLayout
+          </Text>
+          </Touch>
+          <TouchableOpacity onPress={() => {
+            NativeModules.TakePhotoModule.selectPhoto();
+          }}>
+            <Text style={styles.welcome}>
+              跳转到原生拍照或相册
+          </Text>
+          </TouchableOpacity>
+
+          <Text style={styles.welcome} onPress={this.callbackComm.bind(this, '你好啊，android')}>
+            Callback通信方式
         </Text>
-        <Text style={styles.welcome} onPress={this.promiseComm.bind(this, '你好啊，android')}>
-          Promise通信方式
+          <Text style={styles.welcome} onPress={this.promiseComm.bind(this, '你好啊，android')}>
+            Promise通信方式
         </Text>
 
-        <Button
-          title="Update the title"
-          onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })}
-        />
-        <Button
-          title="Go to Home"
-          onPress={() => this.props.navigation.push('Home')}
-        />
-      </View>
+          <Button
+            title="Update the title"
+            onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })}
+          />
+          <Button
+            title="Go to Home"
+            onPress={() => this.props.navigation.push('Home')}
+          />
+        </View>
+      </SafeAreaView>
+
     );
   }
 
