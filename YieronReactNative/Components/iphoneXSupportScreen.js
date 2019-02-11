@@ -9,7 +9,100 @@ import { SafeAreaView } from 'react-navigation';
 export default class iphoneXSupportScreen extends Component {
     render() {
         return (
-            <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+            <SafeAreaView style={styles.container} forceInset={{ bottom: 'always' }}>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is top text.
+                </Text>
+                <Text style={styles.paragraph}>
+                    This is bottom text.
+                </Text>
                 <Text style={styles.paragraph}>
                     This is top text.
                 </Text>

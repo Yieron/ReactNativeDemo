@@ -9,6 +9,8 @@ import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
 import ModalScreen from './YieronReactNative/Components/ModalScreen';
 import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
 import iphoneXSupportScreen from './YieronReactNative/Components/iphoneXSupportScreen';
+import AssetExample from './YieronReactNative/Components/AssetExample';
+
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -23,6 +25,9 @@ const AppNavigator = createStackNavigator(
         },
         iphoneXSupport: {
             screen: iphoneXSupportScreen
+        },
+        AssetExample: {
+            screen: AssetExample
         },
     },
 

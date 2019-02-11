@@ -26,8 +26,8 @@ export default class HomeScreen extends React.Component {
                     color={Platform.OS === 'ios' ? '#fff' : null}
                 />
             ),
-            headerBackTitle:'返回',
-            headerTruncatedBackTitle:'',
+            headerBackTitle: '返回',
+            headerTruncatedBackTitle: '',
         }
     };
 
@@ -74,6 +74,13 @@ export default class HomeScreen extends React.Component {
                     onPress={() => {
                         console.log('YINDONG:navigate')
                         this.props.navigation.navigate('iphoneXSupport')
+                    }}
+                />
+                <Button
+                    title="Go to AssetExample navigate"
+                    onPress={() => {
+                        console.log('YINDONG:navigate')
+                        this.props.navigation.navigate('AssetExample')
                     }}
                 />
             </View>);
