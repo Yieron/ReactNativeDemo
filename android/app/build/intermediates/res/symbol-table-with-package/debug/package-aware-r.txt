@@ -1065,7 +1065,6 @@ string facing_camera
 string image_button_description
 string image_description
 string link_description
-string reactNativeCodePush_androidDeploymentKey
 string search_description
 string search_menu_title
 string sendEvent
