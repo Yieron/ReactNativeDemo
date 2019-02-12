@@ -941,6 +941,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tv_amap_location
 id uniform
 id up
 id useLogo
@@ -981,6 +982,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_amaplocation
 layout activity_android_to_rn
 layout activity_photo_select
 layout dev_loading_view

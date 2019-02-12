@@ -1,5 +1,6 @@
 package com.ReactNativeDemo;
 
+import com.ReactNativeDemo.Module.AMAPLocationModule;
 import com.ReactNativeDemo.Module.TakePhotoModule;
 import com.ReactNativeDemo.Module.ToastModule;
 import com.facebook.react.ReactPackage;
@@ -17,6 +18,7 @@ public class MyReactPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new ToastModule(reactContext));
         modules.add(new TakePhotoModule(reactContext));
+        modules.add(new AMAPLocationModule(reactContext));
         return modules;
     }
 

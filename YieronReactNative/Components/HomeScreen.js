@@ -4,6 +4,10 @@ import {
     Text,
     Button,
     Platform,
+    TouchableNativeFeedback,
+    StyleSheet,
+    NativeModules,
+    ActivityIndicator,
 } from "react-native";
 import LogoTitle from "./LogoTitle";
 
@@ -33,7 +37,7 @@ export default class HomeScreen extends React.Component {
 
     render() {
         return (
-            <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+            <View style={styles.container}>
                 <Button
                     title="Go to Welcome push"
                     onPress={() => {
@@ -83,7 +87,15 @@ export default class HomeScreen extends React.Component {
                         this.props.navigation.navigate('AssetExample')
                     }}
                 />
-            </View>);
+                <Button
+                    title="AMAPLocation"
+                    onPress={() => {
+                        console.log('YINDONG:AMAPLocation')
+                        NativeModules.AMAPLocationModule.initLocation();
+                    }}
+                />
+            </View>
+        );
     }
 }
 //************************************************************************
@@ -97,3 +109,10 @@ export default class HomeScreen extends React.Component {
 
 //************************************************************************
 //************************************************************************
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+});

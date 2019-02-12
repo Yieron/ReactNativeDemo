@@ -3,6 +3,10 @@ import {
     StyleSheet,
     View,
     Text,
+    TouchableNativeFeedback,
+    Platform,
+    Button,
+    
 } from 'react-native';
 
 export default class MyDemoView extends Component {
@@ -21,7 +25,7 @@ export default class MyDemoView extends Component {
         console.log('YINDONG-render');
 
         return (
-            <View style={styles.body}>
+            <View style={styles.container}>
                 <Text>Yieron</Text>
             </View>
         )
@@ -64,9 +68,9 @@ export default class MyDemoView extends Component {
 }
 
 const styles = StyleSheet.create({
-    body: {
+    container: {
         flex: 1,
-        flexDirection: 'column',
-
+        alignItems: "center",
+        justifyContent: "center",
     },
-})
+});

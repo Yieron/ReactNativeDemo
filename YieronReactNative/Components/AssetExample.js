@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image, SafeAreaView } from 'react-native';
+import { Text, View, StyleSheet, Image, SafeAreaView, Linking } from 'react-native';
 
 export default class AssetExample extends Component {
+    componentDidMount() {
+        Linking.getInitialURL().then((url) => {
+            //url == null
+            if (url) {
+                //可以根据url写跳转到相应的页面的逻辑和参数
+                console.log('Initial url is: ' + url);
+            }
+        }).catch(err => console.error('An error occurred', err));
+
+        let url = "https://github.com/xiehui999";
+        // let url = "tel:1008611";
+
+        Linking.openURL(url).catch(err => console.error('An error occurred', err));
+    }
+
     render() {
         return (
             <SafeAreaView>
                 <View style={styles.container}>
                     <Text style={styles.paragraph}>
                         Local files and assets can be imported by dragging and dropping them into the editor
-                </Text>
+                    </Text>
                     <Image style={styles.logo} source={require("../assets/img/origin_heart.jpeg")} />
                 </View>
             </SafeAreaView>
@@ -31,7 +46,7 @@ const styles = StyleSheet.create({
     },
     logo: {
         backgroundColor: "#056ecf",
-        height: 128,
-        width: 128,
+        height: 228,
+        width: 228,
     }
 });

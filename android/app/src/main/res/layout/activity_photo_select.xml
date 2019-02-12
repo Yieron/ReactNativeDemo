@@ -10,9 +10,8 @@
         android:id="@+id/btn_faceing_camera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/facing_camera"
         android:onClick="showFacingCamera"
-        />
+        android:text="@string/facing_camera"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
