@@ -94,6 +94,13 @@ export default class HomeScreen extends React.Component {
                         NativeModules.AMAPLocationModule.initLocation();
                     }}
                 />
+                <Button
+                    title="Show ActivityIndicator"
+                    onPress={() => {
+                        console.log('YINDONG:AMAPLocation')
+                        
+                    }}
+                />
             </View>
         );
     }

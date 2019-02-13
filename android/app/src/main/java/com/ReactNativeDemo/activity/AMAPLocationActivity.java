@@ -3,6 +3,7 @@ package com.ReactNativeDemo.activity;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.ReactNativeDemo.R;
+import com.ReactNativeDemo.utils.CommonFunction;
 import com.amap.api.fence.GeoFenceClient;
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.CoordinateConverter;
@@ -60,6 +62,24 @@ public class AMAPLocationActivity extends AppCompatActivity {
 
         //initGeoFenceClient();
         initCoordinateConverter();
+        isAppInstalled();
+    }
+
+    private void isAppInstalled() {
+        boolean appInstalled = CommonFunction.isAppInstalled(this, "com.tencent.map");
+        Log.d(TAG, "CommonFunction: " + appInstalled);
+
+        if (appInstalled) {  //true
+
+        } else {  //false
+            /**
+             * 跳转到应用商店
+             * 跳转到相应的app界面，根据包名（id为包名）
+             */
+            Uri uri = Uri.parse("market://details?id=com.tencent.map");//id为包名
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
     }
 
     /**
