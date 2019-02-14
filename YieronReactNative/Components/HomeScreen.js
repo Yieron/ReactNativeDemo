@@ -97,8 +97,15 @@ export default class HomeScreen extends React.Component {
                 <Button
                     title="Show ActivityIndicator"
                     onPress={() => {
-                        console.log('YINDONG:AMAPLocation')
+                        console.log('YINDONG:ActivityIndicator')
                         
+                    }}
+                />
+                <Button
+                    title="TencentLocation"
+                    onPress={() => {
+                        console.log('YINDONG:AMAPLocation')
+                        NativeModules.TencentLocationModule.startLocation();
                     }}
                 />
             </View>

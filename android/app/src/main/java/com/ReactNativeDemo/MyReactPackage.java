@@ -2,6 +2,7 @@ package com.ReactNativeDemo;
 
 import com.ReactNativeDemo.Module.AMAPLocationModule;
 import com.ReactNativeDemo.Module.TakePhotoModule;
+import com.ReactNativeDemo.Module.TencentLocationModule;
 import com.ReactNativeDemo.Module.ToastModule;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -19,6 +20,7 @@ public class MyReactPackage implements ReactPackage {
         modules.add(new ToastModule(reactContext));
         modules.add(new TakePhotoModule(reactContext));
         modules.add(new AMAPLocationModule(reactContext));
+        modules.add(new TencentLocationModule(reactContext));
         return modules;
     }
 

@@ -23,11 +23,18 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".activity.AMAPLocationActivity"></activity>
+        <activity
+            android:name=".activity.TencentMapActivity"
+            android:label="@string/title_activity_tencent_map"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.AMAPLocationActivity" />
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="a3a591bf69b05aad86f51d4b0bcdfe71" />
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="5P7BZ-6WKWJ-WECF7-FX6DM-3R6OJ-RCBJV" />
 
         <activity android:name=".activity.PhotoSelectActivity">
             <intent-filter>

@@ -200,6 +200,7 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.amap.api:location:latest.integration'  //高德地图定位模块
+    implementation 'com.android.support:design:27.1.1'
 }
 
 // Run this once to be able to run the application with BUCK

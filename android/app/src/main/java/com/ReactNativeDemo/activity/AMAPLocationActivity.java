@@ -62,7 +62,7 @@ public class AMAPLocationActivity extends AppCompatActivity {
 
         //initGeoFenceClient();
         initCoordinateConverter();
-        isAppInstalled();
+//        isAppInstalled();
     }
 
     private void isAppInstalled() {
