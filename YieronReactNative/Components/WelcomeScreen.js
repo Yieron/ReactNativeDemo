@@ -17,7 +17,7 @@ import {
 } from 'react-native';
 import codePush from "react-native-code-push";
 import { createStore } from 'redux';
-import {SafeAreaView} from 'react-navigation';
+import { SafeAreaView } from 'react-navigation';
 
 const Touch = Platform.select({
   ios: TouchableHighlight,

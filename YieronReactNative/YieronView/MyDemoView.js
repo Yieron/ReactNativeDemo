@@ -1,3 +1,8 @@
+/**
+ * 该界面作为初始化界面，每个界面都从该界面复制黏贴
+ * TODO
+ * 将所有必用的1：方法，2：样式，3：控件，4：生命周期   都集中起来。
+ */
 import React, { Component } from 'react'
 import {
     StyleSheet,
@@ -6,8 +11,13 @@ import {
     TouchableNativeFeedback,
     Platform,
     Button,
-    
+    TouchableHighlight,
 } from 'react-native';
+
+const NativeTouchable = Platform.select({
+    ios: TouchableHighlight,
+    android: TouchableNativeFeedback,
+})
 
 export default class MyDemoView extends Component {
     constructor(props) {
@@ -26,7 +36,9 @@ export default class MyDemoView extends Component {
 
         return (
             <View style={styles.container}>
-                <Text>Yieron</Text>
+                <NativeTouchable>
+                    <Text>Yieron</Text>
+                </NativeTouchable>
             </View>
         )
     }
@@ -37,10 +49,6 @@ export default class MyDemoView extends Component {
 
     componentWillReceiveProps(nextProps) {
         console.log('YINDONG-componentWIllReceiveProps', nextProps);
-
-    }
-
-    shouldComponentUpdate() {
 
     }
 

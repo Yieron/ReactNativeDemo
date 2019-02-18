@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  AsyncStorage,
-  StyleSheet,
-  Button,
-  View,
+    AsyncStorage,
+    StyleSheet,
+    Button,
+    View,
 } from 'react-native';
 
 export default class SignInScreen extends React.Component {
