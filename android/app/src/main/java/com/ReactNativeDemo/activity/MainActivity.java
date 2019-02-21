@@ -6,10 +6,10 @@ import android.support.annotation.Nullable;
 
 import com.ReactNativeDemo.BuildConfig;
 import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.microsoft.codepush.react.CodePush;
-import com.facebook.react.ReactActivityDelegate;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 
