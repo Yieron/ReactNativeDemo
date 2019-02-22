@@ -98,14 +98,21 @@ export default class HomeScreen extends React.Component {
                     title="Show ActivityIndicator"
                     onPress={() => {
                         console.log('YINDONG:ActivityIndicator')
-                        
+
                     }}
                 />
                 <Button
                     title="TencentLocation"
                     onPress={() => {
-                        console.log('YINDONG:AMAPLocation')
+                        console.log('YINDONG:TencentLocation')
                         NativeModules.TencentLocationModule.startLocation();
+                    }}
+                />
+                <Button
+                    title="ScreenWithCustomBackBehavior"
+                    onPress={() => {
+                        console.log('YINDONG:ScreenWithCustomBackBehavior')
+                        this.props.navigation.navigate('ScreenWithCustomBackBehavior')
                     }}
                 />
             </View>

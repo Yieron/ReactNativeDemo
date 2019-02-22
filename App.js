@@ -10,6 +10,7 @@ import ModalScreen from './YieronReactNative/Components/ModalScreen';
 import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
 import iphoneXSupportScreen from './YieronReactNative/Components/iphoneXSupportScreen';
 import AssetExample from './YieronReactNative/Components/AssetExample';
+import ScreenWithCustomBackBehavior from './YieronReactNative/Components/ScreenWithCustomBackBehavior';
 
 const AppNavigator = createStackNavigator(
     {
@@ -29,6 +30,9 @@ const AppNavigator = createStackNavigator(
         AssetExample: {
             screen: AssetExample
         },
+        ScreenWithCustomBackBehavior: {
+            screen: ScreenWithCustomBackBehavior
+        }
     },
 
     //**********************************************************
