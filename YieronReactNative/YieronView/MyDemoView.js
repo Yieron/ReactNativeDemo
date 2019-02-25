@@ -13,13 +13,13 @@ import {
     Button,
     TouchableHighlight,
 } from 'react-native';
+import { withNavigationFocus } from "react-navigation";
 
 const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
     android: TouchableNativeFeedback,
 })
-
-export default class MyDemoView extends Component {
+class MyDemoView extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -66,7 +66,10 @@ export default class MyDemoView extends Component {
 
     componentDidUpdate() {
         console.log('YINDONG-componentDidUpdate');
-
+        if (prevProps.isFocused !== this.props.isFocused) {
+            // Use the `this.props.isFocused` boolean
+            // Call any action
+          }      
     }
 
     componentWillUnmount() {
@@ -75,6 +78,7 @@ export default class MyDemoView extends Component {
     }
 }
 
+export default withNavigationFocus(MyDemoView);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
