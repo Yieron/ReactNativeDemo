@@ -22,10 +22,11 @@
         android:id="@+id/btn_send_event_to_rn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
         android:onClick="sendEventToRN"
         android:text="@string/sendEvent"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        tools:layout_editor_absoluteX="0dp" />
 
 
 </android.support.constraint.ConstraintLayout>

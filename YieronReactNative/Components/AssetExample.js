@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image, SafeAreaView, Linking } from 'react-native';
+import { Text, View, StyleSheet, Image, SafeAreaView, Linking, Platform } from 'react-native';
 
 export default class AssetExample extends Component {
     componentDidMount() {
@@ -11,9 +11,9 @@ export default class AssetExample extends Component {
             }
         }).catch(err => console.error('An error occurred', err));
 
-        let url = "https://github.com/xiehui999";
-        // let url = "tel:1008611";
-
+        let url;
+        Platform.OS === 'ios' ? url = "https://github.com/xiehui999" : url = "tel:1008611";
+        
         Linking.openURL(url).catch(err => console.error('An error occurred', err));
     }
 

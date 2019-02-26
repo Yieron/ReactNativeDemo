@@ -31,12 +31,12 @@ a ：file not found
 
 ## 项目进度
 
-已完成DONE：
+DONE：
 codePush  1月16-1月18  Android iOS均已集成OK
 
-正在做DOING：
+DOING：
 Android与RN交互
 
-将要做TODO:
+TODO:
 集成redux
 集成react-native-navigation

@@ -26,7 +26,7 @@ export default class HomeScreen extends React.Component {
             headerRight: (
                 <Button
                     onPress={() => alert('This is a button!')}
-                    title="Button"
+                    title="RNDemo"
                     color={Platform.OS === 'ios' ? '#fff' : null}
                 />
             ),
@@ -50,13 +50,6 @@ export default class HomeScreen extends React.Component {
                     onPress={() => {
                         console.log('YINDONG:navigate')
                         this.props.navigation.navigate('Welcome')
-                    }}
-                />
-                <Button
-                    title="Go back"
-                    onPress={() => {
-                        console.log('YINDONG:goBack')
-                        this.props.navigation.goBack()
                     }}
                 />
                 <Button
@@ -92,13 +85,6 @@ export default class HomeScreen extends React.Component {
                     onPress={() => {
                         console.log('YINDONG:AMAPLocation')
                         NativeModules.AMAPLocationModule.initLocation();
-                    }}
-                />
-                <Button
-                    title="Show ActivityIndicator"
-                    onPress={() => {
-                        console.log('YINDONG:ActivityIndicator')
-
                     }}
                 />
                 <Button

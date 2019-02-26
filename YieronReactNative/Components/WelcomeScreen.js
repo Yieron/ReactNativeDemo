@@ -13,7 +13,6 @@ import {
   Platform, StyleSheet, Text, View,
   TouchableOpacity, TouchableNativeFeedback, TouchableHighlight,
   NativeModules, DeviceEventEmitter, ToastAndroid, Button,
-
 } from 'react-native';
 import codePush from "react-native-code-push";
 import { createStore } from 'redux';
@@ -165,7 +164,6 @@ export default class WelcomeScreen extends Component<Props> {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-
         <View style={styles.container}>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.instructions}>To get started, edit App.js</Text>
@@ -197,22 +195,23 @@ export default class WelcomeScreen extends Component<Props> {
           <TouchableOpacity onPress={() => {
             NativeModules.TakePhotoModule.selectPhoto();
           }}>
-            <Text style={styles.welcome}>
+          <Text style={styles.welcome}>
               跳转到原生拍照或相册
           </Text>
           </TouchableOpacity>
 
           <Text style={styles.welcome} onPress={this.callbackComm.bind(this, '你好啊，android')}>
             Callback通信方式
-        </Text>
+          </Text>
           <Text style={styles.welcome} onPress={this.promiseComm.bind(this, '你好啊，android')}>
             Promise通信方式
-        </Text>
+          </Text>
 
           <Button
             title="Update the title"
             onPress={() => this.props.navigation.setParams({ otherParam: 'Updated!' })}
           />
+
           <Button
             title="Go to Home"
             onPress={() => this.props.navigation.push('Home')}

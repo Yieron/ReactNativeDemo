@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Image, Button,StyleSheet } from 'react-native';
+import { Text, View, Image, Button, StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 
 class MyHomeScreen extends React.Component {
