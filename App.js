@@ -13,7 +13,8 @@ import AssetExample from './YieronReactNative/Components/AssetExample';
 import ScreenWithCustomBackBehavior from './YieronReactNative/Components/ScreenWithCustomBackBehavior';
 import VibrateScreen from './YieronReactNative/Components/VibrateScreen';
 import ToastAndroidScreen from './YieronReactNative/Components/ToastAndroidScreen';
-import TimePickerAndroidScreen from './YieronReactNative/Components/TimePickerAndroidScreen';
+import TimePickerAndroidScreen from './YieronReactNative/Components/picker/TimePickerAndroidScreen';
+import LayoutAnimationScreen from './YieronReactNative/Components/animation/LayoutAnimationScreen';
 
 const AppNavigator = createStackNavigator(
     {
@@ -45,6 +46,9 @@ const AppNavigator = createStackNavigator(
         TimePickerAndroidScreen: {
             screen: TimePickerAndroidScreen
         },
+        LayoutAnimationScreen: {
+            screen: LayoutAnimationScreen
+        }
     },
 
     //**********************************************************

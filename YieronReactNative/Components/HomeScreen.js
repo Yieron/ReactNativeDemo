@@ -122,6 +122,13 @@ export default class HomeScreen extends React.Component {
                         this.props.navigation.navigate('TimePickerAndroidScreen')
                     }}
                 />
+                <Button
+                    title="LayoutAnimationScreen"
+                    onPress={() => {
+                        console.log('YINDONG:LayoutAnimationScreen')
+                        this.props.navigation.navigate('LayoutAnimationScreen')
+                    }}
+                />
             </View>
         );
     }
