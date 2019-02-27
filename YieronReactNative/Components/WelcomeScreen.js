@@ -195,7 +195,7 @@ export default class WelcomeScreen extends Component<Props> {
           <TouchableOpacity onPress={() => {
             NativeModules.TakePhotoModule.selectPhoto();
           }}>
-          <Text style={styles.welcome}>
+            <Text style={styles.welcome}>
               跳转到原生拍照或相册
           </Text>
           </TouchableOpacity>

@@ -101,6 +101,27 @@ export default class HomeScreen extends React.Component {
                         this.props.navigation.navigate('ScreenWithCustomBackBehavior')
                     }}
                 />
+                <Button
+                    title="VibrateScreen"
+                    onPress={() => {
+                        console.log('YINDONG:VibrateScreen')
+                        this.props.navigation.navigate('VibrateScreen')
+                    }}
+                />
+                <Button
+                    title="ToastAndroidScreen"
+                    onPress={() => {
+                        console.log('YINDONG:ToastAndroidScreen')
+                        this.props.navigation.navigate('ToastAndroidScreen')
+                    }}
+                />
+                <Button
+                    title="TimePickerAndroidScreen"
+                    onPress={() => {
+                        console.log('YINDONG:TimePickerAndroidScreen')
+                        this.props.navigation.navigate('TimePickerAndroidScreen')
+                    }}
+                />
             </View>
         );
     }

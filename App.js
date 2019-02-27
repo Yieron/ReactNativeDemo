@@ -11,6 +11,9 @@ import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
 import iphoneXSupportScreen from './YieronReactNative/Components/iphoneXSupportScreen';
 import AssetExample from './YieronReactNative/Components/AssetExample';
 import ScreenWithCustomBackBehavior from './YieronReactNative/Components/ScreenWithCustomBackBehavior';
+import VibrateScreen from './YieronReactNative/Components/VibrateScreen';
+import ToastAndroidScreen from './YieronReactNative/Components/ToastAndroidScreen';
+import TimePickerAndroidScreen from './YieronReactNative/Components/TimePickerAndroidScreen';
 
 const AppNavigator = createStackNavigator(
     {
@@ -32,6 +35,15 @@ const AppNavigator = createStackNavigator(
         },
         ScreenWithCustomBackBehavior: {
             screen: ScreenWithCustomBackBehavior
+        },
+        VibrateScreen: {
+            screen: VibrateScreen
+        },
+        ToastAndroidScreen: {
+            screen: ToastAndroidScreen
+        },
+        TimePickerAndroidScreen: {
+            screen: TimePickerAndroidScreen
         }
     },
 
@@ -148,10 +160,6 @@ const AppContainer = createAppContainer(AppNavigator);
 
 export default class App extends React.Component {
     render() {
-        console.log('YINDONG:AppContainer', AppContainer);
-        console.log('YINDONG:AppNavigator', AppNavigator);
-        console.log('YINDONG:TabNavigator', TabNavigator);
-
         return <AppContainer
             uriPrefix="/app"
             ref={nav => {
