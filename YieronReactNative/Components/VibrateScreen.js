@@ -14,6 +14,8 @@ import {
     Vibration,
     TouchableHighlight,
     ToastAndroid,
+    PixelRatio,
+    PermissionsAndroid,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
 
@@ -34,6 +36,8 @@ class VibrateScreen extends Component {
 
     componentWillMount() {
         console.log('YINDONG-componentWillMount');
+        console.log('YINDONG_PixelRatio', PixelRatio.get(), PixelRatio.getFontScale(), PixelRatio.getPixelSizeForLayoutSize());
+        this.requestCameraPermission();
     }
 
     render() {
@@ -119,6 +123,31 @@ class VibrateScreen extends Component {
     componentWillUnmount() {
         console.log('YINDONG-componentWillUnmount');
 
+    }
+
+
+    async requestCameraPermission() {
+        try {
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.READ_SMS,
+                {
+                    title: '申请摄像头权限',
+                    message:
+                        '一个很牛逼的应用想借用你的摄像头，' +
+                        '然后你就可以拍出酷炫的皂片啦。',
+                    buttonNeutral: '等会再问我',
+                    buttonNegative: '不行',
+                    buttonPositive: '好吧',
+                },
+            );
+            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+                console.log('现在你获得摄像头权限了');
+            } else {
+                console.log('用户并不屌你');
+            }
+        } catch (err) {
+            console.warn(err);
+        }
     }
 }
 

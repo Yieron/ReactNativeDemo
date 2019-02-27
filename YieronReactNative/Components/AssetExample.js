@@ -13,8 +13,9 @@ export default class AssetExample extends Component {
 
         let url;
         Platform.OS === 'ios' ? url = "https://github.com/xiehui999" : url = "tel:1008611";
-        
-        Linking.openURL(url).catch(err => console.error('An error occurred', err));
+        Linking.openURL('app-settings:').catch(err => console.log('error', err)); //iOS端打开APP的系统设置界面
+
+        // Linking.openURL(url).catch(err => console.error('An error occurred', err));
     }
 
     render() {

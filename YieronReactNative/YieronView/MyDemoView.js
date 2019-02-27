@@ -69,7 +69,7 @@ class MyDemoView extends Component {
         if (prevProps.isFocused !== this.props.isFocused) {
             // Use the `this.props.isFocused` boolean
             // Call any action
-          }      
+        }
     }
 
     componentWillUnmount() {
@@ -84,5 +84,14 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
+    },
+    separator: {
+        borderBottomColor: '#bbb',
+        borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    wrapper: {
+        ...StyleSheet.absoluteFill,
+        top: 10,
+        backgroundColor: 'transparent',
     },
 });

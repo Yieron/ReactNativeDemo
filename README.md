@@ -33,10 +33,12 @@ a ：file not found
 
 DONE：
 codePush  1月16-1月18  Android iOS均已集成OK
+Android与RN交互
+集成react-navigation
+集成redux
 
 DOING：
-Android与RN交互
+Share(react-native-share)
 
 TODO:
-集成redux
-集成react-native-navigation
+集成Realm

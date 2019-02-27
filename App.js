@@ -44,7 +44,7 @@ const AppNavigator = createStackNavigator(
         },
         TimePickerAndroidScreen: {
             screen: TimePickerAndroidScreen
-        }
+        },
     },
 
     //**********************************************************
