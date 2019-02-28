@@ -16,6 +16,11 @@ import ToastAndroidScreen from './YieronReactNative/Components/ToastAndroidScree
 import TimePickerAndroidScreen from './YieronReactNative/Components/picker/TimePickerAndroidScreen';
 import LayoutAnimationScreen from './YieronReactNative/Components/animation/LayoutAnimationScreen';
 import FrameAnimationDemoScreen from './YieronReactNative/Components/animation/FrameAnimationDemoScreen';
+import flexDemoScreen from './YieronReactNative/Components/flex/flexDemoScreen';
+import KeyboardDemoScreen from './YieronReactNative/Components/keyboard/KeyboardDemoScreen';
+import InteractionManagerDemoScreen from './YieronReactNative/Components/timer/InteractionManagerDemoScreen';
+import AnimatedDemoScreen from './YieronReactNative/Components/animation/AnimatedDemoScreen';
+
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -51,6 +56,18 @@ const AppNavigator = createStackNavigator(
         },
         FrameAnimationDemoScreen: {
             screen: FrameAnimationDemoScreen
+        },
+        flexDemoScreen: {
+            screen: flexDemoScreen
+        },
+        KeyboardDemoScreen: {
+            screen: KeyboardDemoScreen
+        },
+        InteractionManagerDemoScreen: {
+            screen: InteractionManagerDemoScreen
+        },
+        AnimatedDemoScreen: {
+            screen: AnimatedDemoScreen
         }
     },
 

@@ -8,6 +8,8 @@ import {
     StyleSheet,
     NativeModules,
     ActivityIndicator,
+    SafeAreaView,
+    ScrollView,
 } from "react-native";
 import LogoTitle from "./LogoTitle";
 
@@ -37,106 +39,138 @@ export default class HomeScreen extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Button
-                    title="Go to Welcome push"
-                    onPress={() => {
-                        console.log('YINDONG:push')
-                        this.props.navigation.push('Welcome')
-                    }}
-                />
-                <Button
-                    title="Go to Welcome navigate"
-                    onPress={() => {
-                        console.log('YINDONG:navigate')
-                        this.props.navigation.navigate('Welcome')
-                    }}
-                />
-                <Button
-                    title="Show Modal"
-                    onPress={() => {
-                        console.log('YINDONG:showModal')
-                        this.props.navigation.push('MyModal')
-                    }}
-                />
-                <Button
-                    title="Go to Settings"
-                    onPress={() => {
-                        console.log('YINDONG:showModal')
-                        this.props.navigation.push('Setting')
-                    }}
-                />
-                <Button
-                    title="Go to iphoneXSupportScreen navigate"
-                    onPress={() => {
-                        console.log('YINDONG:navigate')
-                        this.props.navigation.navigate('iphoneXSupport')
-                    }}
-                />
-                <Button
-                    title="Go to AssetExample navigate"
-                    onPress={() => {
-                        console.log('YINDONG:navigate')
-                        this.props.navigation.navigate('AssetExample')
-                    }}
-                />
-                <Button
-                    title="AMAPLocation"
-                    onPress={() => {
-                        console.log('YINDONG:AMAPLocation')
-                        NativeModules.AMAPLocationModule.initLocation();
-                    }}
-                />
-                <Button
-                    title="TencentLocation"
-                    onPress={() => {
-                        console.log('YINDONG:TencentLocation')
-                        NativeModules.TencentLocationModule.startLocation();
-                    }}
-                />
-                <Button
-                    title="ScreenWithCustomBackBehavior"
-                    onPress={() => {
-                        console.log('YINDONG:ScreenWithCustomBackBehavior')
-                        this.props.navigation.navigate('ScreenWithCustomBackBehavior')
-                    }}
-                />
-                <Button
-                    title="VibrateScreen"
-                    onPress={() => {
-                        console.log('YINDONG:VibrateScreen')
-                        this.props.navigation.navigate('VibrateScreen')
-                    }}
-                />
-                <Button
-                    title="ToastAndroidScreen"
-                    onPress={() => {
-                        console.log('YINDONG:ToastAndroidScreen')
-                        this.props.navigation.navigate('ToastAndroidScreen')
-                    }}
-                />
-                <Button
-                    title="TimePickerAndroidScreen"
-                    onPress={() => {
-                        console.log('YINDONG:TimePickerAndroidScreen')
-                        this.props.navigation.navigate('TimePickerAndroidScreen')
-                    }}
-                />
-                <Button
-                    title="LayoutAnimationScreen"
-                    onPress={() => {
-                        console.log('YINDONG:LayoutAnimationScreen')
-                        this.props.navigation.navigate('LayoutAnimationScreen')
-                    }}
-                />
-                <Button
-                    title="FrameAnimationDemoScreen"
-                    onPress={() => {
-                        console.log('YINDONG:FrameAnimationDemoScreen')
-                        this.props.navigation.navigate('FrameAnimationDemoScreen')
-                    }}
-                />
-            </View>
+            <SafeAreaView>
+                <ScrollView>
+                    <View style={styles.container}>
+                        <Button
+                            title="Go to Welcome push"
+                            onPress={() => {
+                                console.log('YINDONG:push')
+                                this.props.navigation.push('Welcome')
+                            }}
+                        />
+                        <Button
+                            title="Go to Welcome navigate"
+                            onPress={() => {
+                                console.log('YINDONG:navigate')
+                                this.props.navigation.navigate('Welcome')
+                            }}
+                        />
+                        <Button
+                            title="Show Modal"
+                            onPress={() => {
+                                console.log('YINDONG:showModal')
+                                this.props.navigation.push('MyModal')
+                            }}
+                        />
+                        <Button
+                            title="Go to Settings"
+                            onPress={() => {
+                                console.log('YINDONG:showModal')
+                                this.props.navigation.push('Setting')
+                            }}
+                        />
+                        <Button
+                            title="Go to iphoneXSupportScreen navigate"
+                            onPress={() => {
+                                console.log('YINDONG:navigate')
+                                this.props.navigation.navigate('iphoneXSupport')
+                            }}
+                        />
+                        <Button
+                            title="Go to AssetExample navigate"
+                            onPress={() => {
+                                console.log('YINDONG:navigate')
+                                this.props.navigation.navigate('AssetExample')
+                            }}
+                        />
+                        <Button
+                            title="AMAPLocation"
+                            onPress={() => {
+                                console.log('YINDONG:AMAPLocation')
+                                NativeModules.AMAPLocationModule.initLocation();
+                            }}
+                        />
+                        <Button
+                            title="TencentLocation"
+                            onPress={() => {
+                                console.log('YINDONG:TencentLocation')
+                                NativeModules.TencentLocationModule.startLocation();
+                            }}
+                        />
+                        <Button
+                            title="ScreenWithCustomBackBehavior"
+                            onPress={() => {
+                                console.log('YINDONG:ScreenWithCustomBackBehavior')
+                                this.props.navigation.navigate('ScreenWithCustomBackBehavior')
+                            }}
+                        />
+                        <Button
+                            title="VibrateScreen"
+                            onPress={() => {
+                                console.log('YINDONG:VibrateScreen')
+                                this.props.navigation.navigate('VibrateScreen')
+                            }}
+                        />
+                        <Button
+                            title="ToastAndroidScreen"
+                            onPress={() => {
+                                console.log('YINDONG:ToastAndroidScreen')
+                                this.props.navigation.navigate('ToastAndroidScreen')
+                            }}
+                        />
+                        <Button
+                            title="TimePickerAndroidScreen"
+                            onPress={() => {
+                                console.log('YINDONG:TimePickerAndroidScreen')
+                                this.props.navigation.navigate('TimePickerAndroidScreen')
+                            }}
+                        />
+                        <Button
+                            title="LayoutAnimationScreen"
+                            onPress={() => {
+                                console.log('YINDONG:LayoutAnimationScreen')
+                                this.props.navigation.navigate('LayoutAnimationScreen')
+                            }}
+                        />
+                        <Button
+                            title="FrameAnimationDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:FrameAnimationDemoScreen')
+                                this.props.navigation.navigate('FrameAnimationDemoScreen')
+                            }}
+                        />
+                        <Button
+                            title="flexDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:flexDemoScreen')
+                                this.props.navigation.navigate('flexDemoScreen')
+                            }}
+                        />
+                        <Button
+                            title="KeyboardDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:KeyboardDemoScreen')
+                                this.props.navigation.navigate('KeyboardDemoScreen')
+                            }}
+                        />
+                        <Button
+                            title="InteractionManagerDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:InteractionManagerDemoScreen')
+                                this.props.navigation.navigate('InteractionManagerDemoScreen')
+                            }}
+                        />
+                        <Button
+                            title="AnimatedDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:AnimatedDemoScreen')
+                                this.props.navigation.navigate('AnimatedDemoScreen')
+                            }}
+                        />
+                    </View>
+                </ScrollView>
+            </SafeAreaView>
         );
     }
 }
