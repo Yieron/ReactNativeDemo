@@ -15,7 +15,7 @@ import VibrateScreen from './YieronReactNative/Components/VibrateScreen';
 import ToastAndroidScreen from './YieronReactNative/Components/ToastAndroidScreen';
 import TimePickerAndroidScreen from './YieronReactNative/Components/picker/TimePickerAndroidScreen';
 import LayoutAnimationScreen from './YieronReactNative/Components/animation/LayoutAnimationScreen';
-
+import FrameAnimationDemoScreen from './YieronReactNative/Components/animation/FrameAnimationDemoScreen';
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -48,6 +48,9 @@ const AppNavigator = createStackNavigator(
         },
         LayoutAnimationScreen: {
             screen: LayoutAnimationScreen
+        },
+        FrameAnimationDemoScreen: {
+            screen: FrameAnimationDemoScreen
         }
     },
 

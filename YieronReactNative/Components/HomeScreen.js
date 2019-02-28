@@ -129,6 +129,13 @@ export default class HomeScreen extends React.Component {
                         this.props.navigation.navigate('LayoutAnimationScreen')
                     }}
                 />
+                <Button
+                    title="FrameAnimationDemoScreen"
+                    onPress={() => {
+                        console.log('YINDONG:FrameAnimationDemoScreen')
+                        this.props.navigation.navigate('FrameAnimationDemoScreen')
+                    }}
+                />
             </View>
         );
     }
