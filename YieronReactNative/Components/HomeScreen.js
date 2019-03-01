@@ -175,6 +175,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('ClipboardDemoScreen')
                             }}
                         />
+                        <Button
+                            title="BackHandlerDemo"
+                            onPress={() => {
+                                console.log('YINDONG:BackHandlerDemo')
+                                this.props.navigation.navigate('BackHandlerDemo')
+                            }}
+                        />
                         
                     </View>
                 </ScrollView>

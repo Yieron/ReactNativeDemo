@@ -1,3 +1,8 @@
+/**
+ * 该界面作为初始化界面，每个界面都从该界面复制黏贴
+ * TODO
+ * 将所有必用的1：方法，2：样式，3：控件，4：生命周期   都集中起来。
+ */
 import React, { Component } from 'react'
 import {
     StyleSheet,
@@ -7,7 +12,7 @@ import {
     Platform,
     Button,
     TouchableHighlight,
-    Clipboard,
+    BackHandler,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
 
@@ -15,10 +20,12 @@ const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
     android: TouchableNativeFeedback,
 })
-class ClipboardDemoScreen extends Component {
+class BackHandlerDemo extends Component {
     constructor(props) {
         super(props);
-        this.state = { textFromClipboard: '' };
+        this.state = {
+
+        }
     }
 
     componentWillMount() {
@@ -30,25 +37,21 @@ class ClipboardDemoScreen extends Component {
 
         return (
             <View style={styles.container}>
-                <View style={styles.flexDirection}>
-                    <Text style={styles.buttonStyle} onPress={this.copyToClipBoard.bind(this)}>
-                        存入剪贴板
-                </Text>
-                    <Text style={styles.buttonStyle} onPress={this.pasteFromClipboard.bind(this)}>
-                        读取剪贴板
-                </Text>
-                </View>
-                <Text style={styles.info}>
-                    {this.state.textFromClipboard}
-                </Text>
+                <NativeTouchable>
+                    <Text>Yieron</Text>
+                </NativeTouchable>
             </View>
-        );
-
+        )
     }
 
     componentDidMount() {
         console.log('YINDONG-componentDidMount');
-        this._getContent();
+        // BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
+        this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+            // this.goBack(); // works best when the goBack is async
+            BackHandler.exitApp();  //退出程序
+            return true;
+        });
     }
 
     componentWillReceiveProps(nextProps) {
@@ -78,40 +81,31 @@ class ClipboardDemoScreen extends Component {
 
     componentWillUnmount() {
         console.log('YINDONG-componentWillUnmount');
+        this.backHandler.remove();
 
+        // BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
     }
 
-    async _getContent() {
-        let content = await Clipboard.getString();
-        console.log('YINDONG_content', content);
+    handleBackPress = () => {
+        let backTimer = 0;
+        let backPressTimes = 0;
+        let exitTimerDuration = 1000;
 
-    }
-
-    _setContent() {
-        Clipboard.setString('hello world');
-    }
-
-    //从剪贴板中读取字符串
-    pasteFromClipboard() {
-        Clipboard.getString().then(
-            (textFromClipboard) => {
-                this.setState({ textFromClipboard });
-            }
-        ).catch(
-            (error) => {
-                console.log("从剪贴板中读取数据错误!");
-                console.log(error);
-            }
-        );
-    }
-
-    //向剪贴板中存入字符串
-    copyToClipBoard() {
-        Clipboard.setString('我是黏贴板内容');
+        console.log('YINDONG_handleBackPress');
+        if (backPressTimes >= 1) {
+            return false;
+        }
+        backPressTimes++;
+        clearTimeout(backTimer);
+        backTimer = setTimeout(() => {
+            backPressTimes = 0;
+        }, exitTimerDuration);
+        // this.goBack(); // works best when the goBack is async
+        return true;
     }
 }
 
-export default withNavigationFocus(ClipboardDemoScreen);
+export default withNavigationFocus(BackHandlerDemo);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -126,20 +120,5 @@ const styles = StyleSheet.create({
         ...StyleSheet.absoluteFill,
         top: 10,
         backgroundColor: 'transparent',
-    },
-    flexDirection: {
-        flexDirection: 'row'
-    },
-    buttonStyle: {
-        textAlign: 'center',
-        color: 'white',
-        margin: 10,
-        backgroundColor: '#4CA300',
-        width: 140,
-        fontSize: 23
-    },
-    info: {
-        fontSize: 20,
-        margin: 10
     },
 });
