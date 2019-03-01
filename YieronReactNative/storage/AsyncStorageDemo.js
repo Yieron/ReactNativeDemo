@@ -7,7 +7,7 @@ import {
     Platform,
     Button,
     TouchableHighlight,
-    BackHandler,
+    AsyncStorage,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
 
@@ -15,7 +15,7 @@ const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
     android: TouchableNativeFeedback,
 })
-class BackHandlerDemo extends Component {
+class AsyncStorageDemo extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -41,12 +41,6 @@ class BackHandlerDemo extends Component {
 
     componentDidMount() {
         console.log('YINDONG-componentDidMount');
-        // BackHandler.addEventListener('hardwareBackPress', this.handleBackPress);
-        this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
-            // this.goBack(); // works best when the goBack is async
-            BackHandler.exitApp();  //退出程序
-            return true;
-        });
     }
 
     componentWillReceiveProps(nextProps) {
@@ -76,31 +70,11 @@ class BackHandlerDemo extends Component {
 
     componentWillUnmount() {
         console.log('YINDONG-componentWillUnmount');
-        this.backHandler.remove();
 
-        // BackHandler.removeEventListener('hardwareBackPress', this.handleBackPress);
-    }
-
-    handleBackPress = () => {
-        let backTimer = 0;
-        let backPressTimes = 0;
-        let exitTimerDuration = 1000;
-
-        console.log('YINDONG_handleBackPress');
-        if (backPressTimes >= 1) {
-            return false;
-        }
-        backPressTimes++;
-        clearTimeout(backTimer);
-        backTimer = setTimeout(() => {
-            backPressTimes = 0;
-        }, exitTimerDuration);
-        // this.goBack(); // works best when the goBack is async
-        return true;
     }
 }
 
-export default withNavigationFocus(BackHandlerDemo);
+export default withNavigationFocus(AsyncStorageDemo);
 const styles = StyleSheet.create({
     container: {
         flex: 1,

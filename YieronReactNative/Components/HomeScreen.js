@@ -182,7 +182,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('BackHandlerDemo')
                             }}
                         />
-                        
+                        <Button
+                            title="AsyncStorageDemo"
+                            onPress={() => {
+                                console.log('YINDONG:AsyncStorageDemo')
+                                this.props.navigation.navigate('AsyncStorageDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

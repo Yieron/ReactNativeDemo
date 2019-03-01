@@ -66,10 +66,10 @@ class MyDemoView extends Component {
 
     componentDidUpdate() {
         console.log('YINDONG-componentDidUpdate');
-        if (prevProps.isFocused !== this.props.isFocused) {
-            // Use the `this.props.isFocused` boolean
-            // Call any action
-        }
+        // if (prevProps.isFocused !== this.props.isFocused) {
+        //     // Use the `this.props.isFocused` boolean
+        //     // Call any action
+        // }
     }
 
     componentWillUnmount() {

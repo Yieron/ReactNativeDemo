@@ -22,6 +22,7 @@ import InteractionManagerDemoScreen from './YieronReactNative/Components/timer/I
 import AnimatedDemoScreen from './YieronReactNative/Components/animation/AnimatedDemoScreen';
 import ClipboardDemoScreen from './YieronReactNative/Components/keyboard/ClipboardDemoScreen';
 import BackHandlerDemo from './YieronReactNative/Components/hardware/BackHandlerDemo';
+import AsyncStorageDemo from './YieronReactNative/storage/AsyncStorageDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -76,6 +77,9 @@ const AppNavigator = createStackNavigator(
         },
         BackHandlerDemo: {
             screen: BackHandlerDemo
+        },
+        AsyncStorageDemo: {
+            screen: AsyncStorageDemo
         }
     },
 
