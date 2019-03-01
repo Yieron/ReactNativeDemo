@@ -168,6 +168,14 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('AnimatedDemoScreen')
                             }}
                         />
+                        <Button
+                            title="ClipboardDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:ClipboardDemoScreen')
+                                this.props.navigation.navigate('ClipboardDemoScreen')
+                            }}
+                        />
+                        
                     </View>
                 </ScrollView>
             </SafeAreaView>

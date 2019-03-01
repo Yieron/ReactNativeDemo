@@ -3,11 +3,16 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Dimensions,
 } from 'react-native';
+const { scale, height, width, fontScale } = Dimensions.get('window');
 
 export default class flexDemoScreen extends Component {
     render() {
+        console.log('YINDONG_Dimensions:', Dimensions.get('window'));
+        console.log('YINDONG_Screen',Dimensions.get('screen'));
+        
         return (
             <View style={styles.container}>
                 <View style={styles.viewItem1}>

@@ -43,7 +43,7 @@ class TimePickerAndroidScreen extends Component {
 
                 <Button
                     title="打开时间选择器"
-                    onPress={() => {
+                    onPress={() => {    
                         try {
                             const { action, hour, minute } = TimePickerAndroid.open({
                                 hour: 14,

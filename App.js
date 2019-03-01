@@ -20,7 +20,7 @@ import flexDemoScreen from './YieronReactNative/Components/flex/flexDemoScreen';
 import KeyboardDemoScreen from './YieronReactNative/Components/keyboard/KeyboardDemoScreen';
 import InteractionManagerDemoScreen from './YieronReactNative/Components/timer/InteractionManagerDemoScreen';
 import AnimatedDemoScreen from './YieronReactNative/Components/animation/AnimatedDemoScreen';
-
+import ClipboardDemoScreen from './YieronReactNative/Components/keyboard/ClipboardDemoScreen';
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -68,6 +68,9 @@ const AppNavigator = createStackNavigator(
         },
         AnimatedDemoScreen: {
             screen: AnimatedDemoScreen
+        },
+        ClipboardDemoScreen:{
+            screen:ClipboardDemoScreen
         }
     },
 
