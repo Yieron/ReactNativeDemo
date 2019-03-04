@@ -24,6 +24,13 @@ import ClipboardDemoScreen from './YieronReactNative/Components/keyboard/Clipboa
 import BackHandlerDemo from './YieronReactNative/Components/hardware/BackHandlerDemo';
 import AsyncStorageDemo from './YieronReactNative/storage/AsyncStorageDemo';
 import AppStateDemo from './YieronReactNative/api/AppStateDemo';
+import AlertDemoScreen from './YieronReactNative/Components/Alert/AlertDemoScreen';
+import AccessibilityInfoDemo from './YieronReactNative/Components/hardware/AccessibilityInfoDemo';
+import webViewDemo from './YieronReactNative/Components/webView/webViewDemo';
+import FlatListDemo from './YieronReactNative/Components/List/FlatListDemo';
+import SectionListDemo from './YieronReactNative/Components/List/SectionListDemo';
+import VirtualizedListDemo from './YieronReactNative/Components/List/VirtualizedListDemo';
+import ViewPagerAndroidDemo from './YieronReactNative/Components/container/ViewPagerAndroidDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -84,6 +91,27 @@ const AppNavigator = createStackNavigator(
         },
         AppStateDemo: {
             screen: AppStateDemo
+        },
+        AlertDemoScreen: {
+            screen: AlertDemoScreen
+        },
+        AccessibilityInfoDemo: {
+            screen: AccessibilityInfoDemo
+        },
+        webViewDemo: {
+            screen: webViewDemo
+        },
+        FlatListDemo: {
+            screen: FlatListDemo
+        },
+        SectionListDemo: {
+            screen: SectionListDemo
+        },
+        VirtualizedListDemo: {
+            screen: VirtualizedListDemo
+        },
+        ViewPagerAndroidDemo: {
+            screen: ViewPagerAndroidDemo
         }
     },
 

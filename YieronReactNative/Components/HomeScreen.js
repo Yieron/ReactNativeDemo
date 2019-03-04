@@ -196,7 +196,55 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('AppStateDemo')
                             }}
                         />
-                        
+                        <Button
+                            title="AlertDemoScreen"
+                            onPress={() => {
+                                console.log('YINDONG:AlertDemoScreen')
+                                this.props.navigation.navigate('AlertDemoScreen')
+                            }}
+                        />
+                        <Button
+                            title="AccessibilityInfoDemo"
+                            onPress={() => {
+                                console.log('YINDONG:AccessibilityInfoDemo')
+                                this.props.navigation.navigate('AccessibilityInfoDemo')
+                            }}
+                        />
+                        <Button
+                            title="webViewDemo"
+                            onPress={() => {
+                                console.log('YINDONG:webViewDemo')
+                                this.props.navigation.navigate('webViewDemo')
+                            }}
+                        />
+                        <Button
+                            title="VirtualizedListDemo"
+                            onPress={() => {
+                                console.log('YINDONG:VirtualizedListDemo')
+                                this.props.navigation.navigate('VirtualizedListDemo')
+                            }}
+                        />
+                        <Button
+                            title="SectionListDemo"
+                            onPress={() => {
+                                console.log('YINDONG:SectionListDemo')
+                                this.props.navigation.navigate('SectionListDemo')
+                            }}
+                        />
+                        <Button
+                            title="FlatListDemo"
+                            onPress={() => {
+                                console.log('YINDONG:FlatListDemo')
+                                this.props.navigation.navigate('FlatListDemo')
+                            }}
+                        />
+                        <Button
+                            title="ViewPagerAndroidDemo"
+                            onPress={() => {
+                                console.log('YINDONG:ViewPagerAndroidDemo')
+                                this.props.navigation.navigate('ViewPagerAndroidDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>
