@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image, SafeAreaView, Linking, Platform } from 'react-native';
+import { Text, View, StyleSheet, Image, SafeAreaView, Linking, Platform, AlertIOS } from 'react-native';
 
 export default class AssetExample extends Component {
     componentDidMount() {
@@ -11,11 +11,27 @@ export default class AssetExample extends Component {
             }
         }).catch(err => console.error('An error occurred', err));
 
-        let url;
-        Platform.OS === 'ios' ? url = "https://github.com/xiehui999" : url = "tel:1008611";
-        Linking.openURL('app-settings:').catch(err => console.log('error', err)); //iOS端打开APP的系统设置界面
-
         // Linking.openURL(url).catch(err => console.error('An error occurred', err));
+
+        AlertIOS.alert(
+            "Update available",
+            "Keep your app up to date to enjoy the latest features",
+            [
+                {
+                    text: "Cancel",
+                    onPress: () => console.log("Cancel Pressed"),
+                    style: "cancel"
+                },
+                {
+                    text: "Install",
+                    onPress: () => {
+                        let url;
+                        Platform.OS === 'ios' ? url = "https://github.com/xiehui999" : url = "tel:1008611";
+                        Linking.openURL('app-settings:').catch(err => console.log('error', err)); //iOS端打开APP的系统设置界面
+                    }
+                }
+            ]
+        );
     }
 
     render() {

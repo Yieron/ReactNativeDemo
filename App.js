@@ -10,9 +10,9 @@ import ModalScreen from './YieronReactNative/Components/ModalScreen';
 import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
 import iphoneXSupportScreen from './YieronReactNative/Components/iphoneXSupportScreen';
 import AssetExample from './YieronReactNative/Components/AssetExample';
-import ScreenWithCustomBackBehavior from './YieronReactNative/Components/ScreenWithCustomBackBehavior';
-import VibrateScreen from './YieronReactNative/Components/VibrateScreen';
-import ToastAndroidScreen from './YieronReactNative/Components/ToastAndroidScreen';
+import ScreenWithCustomBackBehavior from './YieronReactNative/Components/hardware/ScreenWithCustomBackBehavior';
+import VibrateScreen from './YieronReactNative/Components/hardware/VibrateScreen';
+import ToastAndroidScreen from './YieronReactNative/Components/Alert/ToastAndroidScreen';
 import TimePickerAndroidScreen from './YieronReactNative/Components/picker/TimePickerAndroidScreen';
 import LayoutAnimationScreen from './YieronReactNative/Components/animation/LayoutAnimationScreen';
 import FrameAnimationDemoScreen from './YieronReactNative/Components/animation/FrameAnimationDemoScreen';
@@ -23,6 +23,7 @@ import AnimatedDemoScreen from './YieronReactNative/Components/animation/Animate
 import ClipboardDemoScreen from './YieronReactNative/Components/keyboard/ClipboardDemoScreen';
 import BackHandlerDemo from './YieronReactNative/Components/hardware/BackHandlerDemo';
 import AsyncStorageDemo from './YieronReactNative/storage/AsyncStorageDemo';
+import AppStateDemo from './YieronReactNative/api/AppStateDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -80,6 +81,9 @@ const AppNavigator = createStackNavigator(
         },
         AsyncStorageDemo: {
             screen: AsyncStorageDemo
+        },
+        AppStateDemo: {
+            screen: AppStateDemo
         }
     },
 

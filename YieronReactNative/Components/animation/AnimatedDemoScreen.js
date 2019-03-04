@@ -12,6 +12,7 @@ import {
     Easing,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
+import { ScrollView } from 'react-native-gesture-handler';
 
 const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
@@ -73,84 +74,86 @@ class AnimatedDemoScreen extends Component {
             return <Animated.View key={i} style={{ opacity: this.animatedValue2[a], height: 20, width: 20, backgroundColor: 'red', marginLeft: 3, marginTop: 3 }} />
         })
         return (
-            <View style={styles.container}>
-                {animations}
+            <ScrollView>
+                <View style={styles.container}>
+                    {animations}
 
-                <Animated.View // 可选的基本组件类型: Image, Text, View(可以包裹任意子View)
-                    style={{
-                        flex: 1, alignItems: 'center', justifyContent: 'center',
-                        opacity: this.state.fadeOutOpacity,
-                        transform: [  // scale, scaleX, scaleY, translateX, translateY, rotate, rotateX, rotateY, rotateZ
-                            { scale: this.state.bounceValue },  // 缩放
-                            {
-                                rotate: this.state.rotateValue.interpolate({ // 旋转，使用插值函数做值映射
-                                    inputRange: [0, 1],
-                                    outputRange: ['0deg', '360deg'],
-                                })
-                            },
-                            { translateX: this.state.translateValue.x }, // x轴移动
-                            { translateY: this.state.translateValue.y }, // y轴移动
-                        ],
-                    }}>
+                    <Animated.View // 可选的基本组件类型: Image, Text, View(可以包裹任意子View)
+                        style={{
+                            flex: 1, alignItems: 'center', justifyContent: 'center',
+                            opacity: this.state.fadeOutOpacity,
+                            transform: [  // scale, scaleX, scaleY, translateX, translateY, rotate, rotateX, rotateY, rotateZ
+                                { scale: this.state.bounceValue },  // 缩放
+                                {
+                                    rotate: this.state.rotateValue.interpolate({ // 旋转，使用插值函数做值映射
+                                        inputRange: [0, 1],
+                                        outputRange: ['0deg', '360deg'],
+                                    })
+                                },
+                                { translateX: this.state.translateValue.x }, // x轴移动
+                                { translateY: this.state.translateValue.y }, // y轴移动
+                            ],
+                        }}>
 
-                    <Image source={{ uri: 'https://i.imgur.com/XMKOH81.jpg' }}
-                        style={{ width: 400, height: 400 }} />
-                </Animated.View >
-                <Animated.Image
-                    style={{
-                        width: 297,
-                        height: 270,
-                        alignItems: 'center', justifyContent: 'center',
-                        transform: [{ rotate: spin }]
-                    }}
-                    source={{ uri: 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png' }}
-                />
-                <Animated.View
-                    style={{
-                        marginLeft,
-                        height: 30,
-                        width: 40,
-                        backgroundColor: 'red'
-                    }} />
-                <Animated.View
-                    style={{
-                        opacity,
-                        marginTop: 10,
-                        height: 30,
-                        width: 40,
-                        backgroundColor: 'blue'
-                    }} />
-                <Animated.View
-                    style={{
-                        marginLeft: movingMargin,
-                        marginTop: 10,
-                        height: 30,
-                        width: 40,
-                        backgroundColor: 'orange'
-                    }} />
-                <Animated.Text
-                    style={{
-                        fontSize: textSize,
-                        marginTop: 10,
-                        color: 'green'
-                    }} >
-                    Animated Text!
+                        <Image source={{ uri: 'https://i.imgur.com/XMKOH81.jpg' }}
+                            style={{ width: 400, height: 400 }} />
+                    </Animated.View >
+                    <Animated.Image
+                        style={{
+                            width: 297,
+                            height: 270,
+                            alignItems: 'center', justifyContent: 'center',
+                            transform: [{ rotate: spin }]
+                        }}
+                        source={{ uri: 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png' }}
+                    />
+                    <Animated.View
+                        style={{
+                            marginLeft,
+                            height: 30,
+                            width: 40,
+                            backgroundColor: 'red'
+                        }} />
+                    <Animated.View
+                        style={{
+                            opacity,
+                            marginTop: 10,
+                            height: 30,
+                            width: 40,
+                            backgroundColor: 'blue'
+                        }} />
+                    <Animated.View
+                        style={{
+                            marginLeft: movingMargin,
+                            marginTop: 10,
+                            height: 30,
+                            width: 40,
+                            backgroundColor: 'orange'
+                        }} />
+                    <Animated.Text
+                        style={{
+                            fontSize: textSize,
+                            marginTop: 10,
+                            color: 'green'
+                        }} >
+                        Animated Text!
                 </Animated.Text>
-                <Animated.View
-                    style={{
-                        transform: [{ rotateX }],
-                        marginTop: 50,
-                        height: 30,
-                        width: 40,
-                        backgroundColor: 'black'
-                    }}>
-                    <Text style={{ color: 'white' }}>Hello from TransformX</Text>
-                </Animated.View>
-                <Text style={{ marginBottom: 100 }} onPress={this.spring.bind(this)}>Spring</Text>
-                <Animated.Image
-                    style={{ width: 227, height: 200, transform: [{ scale: this.springValue }] }}
-                    source={{ uri: 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png' }} />
-            </View>
+                    <Animated.View
+                        style={{
+                            transform: [{ rotateX }],
+                            marginTop: 50,
+                            height: 30,
+                            width: 40,
+                            backgroundColor: 'black'
+                        }}>
+                        <Text style={{ color: 'white' }}>Hello from TransformX</Text>
+                    </Animated.View>
+                    <Text style={{ marginBottom: 100 }} onPress={this.spring.bind(this)}>Spring</Text>
+                    <Animated.Image
+                        style={{ width: 227, height: 200, transform: [{ scale: this.springValue }] }}
+                        source={{ uri: 'https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png' }} />
+                </View>
+            </ScrollView>
         );
     }
 
