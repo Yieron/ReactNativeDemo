@@ -3,7 +3,7 @@ import {
     StyleSheet, Text, View, ScrollView
 } from 'react-native';
 import { SafeAreaView } from 'react-navigation';
-import YieronNetWorkUtil from '../utils/YieronNetWorkUtil';
+import YieronNetWorkUtil from '../../utils/YieronNetWorkUtil';
 
 export default class iphoneXSupportScreen extends Component {
     componentWillMount(){

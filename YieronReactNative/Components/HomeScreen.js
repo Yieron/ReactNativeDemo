@@ -245,6 +245,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('ViewPagerAndroidDemo')
                             }}
                         />
+                        <Button
+                            title="SnapshotViewIOSDemo"
+                            onPress={() => {
+                                console.log('YINDONG:SnapshotViewIOSDemo')
+                                this.props.navigation.navigate('SnapshotViewIOSDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

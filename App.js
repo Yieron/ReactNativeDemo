@@ -8,7 +8,7 @@ import HomeScreen from './YieronReactNative/Components/HomeScreen';
 import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
 import ModalScreen from './YieronReactNative/Components/ModalScreen';
 import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
-import iphoneXSupportScreen from './YieronReactNative/Components/iphoneXSupportScreen';
+import iphoneXSupportScreen from './YieronReactNative/Components/iOSOnly/iphoneXSupportScreen';
 import AssetExample from './YieronReactNative/Components/AssetExample';
 import ScreenWithCustomBackBehavior from './YieronReactNative/Components/hardware/ScreenWithCustomBackBehavior';
 import VibrateScreen from './YieronReactNative/Components/hardware/VibrateScreen';
@@ -31,6 +31,7 @@ import FlatListDemo from './YieronReactNative/Components/List/FlatListDemo';
 import SectionListDemo from './YieronReactNative/Components/List/SectionListDemo';
 import VirtualizedListDemo from './YieronReactNative/Components/List/VirtualizedListDemo';
 import ViewPagerAndroidDemo from './YieronReactNative/Components/container/ViewPagerAndroidDemo';
+import SnapshotViewIOSDemo from './YieronReactNative/Components/iOSOnly/SnapshotViewIOSDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -112,6 +113,9 @@ const AppNavigator = createStackNavigator(
         },
         ViewPagerAndroidDemo: {
             screen: ViewPagerAndroidDemo
+        },
+        SnapshotViewIOSDemo: {
+            screen: SnapshotViewIOSDemo
         }
     },
 
