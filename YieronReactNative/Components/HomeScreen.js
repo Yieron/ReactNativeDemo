@@ -273,6 +273,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('TextDemo')
                             }}
                         />
+                        <Button
+                            title="SliderDemo"
+                            onPress={() => {
+                                console.log('YINDONG:SliderDemo')
+                                this.props.navigation.navigate('SliderDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

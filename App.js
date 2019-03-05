@@ -35,6 +35,7 @@ import SnapshotViewIOSDemo from './YieronReactNative/Components/iOSOnly/Snapshot
 import TouchableOpacityDemo from './YieronReactNative/Components/Touch/TouchableOpacityDemo';
 import TextInputDemo from './YieronReactNative/Components/TextInput/TextInputDemo';
 import TextDemo from './YieronReactNative/Components/TextInput/TextDemo';
+import SliderDemo from './YieronReactNative/Components/progressbar/SliderDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -128,6 +129,9 @@ const AppNavigator = createStackNavigator(
         },
         TextDemo: {
             screen: TextDemo
+        },
+        SliderDemo: {
+            screen: SliderDemo
         }
     },
 

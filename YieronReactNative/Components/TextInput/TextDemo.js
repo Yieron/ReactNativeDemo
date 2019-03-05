@@ -11,6 +11,7 @@ import {
     Platform,
     Button,
     TouchableHighlight,
+    Switch,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
 
@@ -22,7 +23,7 @@ class TextDemo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            turnOn: true,
         }
     }
 
@@ -38,7 +39,21 @@ class TextDemo extends Component {
                 <NativeTouchable>
                     <Text>Yieron</Text>
                 </NativeTouchable>
-            </View>
+                <Switch
+                    style={{ marginTop: 60 }}
+                    //动态改变value
+                    value={this.state.turnOn}
+                    //当切换开关室回调此方法
+                    onValueChange={(value) => {
+                        console.log('YINDONG_value', value);
+
+                        this.setState({ turnOn: value })
+                    }
+                    }
+
+                >
+                </Switch>
+            </View >
         )
     }
 
