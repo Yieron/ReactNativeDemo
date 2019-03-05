@@ -6,6 +6,7 @@ import {
     View,
     TouchableNativeFeedback,
     TouchableHighlight,
+    ToolbarAndroid,
 } from 'react-native'
 
 export default class TouchableOpacityDemo extends Component {
@@ -35,17 +36,24 @@ export default class TouchableOpacityDemo extends Component {
                 >
                     <Text> Touch Here </Text>
                 </TouchableHighlight>
-                <TouchableNativeFeedback
-                    style={styles.button}
-                    onPress={this.onPress}
-                >
-                    <Text> Touch Here </Text>
-                </TouchableNativeFeedback>
+
                 <View style={[styles.countContainer]}>
                     <Text style={[styles.countText]}>
                         {this.state.count !== 0 ? this.state.count : null}
                     </Text>
                 </View>
+
+                <ToolbarAndroid
+                    navIcon={require('../../assets/img/origin_heart.jpeg')}
+                    title={this.state.actionText}
+                    logo={require('../../assets/img/origin_heart.jpeg')}
+                    style={{ height: 70, borderWidth: 2, borderColor: '#000', backgroundColor: 'goldenrod' }}
+                    actions={[{ title: '菜单', icon: require('../../assets/img/origin_heart.jpeg'), show: 'never', showWithText: true },
+                    { title: '菜单', icon: require('../../assets/img/origin_heart.jpeg'), show: 'ifRoom', showWithText: true },
+                    { title: '功能1', show: 'always', showWithText: true }]}
+                    onActionSelected={this.onActionSelected}
+                    onIconClicked={() => this.setState({ actionText: this.state.actionText == '我是标题' ? '我是第二个标题' : '我是标题' })}
+                />
             </View>
         )
     }

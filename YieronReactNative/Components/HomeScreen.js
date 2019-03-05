@@ -259,6 +259,20 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('TouchableOpacityDemo')
                             }}
                         />
+                        <Button
+                            title="TextInputDemo"
+                            onPress={() => {
+                                console.log('YINDONG:TextInputDemo')
+                                this.props.navigation.navigate('TextInputDemo')
+                            }}
+                        />
+                        <Button
+                            title="TextDemo"
+                            onPress={() => {
+                                console.log('YINDONG:TextDemo')
+                                this.props.navigation.navigate('TextDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

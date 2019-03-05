@@ -33,6 +33,8 @@ import VirtualizedListDemo from './YieronReactNative/Components/List/Virtualized
 import ViewPagerAndroidDemo from './YieronReactNative/Components/container/ViewPagerAndroidDemo';
 import SnapshotViewIOSDemo from './YieronReactNative/Components/iOSOnly/SnapshotViewIOSDemo';
 import TouchableOpacityDemo from './YieronReactNative/Components/Touch/TouchableOpacityDemo';
+import TextInputDemo from './YieronReactNative/Components/TextInput/TextInputDemo';
+import TextDemo from './YieronReactNative/Components/TextInput/TextDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -121,6 +123,12 @@ const AppNavigator = createStackNavigator(
         TouchableOpacityDemo: {
             screen: TouchableOpacityDemo
         },
+        TextInputDemo: {
+            screen: TextInputDemo
+        },
+        TextDemo: {
+            screen: TextDemo
+        }
     },
 
     //**********************************************************
