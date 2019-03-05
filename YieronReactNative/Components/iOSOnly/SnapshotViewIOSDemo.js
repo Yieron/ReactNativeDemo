@@ -8,8 +8,11 @@ import {
     Button,
     TouchableHighlight,
     SnapshotViewIOS,
+    AsyncStorage,
+    ToastAndroid,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
+import YieronNetUtil from '../../utils/YieronNetUtil';
 
 const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
@@ -44,6 +47,21 @@ class SnapshotViewIOSDemo extends Component {
 
     componentDidMount() {
         console.log('YINDONG-componentDidMount');
+        //加载数据
+        var url = 'http://192.168.2.112:8042/ShengDaAutoPlatform/remit!clerkDetail';
+        var service = "clerkDetail";
+        var userInfo;
+        AsyncStorage.getItem("userInfo", (error, result) => {
+            if (error) {
+
+            } else {
+                userInfo = eval('(' + result + ')');
+                var params = "service=clerkDetail&pageSize=10&page=1&userId=" + '';
+                YieronNetUtil.post(url, service, params, (result) => {
+                    ToastAndroid.show(result.resultDesc, ToastAndroid.SHORT);
+                });
+            }
+        });
     }
 
     componentWillReceiveProps(nextProps) {
