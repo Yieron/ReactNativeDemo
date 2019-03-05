@@ -32,6 +32,7 @@ import SectionListDemo from './YieronReactNative/Components/List/SectionListDemo
 import VirtualizedListDemo from './YieronReactNative/Components/List/VirtualizedListDemo';
 import ViewPagerAndroidDemo from './YieronReactNative/Components/container/ViewPagerAndroidDemo';
 import SnapshotViewIOSDemo from './YieronReactNative/Components/iOSOnly/SnapshotViewIOSDemo';
+import TouchableOpacityDemo from './YieronReactNative/Components/Touch/TouchableOpacityDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -116,7 +117,10 @@ const AppNavigator = createStackNavigator(
         },
         SnapshotViewIOSDemo: {
             screen: SnapshotViewIOSDemo
-        }
+        },
+        TouchableOpacityDemo: {
+            screen: TouchableOpacityDemo
+        },
     },
 
     //**********************************************************

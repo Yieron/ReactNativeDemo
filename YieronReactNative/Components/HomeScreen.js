@@ -252,6 +252,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('SnapshotViewIOSDemo')
                             }}
                         />
+                        <Button
+                            title="TouchableOpacityDemo"
+                            onPress={() => {
+                                console.log('YINDONG:TouchableOpacityDemo')
+                                this.props.navigation.navigate('TouchableOpacityDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

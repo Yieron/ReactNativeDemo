@@ -38,9 +38,13 @@ class SnapshotViewIOSDemo extends Component {
                 <SnapshotViewIOS
                     onSnapshotReady={console.log('YINDONG_onSnapshotReady')}
                     testIdentifier='屏幕快照'
+                    style={{ backgroundColor: "green", flex: 1 }}
                 >
                     <Text>我是屏幕快照</Text>
+                    <View style={{ backgroundColor: "blue", flex: 0.3 }} />
+                    <View style={{ backgroundColor: "red", flex: 0.5 }} />
                 </SnapshotViewIOS>
+
             </View>
         )
     }
@@ -99,8 +103,6 @@ export default withNavigationFocus(SnapshotViewIOSDemo);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
     },
     separator: {
         borderBottomColor: '#bbb',

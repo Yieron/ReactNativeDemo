@@ -197,7 +197,7 @@ export default class WelcomeScreen extends Component<Props> {
           }}>
             <Text style={styles.welcome}>
               跳转到原生拍照或相册
-          </Text>
+            </Text>
           </TouchableOpacity>
 
           <Text style={styles.welcome} onPress={this.callbackComm.bind(this, '你好啊，android')}>
