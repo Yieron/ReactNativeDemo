@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "antd-mobile": "^2.2.9",
     "appcenter": "^1.12.0",
     "crypto-js": "^3.1.9-1",
     "react": "16.6.3",

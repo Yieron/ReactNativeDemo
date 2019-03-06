@@ -315,6 +315,21 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('setIntervalDemo')
                             }}
                         />
+                        <Button
+                            title="ProgressBarAndroidDemo"
+                            onPress={() => {
+                                console.log('YINDONG:ProgressBarAndroidDemo')
+                                this.props.navigation.navigate('ProgressBarAndroidDemo')
+                            }}
+                        />
+                        <Button
+                            title="PickerIOSDemo"
+                            onPress={() => {
+                                console.log('YINDONG:PickerIOSDemo')
+                                this.props.navigation.navigate('PickerIOSDemo')
+                            }}
+                        />
+                        
                     </View>
                 </ScrollView>
             </SafeAreaView>

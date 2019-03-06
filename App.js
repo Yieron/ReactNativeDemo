@@ -41,6 +41,8 @@ import ScrollViewDemo from './YieronReactNative/Components/List/ScrollViewDemo';
 import setIntervalDemo from './YieronReactNative/Components/timer/setIntervalDemo';
 import setTimeoutDemo from './YieronReactNative/Components/timer/setTimeoutDemo';
 import ProgressViewIOSDemo from './YieronReactNative/Components/iOSOnly/ProgressViewIOSDemo';
+import ProgressBarAndroidDemo from './YieronReactNative/Components/AndroidOnly/ProgressBarAndroidDemo';
+import PickerIOSDemo from './YieronReactNative/Components/iOSOnly/PickerIOSDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -152,6 +154,12 @@ const AppNavigator = createStackNavigator(
         },
         ProgressViewIOSDemo: {
             screen: ProgressViewIOSDemo
+        },
+        ProgressBarAndroidDemo: {
+            screen: ProgressBarAndroidDemo
+        },
+        PickerIOSDemo: {
+            screen: PickerIOSDemo
         }
     },
 
