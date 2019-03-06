@@ -280,6 +280,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('SliderDemo')
                             }}
                         />
+                        <Button
+                            title="SegmentedControlIOSDemo"
+                            onPress={() => {
+                                console.log('YINDONG:SegmentedControlIOSDemo')
+                                this.props.navigation.navigate('SegmentedControlIOSDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

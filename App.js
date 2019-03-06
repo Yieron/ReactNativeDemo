@@ -36,6 +36,7 @@ import TouchableOpacityDemo from './YieronReactNative/Components/Touch/Touchable
 import TextInputDemo from './YieronReactNative/Components/TextInput/TextInputDemo';
 import TextDemo from './YieronReactNative/Components/TextInput/TextDemo';
 import SliderDemo from './YieronReactNative/Components/progressbar/SliderDemo';
+import SegmentedControlIOSDemo from './YieronReactNative/Components/iOSOnly/SegmentedControlIOSDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -132,6 +133,9 @@ const AppNavigator = createStackNavigator(
         },
         SliderDemo: {
             screen: SliderDemo
+        },
+        SegmentedControlIOSDemo: {
+            screen: SegmentedControlIOSDemo
         }
     },
 
