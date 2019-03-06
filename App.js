@@ -37,6 +37,10 @@ import TextInputDemo from './YieronReactNative/Components/TextInput/TextInputDem
 import TextDemo from './YieronReactNative/Components/TextInput/TextDemo';
 import SliderDemo from './YieronReactNative/Components/progressbar/SliderDemo';
 import SegmentedControlIOSDemo from './YieronReactNative/Components/iOSOnly/SegmentedControlIOSDemo';
+import ScrollViewDemo from './YieronReactNative/Components/List/ScrollViewDemo';
+import setIntervalDemo from './YieronReactNative/Components/timer/setIntervalDemo';
+import setTimeoutDemo from './YieronReactNative/Components/timer/setTimeoutDemo';
+import ProgressViewIOSDemo from './YieronReactNative/Components/iOSOnly/ProgressViewIOSDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -136,6 +140,18 @@ const AppNavigator = createStackNavigator(
         },
         SegmentedControlIOSDemo: {
             screen: SegmentedControlIOSDemo
+        },
+        ScrollViewDemo: {
+            screen: ScrollViewDemo
+        },
+        setIntervalDemo: {
+            screen: setIntervalDemo
+        },
+        setTimeoutDemo: {
+            screen: setTimeoutDemo
+        },
+        ProgressViewIOSDemo: {
+            screen: ProgressViewIOSDemo
         }
     },
 

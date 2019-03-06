@@ -287,6 +287,34 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('SegmentedControlIOSDemo')
                             }}
                         />
+                        <Button
+                            title="ScrollViewDemo"
+                            onPress={() => {
+                                console.log('YINDONG:ScrollViewDemo')
+                                this.props.navigation.navigate('ScrollViewDemo')
+                            }}
+                        />
+                        <Button
+                            title="ProgressViewIOSDemo"
+                            onPress={() => {
+                                console.log('YINDONG:ProgressViewIOSDemo')
+                                this.props.navigation.navigate('ProgressViewIOSDemo')
+                            }}
+                        />
+                        <Button
+                            title="setTimeoutDemo"
+                            onPress={() => {
+                                console.log('YINDONG:setTimeoutDemo')
+                                this.props.navigation.navigate('setTimeoutDemo')
+                            }}
+                        />
+                        <Button
+                            title="setIntervalDemo"
+                            onPress={() => {
+                                console.log('YINDONG:setIntervalDemo')
+                                this.props.navigation.navigate('setIntervalDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>
