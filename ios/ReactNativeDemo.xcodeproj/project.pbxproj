@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -48,6 +47,8 @@
 		D753607E21F1B4BE00409F0C /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D753604D21F1ADFB00409F0C /* libCodePush.a */; };
 		D779899321FAFFA8003DC14D /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D779899221FAFF2B003DC14D /* libRNGestureHandler.a */; };
 		FDAEF6ED3A056EC5A7D97CDD /* libPods-ReactNativeDemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7636D55C18261BBF48A3DAF5 /* libPods-ReactNativeDemo-tvOSTests.a */; };
+		C9AD7B3858AB4D17BFB60850 /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5F6BDC0256F4A3584324BEB /* antfill.ttf */; };
+		024D0E88F2B2404FBB808641 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B691AA9F388C45E0B3485379 /* antoutline.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -435,6 +436,8 @@
 		D9936F9092F04155AA7E6C88 /* AppCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "ReactNativeDemo/AppCenter-Config.plist"; sourceTree = "<group>"; };
 		DDF8EECC218C6F0E62E4C215 /* Pods-ReactNativeDemo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeDemo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeDemo-tvOS/Pods-ReactNativeDemo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA0A90546D067DBA22FA848 /* Pods-ReactNativeDemo-tvOSTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeDemo-tvOSTests.staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeDemo-tvOSTests/Pods-ReactNativeDemo-tvOSTests.staging.xcconfig"; sourceTree = "<group>"; };
+		F5F6BDC0256F4A3584324BEB /* antfill.ttf */ = {isa = PBXFileReference; name = "antfill.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B691AA9F388C45E0B3485379 /* antoutline.ttf */ = {isa = PBXFileReference; name = "antoutline.ttf"; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -691,6 +694,7 @@
 				D719F7B021EC1E3E003915C8 /* Recovered References */,
 				D9936F9092F04155AA7E6C88 /* AppCenter-Config.plist */,
 				8CA9CA50C2D8E268F2D4708E /* Pods */,
+				4D609BB5F7BE47C9A73FD222 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -781,6 +785,16 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		4D609BB5F7BE47C9A73FD222 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				F5F6BDC0256F4A3584324BEB /* antfill.ttf */,
+				B691AA9F388C45E0B3485379 /* antoutline.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1308,6 +1322,8 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				A2D49DBF538A4F2082C46EBD /* AppCenter-Config.plist in Resources */,
+				C9AD7B3858AB4D17BFB60850 /* antfill.ttf in Resources */,
+				024D0E88F2B2404FBB808641 /* antoutline.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
