@@ -16,7 +16,7 @@ import ToastAndroidScreen from './YieronReactNative/Components/Alert/ToastAndroi
 import TimePickerAndroidScreen from './YieronReactNative/Components/picker/TimePickerAndroidScreen';
 import LayoutAnimationScreen from './YieronReactNative/Components/animation/LayoutAnimationScreen';
 import FrameAnimationDemoScreen from './YieronReactNative/Components/animation/FrameAnimationDemoScreen';
-import flexDemoScreen from './YieronReactNative/Components/flex/flexDemoScreen';
+import flexDemoScreen from './YieronReactNative/Components/flexLayout/flexDemoScreen';
 import KeyboardDemoScreen from './YieronReactNative/Components/keyboard/KeyboardDemoScreen';
 import InteractionManagerDemoScreen from './YieronReactNative/Components/timer/InteractionManagerDemoScreen';
 import AnimatedDemoScreen from './YieronReactNative/Components/animation/AnimatedDemoScreen';

@@ -92,7 +92,6 @@ export default withNavigationFocus(SegmentedControlIOSDemo);
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
     },
     separator: {
         borderBottomColor: '#bbb',
