@@ -43,6 +43,9 @@ import setTimeoutDemo from './YieronReactNative/Components/timer/setTimeoutDemo'
 import ProgressViewIOSDemo from './YieronReactNative/Components/iOSOnly/ProgressViewIOSDemo';
 import ProgressBarAndroidDemo from './YieronReactNative/Components/AndroidOnly/ProgressBarAndroidDemo';
 import PickerIOSDemo from './YieronReactNative/Components/iOSOnly/PickerIOSDemo';
+import PickerDemo from './YieronReactNative/Components/picker/PickerDemo';
+import MaskedViewIOSDemo from './YieronReactNative/Components/iOSOnly/MaskedViewIOSDemo';
+import KeyboardAvoidingViewDemo from './YieronReactNative/Components/keyboard/KeyboardAvoidingViewDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -160,7 +163,19 @@ const AppNavigator = createStackNavigator(
         },
         PickerIOSDemo: {
             screen: PickerIOSDemo
-        }
+        },
+        PickerDemo: {
+            screen: PickerDemo
+        },
+        ModalScreen: {
+            screen: ModalScreen
+        },
+        MaskedViewIOSDemo: {
+            screen: MaskedViewIOSDemo
+        },
+        KeyboardAvoidingViewDemo: {
+            screen: KeyboardAvoidingViewDemo
+        },
     },
 
     //**********************************************************

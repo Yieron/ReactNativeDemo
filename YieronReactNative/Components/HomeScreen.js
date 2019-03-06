@@ -329,7 +329,34 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('PickerIOSDemo')
                             }}
                         />
-                        
+                        <Button
+                            title="PickerDemo"
+                            onPress={() => {
+                                console.log('YINDONG:PickerDemo')
+                                this.props.navigation.navigate('PickerDemo')
+                            }}
+                        />
+                        <Button
+                            title="ModalScreen"
+                            onPress={() => {
+                                console.log('YINDONG:ModalScreen')
+                                this.props.navigation.navigate('ModalScreen')
+                            }}
+                        />
+                        <Button
+                            title="MaskedViewIOSDemo"
+                            onPress={() => {
+                                console.log('YINDONG:MaskedViewIOSDemo')
+                                this.props.navigation.navigate('MaskedViewIOSDemo')
+                            }}
+                        />
+                        <Button
+                            title="KeyboardAvoidingViewDemo"
+                            onPress={() => {
+                                console.log('YINDONG:KeyboardAvoidingViewDemo')
+                                this.props.navigation.navigate('KeyboardAvoidingViewDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>
