@@ -10,8 +10,13 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 用于读取手机当前的状态 -->
-    <uses-permission tools:node="remove" android:name="android.permission.READ_PHONE_STATE" /> <!-- 用于写入缓存数据到扩展存储卡 -->
-    <uses-permission tools:node="remove" android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" /> <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove" /> <!-- 用于申请调用A-GPS模块 -->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -24,10 +29,20 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
+        <service
+            android:name=".service.MyTaskService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <receiver
+            android:name=".BroadcastReceiver.NetworkChangeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".activity.TencentMapActivity"
             android:label="@string/title_activity_tencent_map"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.AMAPLocationActivity" />
 
         <meta-data
@@ -64,6 +79,7 @@
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
         <service android:name="com.amap.api.location.APSService" />
+
     </application>
 
 </manifest>

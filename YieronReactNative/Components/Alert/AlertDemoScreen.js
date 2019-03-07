@@ -1,8 +1,3 @@
-/**
- * 该界面作为初始化界面，每个界面都从该界面复制黏贴
- * TODO
- * 将所有必用的1：方法，2：样式，3：控件，4：生命周期   都集中起来。
- */
 import React, { Component } from 'react'
 import {
     StyleSheet,

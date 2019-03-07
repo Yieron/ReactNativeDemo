@@ -49,6 +49,7 @@ import KeyboardAvoidingViewDemo from './YieronReactNative/Components/keyboard/Ke
 import DrawerLayoutAndroidDemo from './YieronReactNative/Components/AndroidOnly/DrawerLayoutAndroidDemo';
 import DatePickerIOSDemo from './YieronReactNative/Components/iOSOnly/DatePickerIOSDemo';
 import ActivityIndicatorDemo from './YieronReactNative/Components/progressbar/ActivityIndicatorDemo';
+
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -187,7 +188,6 @@ const AppNavigator = createStackNavigator(
         ActivityIndicatorDemo: {
             screen: ActivityIndicatorDemo
         }
-
     },
 
     //**********************************************************
