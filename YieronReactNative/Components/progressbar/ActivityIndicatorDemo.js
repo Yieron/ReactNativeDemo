@@ -1,3 +1,8 @@
+/**
+ * 该界面作为初始化界面，每个界面都从该界面复制黏贴
+ * TODO
+ * 将所有必用的1：方法，2：样式，3：控件，4：生命周期   都集中起来。
+ */
 import React, { Component } from 'react'
 import {
     StyleSheet,
@@ -7,7 +12,7 @@ import {
     Platform,
     Button,
     TouchableHighlight,
-    ImageBackground,
+    ActivityIndicator,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
 
@@ -15,7 +20,7 @@ const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
     android: TouchableNativeFeedback,
 })
-class KeyboardAvoidingViewDemo extends Component {
+class ActivityIndicatorDemo extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,15 +36,15 @@ class KeyboardAvoidingViewDemo extends Component {
         console.log('YINDONG-render');
 
         return (
-            <ImageBackground
-                source={require("../../assets/img/origin_heart.jpeg")}
-                style={{ width: '100%', height: '100%' }}>
-                <View style={styles.container}>
-                    <NativeTouchable>
-                        <Text>Yieron</Text>
-                    </NativeTouchable>
-                </View>
-            </ImageBackground>
+            <View style={styles.container}>
+                <NativeTouchable>
+                    <Text>Yieron</Text>
+                </NativeTouchable>
+                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator size="small" color="#00ff00" />
+                <ActivityIndicator size="large" color="#0000ff" />
+                <ActivityIndicator size="small" color="#00ff00" />
+            </View>
         )
     }
 
@@ -78,7 +83,7 @@ class KeyboardAvoidingViewDemo extends Component {
     }
 }
 
-export default withNavigationFocus(KeyboardAvoidingViewDemo);
+export default withNavigationFocus(ActivityIndicatorDemo);
 const styles = StyleSheet.create({
     container: {
         flex: 1,

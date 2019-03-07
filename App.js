@@ -46,7 +46,9 @@ import PickerIOSDemo from './YieronReactNative/Components/iOSOnly/PickerIOSDemo'
 import PickerDemo from './YieronReactNative/Components/picker/PickerDemo';
 import MaskedViewIOSDemo from './YieronReactNative/Components/iOSOnly/MaskedViewIOSDemo';
 import KeyboardAvoidingViewDemo from './YieronReactNative/Components/keyboard/KeyboardAvoidingViewDemo';
-
+import DrawerLayoutAndroidDemo from './YieronReactNative/Components/AndroidOnly/DrawerLayoutAndroidDemo';
+import DatePickerIOSDemo from './YieronReactNative/Components/iOSOnly/DatePickerIOSDemo';
+import ActivityIndicatorDemo from './YieronReactNative/Components/progressbar/ActivityIndicatorDemo';
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -176,6 +178,16 @@ const AppNavigator = createStackNavigator(
         KeyboardAvoidingViewDemo: {
             screen: KeyboardAvoidingViewDemo
         },
+        DrawerLayoutAndroidDemo: {
+            screen: DrawerLayoutAndroidDemo
+        },
+        DatePickerIOSDemo: {
+            screen: DatePickerIOSDemo
+        },
+        ActivityIndicatorDemo: {
+            screen: ActivityIndicatorDemo
+        }
+
     },
 
     //**********************************************************

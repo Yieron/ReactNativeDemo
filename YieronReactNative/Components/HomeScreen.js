@@ -357,6 +357,27 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('KeyboardAvoidingViewDemo')
                             }}
                         />
+                        <Button
+                            title="DrawerLayoutAndroidDemo"
+                            onPress={() => {
+                                console.log('YINDONG:DrawerLayoutAndroidDemo')
+                                this.props.navigation.navigate('DrawerLayoutAndroidDemo')
+                            }}
+                        />
+                        <Button
+                            title="DatePickerIOSDemo"
+                            onPress={() => {
+                                console.log('YINDONG:DatePickerIOSDemo')
+                                this.props.navigation.navigate('DatePickerIOSDemo')
+                            }}
+                        />
+                        <Button
+                            title="ActivityIndicatorDemo"
+                            onPress={() => {
+                                console.log('YINDONG:ActivityIndicatorDemo')
+                                this.props.navigation.navigate('ActivityIndicatorDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>
