@@ -1,8 +1,7 @@
-package com.ReactNativeDemo.application;
+package com.ReactNativeDemo;
 
 import android.app.Application;
 
-import com.ReactNativeDemo.BuildConfig;
 import com.ReactNativeDemo.ReactPackage.ImageViewPackage;
 import com.ReactNativeDemo.ReactPackage.MyReactPackage;
 import com.facebook.react.ReactApplication;
