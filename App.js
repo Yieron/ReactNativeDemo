@@ -49,6 +49,7 @@ import KeyboardAvoidingViewDemo from './YieronReactNative/Components/keyboard/Ke
 import DrawerLayoutAndroidDemo from './YieronReactNative/Components/AndroidOnly/DrawerLayoutAndroidDemo';
 import DatePickerIOSDemo from './YieronReactNative/Components/iOSOnly/DatePickerIOSDemo';
 import ActivityIndicatorDemo from './YieronReactNative/Components/progressbar/ActivityIndicatorDemo';
+import RCTGIFViewDemo from './YieronReactNative/Components/CustomComponent/RCTGIFViewDemo';
 
 const AppNavigator = createStackNavigator(
     {
@@ -187,7 +188,10 @@ const AppNavigator = createStackNavigator(
         },
         ActivityIndicatorDemo: {
             screen: ActivityIndicatorDemo
-        }
+        },
+        RCTGIFViewDemo: {
+            screen: RCTGIFViewDemo
+        },
     },
 
     //**********************************************************

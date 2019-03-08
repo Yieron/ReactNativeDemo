@@ -1,4 +1,4 @@
-package com.ReactNativeDemo;
+package com.ReactNativeDemo.ReactPackage;
 
 import com.ReactNativeDemo.Module.AMAPLocationModule;
 import com.ReactNativeDemo.Module.TakePhotoModule;

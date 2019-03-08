@@ -32,6 +32,10 @@ pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
   platform :ios, '9.0'
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+
+  pod 'lottie-ios', :path => '../node_modules/lottie-ios'
+
   target 'ReactNativeDemoTests' do
     inherit! :search_paths
     # Pods for testing

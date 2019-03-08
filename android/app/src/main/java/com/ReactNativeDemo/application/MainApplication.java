@@ -1,7 +1,10 @@
-package com.ReactNativeDemo;
+package com.ReactNativeDemo.application;
 
 import android.app.Application;
 
+import com.ReactNativeDemo.BuildConfig;
+import com.ReactNativeDemo.ReactPackage.ImageViewPackage;
+import com.ReactNativeDemo.ReactPackage.MyReactPackage;
 import com.facebook.react.ReactApplication;
 import com.microsoft.codepush.react.CodePush;
 import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
@@ -43,7 +46,8 @@ public class MainApplication extends Application implements ReactApplication {
                     new CodePush("ZPE_RQiwfQUAJipupv_AHoU-yhB64a24f70d-accd-4d8a-8209-ae5e2e68a948",
                             getApplicationContext(), BuildConfig.DEBUG),//Staging Deployment Key
 //                    new CodePush(BuildConfig.CODEPUSH_KEY, MainApplication.this, BuildConfig.DEBUG), // Add/change this line.
-                    new MyReactPackage()
+                    new MyReactPackage(),
+                    new ImageViewPackage()
             );
         }
 

@@ -378,6 +378,13 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('ActivityIndicatorDemo')
                             }}
                         />
+                        <Button
+                            title="RCTGIFViewDemo"
+                            onPress={() => {
+                                console.log('YINDONG:RCTGIFViewDemo')
+                                this.props.navigation.navigate('RCTGIFViewDemo')
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>
