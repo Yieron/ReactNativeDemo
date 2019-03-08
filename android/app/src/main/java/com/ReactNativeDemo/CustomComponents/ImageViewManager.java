@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.ReactNativeDemo.R;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReadableArray;
@@ -13,7 +14,9 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.common.MapBuilder;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.uimanager.events.Event;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 import java.io.IOException;
@@ -47,6 +50,7 @@ public class ImageViewManager extends SimpleViewManager<ImageView> implements Li
         this.mContext = reactContext;
         this.mContext.addLifecycleEventListener(this);
         final ImageView imageView = new ImageView(reactContext);
+        imageView.setImageResource(R.mipmap.rn);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +64,24 @@ public class ImageViewManager extends SimpleViewManager<ImageView> implements Li
                 );
             }
         });
+
+        // 1.
+//        mContext.getNativeModule(UIManagerModule.class)
+//                .getEventDispatcher()
+//                .dispatchEvent(new ReactScaleChangeEvent(imageView.getId(), "ScaleInfo: scaleFactor:"));
+
+
+        // 2.
+        WritableMap map = Arguments.createMap();
+        map.putInt("target", imageView.getId());
+        map.putString("msg", "ScaleInfo: scaleFactor:");
+
+        /**
+         * {@link com.facebook.react.uimanager.UIManagerModuleConstants}
+         */
+        mContext.getJSModule(RCTEventEmitter.class).receiveEvent(
+                imageView.getId(), "topChange", map
+        );
         return imageView;
     }
 
@@ -168,21 +190,22 @@ public class ImageViewManager extends SimpleViewManager<ImageView> implements Li
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call call, final Response response) throws IOException {
-                mContext.runOnUiQueueThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            showGifImage(image, response.body().bytes());
-                            imageCache.put(url, response.body().bytes());
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
+//                mContext.runOnUiQueueThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        try {
+//                            showGifImage(image, response.body().bytes());
+//                            imageCache.put(url, response.body().bytes());
+//                        } catch (IOException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                });
             }
 
             @Override
             public void onFailure(Call call, IOException e) {
+
             }
         });
     }
@@ -199,3 +222,5 @@ public class ImageViewManager extends SimpleViewManager<ImageView> implements Li
         image.setBackground(gifDrawable);
     }
 }
+
+

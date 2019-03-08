@@ -50,7 +50,7 @@ import DrawerLayoutAndroidDemo from './YieronReactNative/Components/AndroidOnly/
 import DatePickerIOSDemo from './YieronReactNative/Components/iOSOnly/DatePickerIOSDemo';
 import ActivityIndicatorDemo from './YieronReactNative/Components/progressbar/ActivityIndicatorDemo';
 import RCTGIFViewDemo from './YieronReactNative/Components/CustomComponent/RCTGIFViewDemo';
-
+import VideoViewDemo from './YieronReactNative/Components/CustomComponent/VideoViewDemo';
 const AppNavigator = createStackNavigator(
     {
         //路由的唯一必需配置项是screen（此项设置一个组件）
@@ -192,6 +192,9 @@ const AppNavigator = createStackNavigator(
         RCTGIFViewDemo: {
             screen: RCTGIFViewDemo
         },
+        VideoViewDemo: {
+            screen: VideoViewDemo
+        }
     },
 
     //**********************************************************
