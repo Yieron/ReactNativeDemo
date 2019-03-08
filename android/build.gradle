@@ -3,7 +3,7 @@
 buildscript {
     ext {
         buildToolsVersion = "27.0.3"
-        minSdkVersion = 16
+        minSdkVersion = 18
         compileSdkVersion = 27
         targetSdkVersion = 26
         supportLibVersion = "27.1.1"
@@ -11,6 +11,8 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.2'

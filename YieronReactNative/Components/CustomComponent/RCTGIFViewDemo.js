@@ -10,16 +10,21 @@ import {
 
 import RCTGIFView from './RCTGIFView';
 
+let GIF_IMAGE_ARRAY = [
+    'https://cimili-cdn-gif-of-track.cimili.com/v2_gif_266_6967.gif',
+    'https://cimili-cdn-gif-of-track.cimili.com/v2_gif_505_13547.gif'
+];
 export default class RCTGIFViewDemo extends Component {
     constructor(props) {
         super(props);
 
         console.log('YINDONG_RCTGIFViewDemo');
-        
+        this.index = 0;
+
         this.state = {
             isPlaying: true,
             image: '图片地址',
-            gifImage: '',
+            gifImage: GIF_IMAGE_ARRAY[this.index]
         }
     }
 
@@ -29,14 +34,28 @@ export default class RCTGIFViewDemo extends Component {
         return (
             <View style={styles.container}>
                 <RCTGIFView
-                    imageName={this.state.image}
-                    ref='RCTImageView'
                     style={styles.gifImage}
                     playStatus={this.state.isPlaying}
                     imageName={this.state.gifImage}
-                    onClick={(msg) => alert('原生层传递的数据为：', msg)}
                 />
-            </View>
+                <View style={styles.controller}>
+                    <Text
+                        style={styles.btn}
+                        onPress={() => this.playGif()}>
+                        播放
+                    </Text>
+                    <Text
+                        style={styles.btn}
+                        onPress={() => this.stopGif()}>
+                        暂停
+                    </Text>
+                    <Text
+                        style={styles.btn}
+                        onPress={() => this.changeGifImage()}>
+                        切换
+                    </Text>
+                </View>
+            </View >
         );
     }
 
@@ -47,6 +66,37 @@ export default class RCTGIFViewDemo extends Component {
             UIManager.RCTImageView.Commands.handleTask, // Commands后面的值与原生层定义的HANDLE_METHOD_NAME一致
             [name] // 向原生层传递的参数数据,数据形如：["第一个参数","第二个参数",3]
         );
+    }
+
+    changeGifImage() {
+        if (this.index) {
+            this.index = 0;
+            this.setState({
+                isPlaying: true,
+                gifImage: GIF_IMAGE_ARRAY[this.index]
+            })
+        } else {
+            this.index = 1;
+            this.setState({
+                isPlaying: true,
+                gifImage: GIF_IMAGE_ARRAY[this.index]
+            })
+        }
+
+    }
+
+    /**
+     * 播放
+     */
+    playGif() {
+        this.setState({ isPlaying: true })
+    }
+
+    /**
+     * 暂停
+     */
+    stopGif() {
+        this.setState({ isPlaying: false })
     }
 }
 

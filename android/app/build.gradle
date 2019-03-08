@@ -202,6 +202,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.amap.api:location:latest.integration'  //高德地图定位模块
     implementation 'com.android.support:design:27.1.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
     /**
      *
      *  摘自RN官方文档0.58   Image
