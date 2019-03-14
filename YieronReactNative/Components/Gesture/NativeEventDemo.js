@@ -1,0 +1,30 @@
+/**
+ *
+ onMoveShouldSetPanResponder
+ onMoveShouldSetPanResponderCapture
+ onStartShouldSetPanResponder
+ onStartShouldSetPanResponderCapture
+ onPanResponderReject
+ onPanResponderGrant
+ onPanResponderStart
+ onPanResponderEnd
+ onPanResponderRelease
+ onPanResponderMove
+ onPanResponderTerminate
+ onPanResponderTerminateRequest
+ onShouldBlockNativeResponder
+ */
+
+/**
+ *
+    stateID—触摸状态的ID，在屏幕上至少有一个点的情况下，这个id会一直存在。
+    moveX—最近一次移动时的屏幕横坐标
+    moveY—最近一次移动时的屏幕纵坐标
+    x0—当响应器产生时的屏幕坐标
+    y0—当响应器产生时的屏幕坐标
+    dx—从触摸开始累积的横向路程
+    dy—从触摸操作开始累积纵向路程
+    vx—当前的横向移动速度
+    vy—当前的纵向移动速度
+    numberActiveTouches—当前在屏幕上的有效触摸点的数量。
+ */
