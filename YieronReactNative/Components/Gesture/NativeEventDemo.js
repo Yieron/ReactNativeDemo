@@ -2,6 +2,8 @@
  *
  onMoveShouldSetPanResponder
  onMoveShouldSetPanResponderCapture
+ onStartShouldSetResponder
+ onMoveShouldSetResponder
  onStartShouldSetPanResponder
  onStartShouldSetPanResponderCapture
  onPanResponderReject
@@ -13,6 +15,12 @@
  onPanResponderTerminate
  onPanResponderTerminateRequest
  onShouldBlockNativeResponder
+ onResponderGrant
+ onResponderReject
+ onResponderMove
+ onResponderRelease
+ onResponderTerminationRequest
+ onResponderTerminate
  */
 
 /**

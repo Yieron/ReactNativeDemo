@@ -392,6 +392,14 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('VideoViewDemo')
                             }}
                         />
+                        <Button
+                            title="SampleAppMovies"
+                            onPress={() => {
+                                console.log('YINDONG:SampleAppMovies')
+                                this.props.navigation.navigate('SampleAppMovies')
+                            }}
+                        />
+                        
                     </View>
                 </ScrollView>
             </SafeAreaView>
