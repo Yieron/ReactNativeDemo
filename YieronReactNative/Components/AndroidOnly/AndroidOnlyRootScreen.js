@@ -11,7 +11,7 @@ import {
     SafeAreaView,
     ScrollView,
 } from "react-native";
-import LogoTitle from "./LogoTitle";
+import LogoTitle from "../LogoTitle";
 
 export default class AndroidOnlyRootScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
@@ -46,7 +46,7 @@ export default class AndroidOnlyRootScreen extends React.Component {
                             title="Go to AssetExample navigate"
                             onPress={() => {
                                 console.log('YINDONG:navigate')
-                                this.props.navigation.navigate('AssetExample')
+                                this.props.navigation.navigate('AssetExample', { /* params go here */ })
                             }}
                         />
                         <Button
@@ -67,223 +67,108 @@ export default class AndroidOnlyRootScreen extends React.Component {
                             title="ScreenWithCustomBackBehavior"
                             onPress={() => {
                                 console.log('YINDONG:ScreenWithCustomBackBehavior')
-                                this.props.navigation.navigate('ScreenWithCustomBackBehavior')
+                                this.props.navigation.navigate('ScreenWithCustomBackBehavior', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="VibrateScreen"
                             onPress={() => {
                                 console.log('YINDONG:VibrateScreen')
-                                this.props.navigation.navigate('VibrateScreen')
+                                this.props.navigation.navigate('VibrateScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="ToastAndroidScreen"
                             onPress={() => {
                                 console.log('YINDONG:ToastAndroidScreen')
-                                this.props.navigation.navigate('ToastAndroidScreen')
+                                this.props.navigation.navigate('ToastAndroidScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="TimePickerAndroidScreen"
                             onPress={() => {
                                 console.log('YINDONG:TimePickerAndroidScreen')
-                                this.props.navigation.navigate('TimePickerAndroidScreen')
+                                this.props.navigation.navigate('TimePickerAndroidScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="LayoutAnimationScreen"
                             onPress={() => {
                                 console.log('YINDONG:LayoutAnimationScreen')
-                                this.props.navigation.navigate('LayoutAnimationScreen')
+                                this.props.navigation.navigate('LayoutAnimationScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="FrameAnimationDemoScreen"
                             onPress={() => {
                                 console.log('YINDONG:FrameAnimationDemoScreen')
-                                this.props.navigation.navigate('FrameAnimationDemoScreen')
+                                this.props.navigation.navigate('FrameAnimationDemoScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="flexDemoScreen"
                             onPress={() => {
                                 console.log('YINDONG:flexDemoScreen')
-                                this.props.navigation.navigate('flexDemoScreen')
+                                this.props.navigation.navigate('flexDemoScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="KeyboardDemoScreen"
                             onPress={() => {
                                 console.log('YINDONG:KeyboardDemoScreen')
-                                this.props.navigation.navigate('KeyboardDemoScreen')
+                                this.props.navigation.navigate('KeyboardDemoScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="InteractionManagerDemoScreen"
                             onPress={() => {
                                 console.log('YINDONG:InteractionManagerDemoScreen')
-                                this.props.navigation.navigate('InteractionManagerDemoScreen')
-                            }}
-                        />
-                        <Button
-                            title="AnimatedDemoScreen"
-                            onPress={() => {
-                                console.log('YINDONG:AnimatedDemoScreen')
-                                this.props.navigation.navigate('AnimatedDemoScreen')
+                                this.props.navigation.navigate('InteractionManagerDemoScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="ClipboardDemoScreen"
                             onPress={() => {
                                 console.log('YINDONG:ClipboardDemoScreen')
-                                this.props.navigation.navigate('ClipboardDemoScreen')
+                                this.props.navigation.navigate('ClipboardDemoScreen', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="BackHandlerDemo"
                             onPress={() => {
                                 console.log('YINDONG:BackHandlerDemo')
-                                this.props.navigation.navigate('BackHandlerDemo')
+                                this.props.navigation.navigate('BackHandlerDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="AsyncStorageDemo"
                             onPress={() => {
                                 console.log('YINDONG:AsyncStorageDemo')
-                                this.props.navigation.navigate('AsyncStorageDemo')
+                                this.props.navigation.navigate('AsyncStorageDemo', { /* params go here */ })
                             }}
                         />
-                        <Button
-                            title="AppStateDemo"
-                            onPress={() => {
-                                console.log('YINDONG:AppStateDemo')
-                                this.props.navigation.navigate('AppStateDemo')
-                            }}
-                        />
-                        <Button
-                            title="AlertDemoScreen"
-                            onPress={() => {
-                                console.log('YINDONG:AlertDemoScreen')
-                                this.props.navigation.navigate('AlertDemoScreen')
-                            }}
-                        />
-                        <Button
-                            title="AccessibilityInfoDemo"
-                            onPress={() => {
-                                console.log('YINDONG:AccessibilityInfoDemo')
-                                this.props.navigation.navigate('AccessibilityInfoDemo')
-                            }}
-                        />
-                        <Button
-                            title="webViewDemo"
-                            onPress={() => {
-                                console.log('YINDONG:webViewDemo')
-                                this.props.navigation.navigate('webViewDemo')
-                            }}
-                        />
+                        
                         <Button
                             title="ViewPagerAndroidDemo"
                             onPress={() => {
                                 console.log('YINDONG:ViewPagerAndroidDemo')
-                                this.props.navigation.navigate('ViewPagerAndroidDemo')
-                            }}
-                        />
-
-                        <Button
-                            title="TouchableOpacityDemo"
-                            onPress={() => {
-                                console.log('YINDONG:TouchableOpacityDemo')
-                                this.props.navigation.navigate('TouchableOpacityDemo')
-                            }}
-                        />
-
-                        <Button
-                            title="SliderDemo"
-                            onPress={() => {
-                                console.log('YINDONG:SliderDemo')
-                                this.props.navigation.navigate('SliderDemo')
-                            }}
-                        />
-                        <Button
-                            title="setTimeoutDemo"
-                            onPress={() => {
-                                console.log('YINDONG:setTimeoutDemo')
-                                this.props.navigation.navigate('setTimeoutDemo')
-                            }}
-                        />
-                        <Button
-                            title="setIntervalDemo"
-                            onPress={() => {
-                                console.log('YINDONG:setIntervalDemo')
-                                this.props.navigation.navigate('setIntervalDemo')
+                                this.props.navigation.navigate('ViewPagerAndroidDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="ProgressBarAndroidDemo"
                             onPress={() => {
                                 console.log('YINDONG:ProgressBarAndroidDemo')
-                                this.props.navigation.navigate('ProgressBarAndroidDemo')
-                            }}
-                        />
-                        <Button
-                            title="PickerDemo"
-                            onPress={() => {
-                                console.log('YINDONG:PickerDemo')
-                                this.props.navigation.navigate('PickerDemo')
-                            }}
-                        />
-                        <Button
-                            title="ModalScreen"
-                            onPress={() => {
-                                console.log('YINDONG:ModalScreen')
-                                this.props.navigation.navigate('ModalScreen')
-                            }}
-                        />
-                        <Button
-                            title="KeyboardAvoidingViewDemo"
-                            onPress={() => {
-                                console.log('YINDONG:KeyboardAvoidingViewDemo')
-                                this.props.navigation.navigate('KeyboardAvoidingViewDemo')
+                                this.props.navigation.navigate('ProgressBarAndroidDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="DrawerLayoutAndroidDemo"
                             onPress={() => {
                                 console.log('YINDONG:DrawerLayoutAndroidDemo')
-                                this.props.navigation.navigate('DrawerLayoutAndroidDemo')
+                                this.props.navigation.navigate('DrawerLayoutAndroidDemo', { /* params go here */ })
                             }}
                         />
-
-                        <Button
-                            title="ActivityIndicatorDemo"
-                            onPress={() => {
-                                console.log('YINDONG:ActivityIndicatorDemo')
-                                this.props.navigation.navigate('ActivityIndicatorDemo')
-                            }}
-                        />
-                        <Button
-                            title="RCTGIFViewDemo"
-                            onPress={() => {
-                                console.log('YINDONG:RCTGIFViewDemo')
-                                this.props.navigation.navigate('RCTGIFViewDemo')
-                            }}
-                        />
-                        <Button
-                            title="VideoViewDemo"
-                            onPress={() => {
-                                console.log('YINDONG:VideoViewDemo')
-                                this.props.navigation.navigate('VideoViewDemo')
-                            }}
-                        />
-                        <Button
-                            title="SampleAppMovies"
-                            onPress={() => {
-                                console.log('YINDONG:SampleAppMovies')
-                                this.props.navigation.navigate('SampleAppMovies')
-                            }}
-                        />
-
                     </View>
                 </ScrollView>
             </SafeAreaView>

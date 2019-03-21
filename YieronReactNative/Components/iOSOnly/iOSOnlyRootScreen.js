@@ -11,7 +11,7 @@ import {
     SafeAreaView,
     ScrollView,
 } from "react-native";
-import LogoTitle from "./LogoTitle";
+import LogoTitle from "../LogoTitle";
 
 export default class iOSOnlyRootScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
@@ -46,56 +46,49 @@ export default class iOSOnlyRootScreen extends React.Component {
                             title="Go to iphoneXSupportScreen navigate"
                             onPress={() => {
                                 console.log('YINDONG:navigate')
-                                this.props.navigation.navigate('iphoneXSupport')
+                                this.props.navigation.navigate('iphoneXSupport', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="SnapshotViewIOSDemo"
                             onPress={() => {
                                 console.log('YINDONG:SnapshotViewIOSDemo')
-                                this.props.navigation.navigate('SnapshotViewIOSDemo')
+                                this.props.navigation.navigate('SnapshotViewIOSDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="SegmentedControlIOSDemo"
                             onPress={() => {
                                 console.log('YINDONG:SegmentedControlIOSDemo')
-                                this.props.navigation.navigate('SegmentedControlIOSDemo')
+                                this.props.navigation.navigate('SegmentedControlIOSDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="ProgressViewIOSDemo"
                             onPress={() => {
                                 console.log('YINDONG:ProgressViewIOSDemo')
-                                this.props.navigation.navigate('ProgressViewIOSDemo')
+                                this.props.navigation.navigate('ProgressViewIOSDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="PickerIOSDemo"
                             onPress={() => {
                                 console.log('YINDONG:PickerIOSDemo')
-                                this.props.navigation.navigate('PickerIOSDemo')
+                                this.props.navigation.navigate('PickerIOSDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="MaskedViewIOSDemo"
                             onPress={() => {
                                 console.log('YINDONG:MaskedViewIOSDemo')
-                                this.props.navigation.navigate('MaskedViewIOSDemo')
+                                this.props.navigation.navigate('MaskedViewIOSDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="DatePickerIOSDemo"
                             onPress={() => {
                                 console.log('YINDONG:DatePickerIOSDemo')
-                                this.props.navigation.navigate('DatePickerIOSDemo')
-                            }}
-                        />
-                        <Button
-                            title="ActivityIndicatorDemo"
-                            onPress={() => {
-                                console.log('YINDONG:ActivityIndicatorDemo')
-                                this.props.navigation.navigate('ActivityIndicatorDemo')
+                                this.props.navigation.navigate('DatePickerIOSDemo', { /* params go here */ })
                             }}
                         />
                     </View>

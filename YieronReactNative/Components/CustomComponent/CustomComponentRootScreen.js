@@ -11,7 +11,7 @@ import {
     SafeAreaView,
     ScrollView,
 } from "react-native";
-import LogoTitle from "./LogoTitle";
+import LogoTitle from "../LogoTitle";
 
 export default class CustomComponentRootScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
@@ -46,24 +46,16 @@ export default class CustomComponentRootScreen extends React.Component {
                             title="RCTGIFViewDemo"
                             onPress={() => {
                                 console.log('YINDONG:RCTGIFViewDemo')
-                                this.props.navigation.navigate('RCTGIFViewDemo')
+                                this.props.navigation.navigate('RCTGIFViewDemo', { /* params go here */ })
                             }}
                         />
                         <Button
                             title="VideoViewDemo"
                             onPress={() => {
                                 console.log('YINDONG:VideoViewDemo')
-                                this.props.navigation.navigate('VideoViewDemo')
+                                this.props.navigation.navigate('VideoViewDemo', { /* params go here */ })
                             }}
                         />
-                        <Button
-                            title="SampleAppMovies"
-                            onPress={() => {
-                                console.log('YINDONG:SampleAppMovies')
-                                this.props.navigation.navigate('SampleAppMovies')
-                            }}
-                        />
-                        
                     </View>
                 </ScrollView>
             </SafeAreaView>

@@ -5,9 +5,9 @@ import {
     createDrawerNavigator, createSwitchNavigator
 } from "react-navigation";
 import ComponentRootScreen from './YieronReactNative/Components/ComponentRootScreen';
-import AndroidOnlyRootScreen from './YieronReactNative/Components/AndroidOnlyRootScreen';
-import iOSOnlyRootScreen from './YieronReactNative/Components/iOSOnlyRootScreen';
-import CustomComponentRootScreen from './YieronReactNative/Components/CustomComponentRootScreen';
+import AndroidOnlyRootScreen from './YieronReactNative/Components/AndroidOnly/AndroidOnlyRootScreen';
+import iOSOnlyRootScreen from './YieronReactNative/Components/iOSOnly/iOSOnlyRootScreen';
+import CustomComponentRootScreen from './YieronReactNative/Components/CustomComponent/CustomComponentRootScreen';
 import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
 import ModalScreen from './YieronReactNative/Components/ModalScreen';
 import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
@@ -67,15 +67,6 @@ const ComponentNavigator = createStackNavigator(
         Setting: {
             screen: SettingsScreen
         },
-        AssetExample: {
-            screen: AssetExample
-        },
-        ScreenWithCustomBackBehavior: {
-            screen: ScreenWithCustomBackBehavior
-        },
-        VibrateScreen: {
-            screen: VibrateScreen
-        },
         LayoutAnimationScreen: {
             screen: LayoutAnimationScreen
         },
@@ -93,16 +84,7 @@ const ComponentNavigator = createStackNavigator(
         },
         AnimatedDemoScreen: {
             screen: AnimatedDemoScreen
-        },
-        ClipboardDemoScreen: {
-            screen: ClipboardDemoScreen
-        },
-        BackHandlerDemo: {
-            screen: BackHandlerDemo
-        },
-        AsyncStorageDemo: {
-            screen: AsyncStorageDemo
-        },
+        }, 
         AppStateDemo: {
             screen: AppStateDemo
         },
@@ -136,9 +118,7 @@ const ComponentNavigator = createStackNavigator(
         SliderDemo: {
             screen: SliderDemo
         },
-        SegmentedControlIOSDemo: {
-            screen: SegmentedControlIOSDemo
-        },
+       
         ScrollViewDemo: {
             screen: ScrollViewDemo
         },
@@ -210,6 +190,24 @@ const AndroidOnlyNavigator = createStackNavigator(
         ToastAndroidScreen: {
             screen: ToastAndroidScreen
         },
+        ClipboardDemoScreen: {
+            screen: ClipboardDemoScreen
+        },
+        BackHandlerDemo: {
+            screen: BackHandlerDemo
+        },
+        AsyncStorageDemo: {
+            screen: AsyncStorageDemo
+        },
+        VibrateScreen: {
+            screen: VibrateScreen
+        },
+        AssetExample: {
+            screen: AssetExample
+        },
+        ScreenWithCustomBackBehavior: {
+            screen: ScreenWithCustomBackBehavior
+        },
     },
     //**********************************************************
     //**********************************************************
@@ -258,6 +256,9 @@ const iOSOnlyNavigator = createStackNavigator(
         },
         SnapshotViewIOSDemo: {
             screen: SnapshotViewIOSDemo
+        },
+        SegmentedControlIOSDemo: {
+            screen: SegmentedControlIOSDemo
         },
     },
     //**********************************************************
