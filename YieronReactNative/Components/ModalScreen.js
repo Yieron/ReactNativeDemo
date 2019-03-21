@@ -40,7 +40,7 @@ class ModalScreen extends Component {
         onLayout={({ nativeEvent }) => this.mainViewOnLayout(nativeEvent)}
       >
         <Modal
-          animationType="slide"
+          animationType="fade"  //fade  淡入   none    slide
           transparent={true}
           visible={this.state.modalVisible}
           onRequestClose={() => {
@@ -64,7 +64,7 @@ class ModalScreen extends Component {
         </Modal>
 
         <TouchableHighlight
-          onPress={()  => {
+          onPress={() => {
             this.setModalVisible(true);
           }}
         >

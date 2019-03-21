@@ -20,6 +20,20 @@ const NativeTouchable = Platform.select({
     android: TouchableNativeFeedback,
 })
 class MyDemoView extends Component {
+    static navigationOptions = ({ navigation, navigationOptions }) => {
+        const { params } = navigation.state;
+        console.log('YINDONG_params', params);
+
+        return {
+            title: params ? params.title : 'A Nested Details Screen',
+            /* These values are used instead of the shared configuration! */
+            headerStyle: {
+                backgroundColor: navigationOptions.headerTintColor,
+            },
+            headerTintColor: navigationOptions.headerStyle.backgroundColor,
+        };
+    };
+
     constructor(props) {
         super(props);
         this.state = {

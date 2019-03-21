@@ -14,7 +14,7 @@ import {
 import LogoTitle from "../LogoTitle";
 
 export default class CustomComponentRootScreen extends React.Component {
-    static navigationOptions = ({ navigation }) => {
+    static navigationOptions = ({ navigation, navigationOptions }) => {
         return {
             // title: 'Home',
             /**
@@ -46,14 +46,20 @@ export default class CustomComponentRootScreen extends React.Component {
                             title="RCTGIFViewDemo"
                             onPress={() => {
                                 console.log('YINDONG:RCTGIFViewDemo')
-                                this.props.navigation.navigate('RCTGIFViewDemo', { /* params go here */ })
+                                this.props.navigation.navigate('RCTGIFViewDemo', {
+                                    /* params go here */
+                                    // increaseCount: 0
+                                })
                             }}
                         />
                         <Button
                             title="VideoViewDemo"
                             onPress={() => {
                                 console.log('YINDONG:VideoViewDemo')
-                                this.props.navigation.navigate('VideoViewDemo', { /* params go here */ })
+                                this.props.navigation.navigate('VideoViewDemo', {
+                                    /* params go here */
+                                    title: 'video'
+                                })
                             }}
                         />
                     </View>

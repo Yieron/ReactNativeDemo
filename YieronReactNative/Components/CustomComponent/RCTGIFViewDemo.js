@@ -6,15 +6,36 @@ import {
     View,
     UIManager,
     findNodeHandle,
+    Button,
 } from 'react-native';
+import LogoTitle from '../LogoTitle';
 
 import RCTGIFView from './RCTGIFView';
+import { YieronColor } from '../../constants/YieronColor';
 
 let GIF_IMAGE_ARRAY = [
     'https://cimili-cdn-gif-of-track.cimili.com/v2_gif_266_6967.gif',
     'https://cimili-cdn-gif-of-track.cimili.com/v2_gif_505_13547.gif'
 ];
 export default class RCTGIFViewDemo extends Component {
+    static navigationOptions = ({ navigation }) => {
+        return {
+            headerTitle: <LogoTitle />,
+            headerRight: (
+                <Button
+                    onPress={() => {
+                        let count = navigation.getParam('increaseCount') ? navigation.getParam('increaseCount') : 0;
+                        count++;
+                        alert(count)
+                    }
+                    }
+                    title="+1"
+                    color={YieronColor.colorBlue}
+                />
+            ),
+        };
+    };
+
     constructor(props) {
         super(props);
 
@@ -24,13 +45,12 @@ export default class RCTGIFViewDemo extends Component {
         this.state = {
             isPlaying: true,
             image: '图片地址',
-            gifImage: GIF_IMAGE_ARRAY[this.index]
+            gifImage: GIF_IMAGE_ARRAY[this.index],
+            count: 0,
         }
     }
 
-
     render() {
-
         return (
             <View style={styles.container}>
                 <RCTGIFView

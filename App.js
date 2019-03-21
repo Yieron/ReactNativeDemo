@@ -84,7 +84,7 @@ const ComponentNavigator = createStackNavigator(
         },
         AnimatedDemoScreen: {
             screen: AnimatedDemoScreen
-        }, 
+        },
         AppStateDemo: {
             screen: AppStateDemo
         },
@@ -118,7 +118,7 @@ const ComponentNavigator = createStackNavigator(
         SliderDemo: {
             screen: SliderDemo
         },
-       
+
         ScrollViewDemo: {
             screen: ScrollViewDemo
         },
@@ -414,6 +414,9 @@ export default class App extends React.Component {
     render() {
         return <AppContainer
             uriPrefix="/app"
+            onNavigationStateChange={(prevState, newState, action) => {
+                console.log('YINDONG_prevState, newState, action:', prevState, newState, action);
+            }}
             ref={nav => {
                 this.navigator = nav;
             }}
