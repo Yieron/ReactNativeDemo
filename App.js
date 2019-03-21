@@ -118,7 +118,9 @@ const ComponentNavigator = createStackNavigator(
         SliderDemo: {
             screen: SliderDemo
         },
-
+        ModalScreen: {
+            screen: ModalScreen
+        },
         ScrollViewDemo: {
             screen: ScrollViewDemo
         },
@@ -130,9 +132,6 @@ const ComponentNavigator = createStackNavigator(
         },
         PickerDemo: {
             screen: PickerDemo
-        },
-        ModalScreen: {
-            screen: ModalScreen
         },
         KeyboardAvoidingViewDemo: {
             screen: KeyboardAvoidingViewDemo
@@ -280,6 +279,7 @@ const iOSOnlyNavigator = createStackNavigator(
         navigationOptions: {
             tabBarLabel: 'iOS平台独有!',
         },
+        mode: 'modal',  
     },
 
     //**********************************************************
@@ -321,25 +321,6 @@ const CustomComponentNavigator = createStackNavigator(
 
     //**********************************************************
     //**********************************************************
-);
-
-
-/**
- * 创建一个modal堆栈
- */
-const RootStack = createStackNavigator(
-    {
-        Main: {
-            screen: WelcomeScreen,
-        },
-        MyModal: {
-            screen: ModalScreen,
-        },
-    },
-    {
-        mode: 'modal',
-        headerMode: 'none',
-    }
 );
 
 const TabNavigator = createBottomTabNavigator(
