@@ -4,7 +4,10 @@ import {
     createStackNavigator, createAppContainer, createBottomTabNavigator,
     createDrawerNavigator, createSwitchNavigator
 } from "react-navigation";
-import HomeScreen from './YieronReactNative/Components/HomeScreen';
+import ComponentRootScreen from './YieronReactNative/Components/ComponentRootScreen';
+import AndroidOnlyRootScreen from './YieronReactNative/Components/AndroidOnlyRootScreen';
+import iOSOnlyRootScreen from './YieronReactNative/Components/iOSOnlyRootScreen';
+import CustomComponentRootScreen from './YieronReactNative/Components/CustomComponentRootScreen';
 import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
 import ModalScreen from './YieronReactNative/Components/ModalScreen';
 import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
@@ -53,20 +56,16 @@ import RCTGIFViewDemo from './YieronReactNative/Components/CustomComponent/RCTGI
 import VideoViewDemo from './YieronReactNative/Components/CustomComponent/VideoViewDemo';
 import SampleAppMovies from './YieronReactNative/Components/List/SampleAppMovies';
 
-const AppNavigator = createStackNavigator(
+const ComponentNavigator = createStackNavigator(
     {
-        //路由的唯一必需配置项是screen（此项设置一个组件）
-        Home: {
-            screen: HomeScreen
+        ComponentRootScreen: {
+            screen: ComponentRootScreen
         },
         Welcome: {
             screen: WelcomeScreen
         },
         Setting: {
             screen: SettingsScreen
-        },
-        iphoneXSupport: {
-            screen: iphoneXSupportScreen
         },
         AssetExample: {
             screen: AssetExample
@@ -76,12 +75,6 @@ const AppNavigator = createStackNavigator(
         },
         VibrateScreen: {
             screen: VibrateScreen
-        },
-        ToastAndroidScreen: {
-            screen: ToastAndroidScreen
-        },
-        TimePickerAndroidScreen: {
-            screen: TimePickerAndroidScreen
         },
         LayoutAnimationScreen: {
             screen: LayoutAnimationScreen
@@ -131,12 +124,6 @@ const AppNavigator = createStackNavigator(
         VirtualizedListDemo: {
             screen: VirtualizedListDemo
         },
-        ViewPagerAndroidDemo: {
-            screen: ViewPagerAndroidDemo
-        },
-        SnapshotViewIOSDemo: {
-            screen: SnapshotViewIOSDemo
-        },
         TouchableOpacityDemo: {
             screen: TouchableOpacityDemo
         },
@@ -161,41 +148,17 @@ const AppNavigator = createStackNavigator(
         setTimeoutDemo: {
             screen: setTimeoutDemo
         },
-        ProgressViewIOSDemo: {
-            screen: ProgressViewIOSDemo
-        },
-        ProgressBarAndroidDemo: {
-            screen: ProgressBarAndroidDemo
-        },
-        PickerIOSDemo: {
-            screen: PickerIOSDemo
-        },
         PickerDemo: {
             screen: PickerDemo
         },
         ModalScreen: {
             screen: ModalScreen
         },
-        MaskedViewIOSDemo: {
-            screen: MaskedViewIOSDemo
-        },
         KeyboardAvoidingViewDemo: {
             screen: KeyboardAvoidingViewDemo
         },
-        DrawerLayoutAndroidDemo: {
-            screen: DrawerLayoutAndroidDemo
-        },
-        DatePickerIOSDemo: {
-            screen: DatePickerIOSDemo
-        },
         ActivityIndicatorDemo: {
             screen: ActivityIndicatorDemo
-        },
-        RCTGIFViewDemo: {
-            screen: RCTGIFViewDemo
-        },
-        VideoViewDemo: {
-            screen: VideoViewDemo
         },
         SampleAppMovies: {
             screen: SampleAppMovies
@@ -208,7 +171,7 @@ const AppNavigator = createStackNavigator(
     // 如果界面中配置了，那么界面上的defaultNavigationOptions会覆盖这里的。
     // 优先界面的。
     {
-        initialRouteName: "Home",
+        initialRouteName: "ComponentRootScreen",
         defaultNavigationOptions: {
             headerTintColor: '#fff',
             headerStyle: {
@@ -219,7 +182,7 @@ const AppNavigator = createStackNavigator(
             },
         },
         navigationOptions: {
-            tabBarLabel: 'Home!',
+            tabBarLabel: 'RN组件',
         },
     },
 
@@ -227,13 +190,146 @@ const AppNavigator = createStackNavigator(
     //**********************************************************
 );
 
+const AndroidOnlyNavigator = createStackNavigator(
+    {
+        AndroidOnlyRootScreen: {
+            screen: AndroidOnlyRootScreen
+        },
+        DrawerLayoutAndroidDemo: {
+            screen: DrawerLayoutAndroidDemo
+        },
+        ProgressBarAndroidDemo: {
+            screen: ProgressBarAndroidDemo
+        },
+        ViewPagerAndroidDemo: {
+            screen: ViewPagerAndroidDemo
+        },
+        TimePickerAndroidScreen: {
+            screen: TimePickerAndroidScreen
+        },
+        ToastAndroidScreen: {
+            screen: ToastAndroidScreen
+        },
+    },
+    //**********************************************************
+    //**********************************************************
+    // 跨页面共享通用的 navigationOptions
+    // 如果界面中配置了，那么界面上的defaultNavigationOptions会覆盖这里的。
+    // 优先界面的。
+    {
+        initialRouteName: "AndroidOnlyRootScreen",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'Android平台仅有',
+        },
+    },
+
+    //**********************************************************
+    //**********************************************************
+);
+
+const iOSOnlyNavigator = createStackNavigator(
+    {
+        iOSOnlyRootScreen: {
+            screen: iOSOnlyRootScreen
+        },
+        iphoneXSupport: {
+            screen: iphoneXSupportScreen
+        },
+        DatePickerIOSDemo: {
+            screen: DatePickerIOSDemo
+        },
+        MaskedViewIOSDemo: {
+            screen: MaskedViewIOSDemo
+        },
+        PickerIOSDemo: {
+            screen: PickerIOSDemo
+        },
+        ProgressViewIOSDemo: {
+            screen: ProgressViewIOSDemo
+        },
+        SnapshotViewIOSDemo: {
+            screen: SnapshotViewIOSDemo
+        },
+    },
+    //**********************************************************
+    //**********************************************************
+    // 跨页面共享通用的 navigationOptions
+    // 如果界面中配置了，那么界面上的defaultNavigationOptions会覆盖这里的。
+    // 优先界面的。
+    {
+        initialRouteName: "iOSOnlyRootScreen",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'iOS平台独有!',
+        },
+    },
+
+    //**********************************************************
+    //**********************************************************
+);
+
+const CustomComponentNavigator = createStackNavigator(
+    {
+        CustomComponentRootScreen: {
+            screen: CustomComponentRootScreen
+        },
+        RCTGIFViewDemo: {
+            screen: RCTGIFViewDemo
+        },
+        VideoViewDemo: {
+            screen: VideoViewDemo
+        },
+    },
+    //**********************************************************
+    //**********************************************************
+    // 跨页面共享通用的 navigationOptions
+    // 如果界面中配置了，那么界面上的defaultNavigationOptions会覆盖这里的。
+    // 优先界面的。
+    {
+        initialRouteName: "CustomComponentRootScreen",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'RN自定义Android组件!',
+        },
+    },
+
+    //**********************************************************
+    //**********************************************************
+);
+
+
 /**
  * 创建一个modal堆栈
  */
 const RootStack = createStackNavigator(
     {
         Main: {
-            screen: AppNavigator,
+            screen: WelcomeScreen,
         },
         MyModal: {
             screen: ModalScreen,
@@ -247,11 +343,13 @@ const RootStack = createStackNavigator(
 
 const TabNavigator = createBottomTabNavigator(
     {
-        Welcome: WelcomeScreen,
-        Home: HomeScreen,
+        Yin: ComponentNavigator,
+        Dong: AndroidOnlyNavigator,
+        Xia: iOSOnlyNavigator,
+        Yully: CustomComponentNavigator,
     },
     {
-        initialRouteName: "Home",
+        initialRouteName: "Yin",
         defaultNavigationOptions: {
             headerTintColor: '#fff',
             headerStyle: {
@@ -262,7 +360,7 @@ const TabNavigator = createBottomTabNavigator(
             },
         },
         navigationOptions: {
-            tabBarLabel: 'Home!',
+            tabBarLabel: 'Yin!',
         },
     },
 );
@@ -270,10 +368,9 @@ const TabNavigator = createBottomTabNavigator(
 const DrawerNavigator = createDrawerNavigator(
     {
         Welcome: WelcomeScreen,
-        Home: HomeScreen,
     },
     {
-        initialRouteName: "Home",
+        initialRouteName: "Welcome",
         defaultNavigationOptions: {
             headerTintColor: '#fff',
             headerStyle: {
@@ -292,10 +389,9 @@ const DrawerNavigator = createDrawerNavigator(
 const SwitchNavigator = createSwitchNavigator(
     {
         Welcome: WelcomeScreen,
-        Home: HomeScreen,
     },
     {
-        initialRouteName: "Home",
+        initialRouteName: "Welcome",
         defaultNavigationOptions: {
             headerTintColor: '#fff',
             headerStyle: {
@@ -311,7 +407,7 @@ const SwitchNavigator = createSwitchNavigator(
     },
 )
 
-const AppContainer = createAppContainer(AppNavigator);
+const AppContainer = createAppContainer(TabNavigator);
 
 export default class App extends React.Component {
     render() {

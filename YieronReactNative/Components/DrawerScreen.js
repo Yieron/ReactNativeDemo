@@ -52,9 +52,6 @@ const styles = StyleSheet.create({
 });
 
 const MyDrawerNavigator = createDrawerNavigator({
-    Home: {
-        screen: MyHomeScreen,
-    },
     Notifications: {
         screen: MyNotificationsScreen,
     },

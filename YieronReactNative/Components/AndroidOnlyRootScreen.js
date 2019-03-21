@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import LogoTitle from "./LogoTitle";
 
-export default class HomeScreen extends React.Component {
+export default class AndroidOnlyRootScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
         return {
             // title: 'Home',
@@ -42,41 +42,6 @@ export default class HomeScreen extends React.Component {
             <SafeAreaView>
                 <ScrollView>
                     <View style={styles.container}>
-                        <Button
-                            title="Go to Welcome push"
-                            onPress={() => {
-                                console.log('YINDONG:push')
-                                this.props.navigation.push('Welcome')
-                            }}
-                        />
-                        <Button
-                            title="Go to Welcome navigate"
-                            onPress={() => {
-                                console.log('YINDONG:navigate')
-                                this.props.navigation.navigate('Welcome')
-                            }}
-                        />
-                        <Button
-                            title="Show Modal"
-                            onPress={() => {
-                                console.log('YINDONG:showModal')
-                                this.props.navigation.push('MyModal')
-                            }}
-                        />
-                        <Button
-                            title="Go to Settings"
-                            onPress={() => {
-                                console.log('YINDONG:showModal')
-                                this.props.navigation.push('Setting')
-                            }}
-                        />
-                        <Button
-                            title="Go to iphoneXSupportScreen navigate"
-                            onPress={() => {
-                                console.log('YINDONG:navigate')
-                                this.props.navigation.navigate('iphoneXSupport')
-                            }}
-                        />
                         <Button
                             title="Go to AssetExample navigate"
                             onPress={() => {
@@ -218,40 +183,13 @@ export default class HomeScreen extends React.Component {
                             }}
                         />
                         <Button
-                            title="VirtualizedListDemo"
-                            onPress={() => {
-                                console.log('YINDONG:VirtualizedListDemo')
-                                this.props.navigation.navigate('VirtualizedListDemo')
-                            }}
-                        />
-                        <Button
-                            title="SectionListDemo"
-                            onPress={() => {
-                                console.log('YINDONG:SectionListDemo')
-                                this.props.navigation.navigate('SectionListDemo')
-                            }}
-                        />
-                        <Button
-                            title="FlatListDemo"
-                            onPress={() => {
-                                console.log('YINDONG:FlatListDemo')
-                                this.props.navigation.navigate('FlatListDemo')
-                            }}
-                        />
-                        <Button
                             title="ViewPagerAndroidDemo"
                             onPress={() => {
                                 console.log('YINDONG:ViewPagerAndroidDemo')
                                 this.props.navigation.navigate('ViewPagerAndroidDemo')
                             }}
                         />
-                        <Button
-                            title="SnapshotViewIOSDemo"
-                            onPress={() => {
-                                console.log('YINDONG:SnapshotViewIOSDemo')
-                                this.props.navigation.navigate('SnapshotViewIOSDemo')
-                            }}
-                        />
+
                         <Button
                             title="TouchableOpacityDemo"
                             onPress={() => {
@@ -259,46 +197,12 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('TouchableOpacityDemo')
                             }}
                         />
-                        <Button
-                            title="TextInputDemo"
-                            onPress={() => {
-                                console.log('YINDONG:TextInputDemo')
-                                this.props.navigation.navigate('TextInputDemo')
-                            }}
-                        />
-                        <Button
-                            title="TextDemo"
-                            onPress={() => {
-                                console.log('YINDONG:TextDemo')
-                                this.props.navigation.navigate('TextDemo')
-                            }}
-                        />
+
                         <Button
                             title="SliderDemo"
                             onPress={() => {
                                 console.log('YINDONG:SliderDemo')
                                 this.props.navigation.navigate('SliderDemo')
-                            }}
-                        />
-                        <Button
-                            title="SegmentedControlIOSDemo"
-                            onPress={() => {
-                                console.log('YINDONG:SegmentedControlIOSDemo')
-                                this.props.navigation.navigate('SegmentedControlIOSDemo')
-                            }}
-                        />
-                        <Button
-                            title="ScrollViewDemo"
-                            onPress={() => {
-                                console.log('YINDONG:ScrollViewDemo')
-                                this.props.navigation.navigate('ScrollViewDemo')
-                            }}
-                        />
-                        <Button
-                            title="ProgressViewIOSDemo"
-                            onPress={() => {
-                                console.log('YINDONG:ProgressViewIOSDemo')
-                                this.props.navigation.navigate('ProgressViewIOSDemo')
                             }}
                         />
                         <Button
@@ -323,13 +227,6 @@ export default class HomeScreen extends React.Component {
                             }}
                         />
                         <Button
-                            title="PickerIOSDemo"
-                            onPress={() => {
-                                console.log('YINDONG:PickerIOSDemo')
-                                this.props.navigation.navigate('PickerIOSDemo')
-                            }}
-                        />
-                        <Button
                             title="PickerDemo"
                             onPress={() => {
                                 console.log('YINDONG:PickerDemo')
@@ -341,13 +238,6 @@ export default class HomeScreen extends React.Component {
                             onPress={() => {
                                 console.log('YINDONG:ModalScreen')
                                 this.props.navigation.navigate('ModalScreen')
-                            }}
-                        />
-                        <Button
-                            title="MaskedViewIOSDemo"
-                            onPress={() => {
-                                console.log('YINDONG:MaskedViewIOSDemo')
-                                this.props.navigation.navigate('MaskedViewIOSDemo')
                             }}
                         />
                         <Button
@@ -364,13 +254,7 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('DrawerLayoutAndroidDemo')
                             }}
                         />
-                        <Button
-                            title="DatePickerIOSDemo"
-                            onPress={() => {
-                                console.log('YINDONG:DatePickerIOSDemo')
-                                this.props.navigation.navigate('DatePickerIOSDemo')
-                            }}
-                        />
+
                         <Button
                             title="ActivityIndicatorDemo"
                             onPress={() => {
@@ -399,7 +283,7 @@ export default class HomeScreen extends React.Component {
                                 this.props.navigation.navigate('SampleAppMovies')
                             }}
                         />
-                        
+
                     </View>
                 </ScrollView>
             </SafeAreaView>
