@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Image, SafeAreaView, Linking, Platform, AlertIOS } from 'react-native';
+import { Text, View, StyleSheet, Image, SafeAreaView, Linking, StatusBar, Platform, AlertIOS } from 'react-native';
+const isAndroid = Platform.OS === 'android';
 
 export default class AssetExample extends Component {
     componentDidMount() {
+        this._navListener = this.props.navigation.addListener('didFocus', () => {
+            StatusBar.setBarStyle('light-content');
+            isAndroid && StatusBar.setBackgroundColor('#6a51ae');
+        });
         Linking.getInitialURL().then((url) => {
             //url == null
             if (url) {
@@ -12,26 +17,29 @@ export default class AssetExample extends Component {
         }).catch(err => console.error('An error occurred', err));
 
         // Linking.openURL(url).catch(err => console.error('An error occurred', err));
-
-        AlertIOS.alert(
-            "Update available",
-            "Keep your app up to date to enjoy the latest features",
-            [
-                {
-                    text: "Cancel",
-                    onPress: () => console.log("Cancel Pressed"),
-                    style: "cancel"
-                },
-                {
-                    text: "Install",
-                    onPress: () => {
-                        let url;
-                        Platform.OS === 'ios' ? url = "https://github.com/xiehui999" : url = "tel:1008611";
-                        Linking.openURL('app-settings:').catch(err => console.log('error', err)); //iOS端打开APP的系统设置界面
+        if (isAndroid) {
+            
+        } else {
+            AlertIOS.alert(
+                "Update available",
+                "Keep your app up to date to enjoy the latest features",
+                [
+                    {
+                        text: "Cancel",
+                        onPress: () => console.log("Cancel Pressed"),
+                        style: "cancel"
+                    },
+                    {
+                        text: "Install",
+                        onPress: () => {
+                            let url;
+                            Platform.OS === 'ios' ? url = "https://github.com/xiehui999" : url = "tel:1008611";
+                            Linking.openURL('app-settings:').catch(err => console.log('error', err)); //iOS端打开APP的系统设置界面
+                        }
                     }
-                }
-            ]
-        );
+                ]
+            );
+        }   
     }
 
     render() {
@@ -45,6 +53,10 @@ export default class AssetExample extends Component {
                 </View>
             </SafeAreaView>
         );
+    }
+
+    componentWillUnmount() {
+        this._navListener.remove();
     }
 }
 

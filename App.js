@@ -362,7 +362,7 @@ const TabNavigator = createBottomTabNavigator(
 const SwitchNavigator = createSwitchNavigator(
     {
         TabNavigator: TabNavigator,
-        AuthStack:AuthStack,
+        AuthStack: AuthStack,
     },
     {
         initialRouteName: "AuthStack",

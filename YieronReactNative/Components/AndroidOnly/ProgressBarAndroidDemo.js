@@ -9,8 +9,11 @@ import {
     Button,
     TouchableHighlight,
     ProgressBarAndroid,
+    StatusBar,
 } from 'react-native';
 import { withNavigationFocus } from "react-navigation";
+import { YieronColor } from '../../constants/YieronColor';
+const isAndroid = Platform.OS === 'android';
 
 const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
@@ -48,6 +51,10 @@ class ProgressBarAndroidDemo extends Component {
 
     componentDidMount() {
         console.log('YINDONG-componentDidMount');
+        this._navListener = this.props.navigation.addListener('didFocus', () => {
+            StatusBar.setBarStyle('dark-content');
+            isAndroid && StatusBar.setBackgroundColor(YieronColor.colorBlue);
+          });
     }
 
     componentWillReceiveProps(nextProps) {
@@ -77,7 +84,7 @@ class ProgressBarAndroidDemo extends Component {
 
     componentWillUnmount() {
         console.log('YINDONG-componentWillUnmount');
-
+        this._navListener.remove();
     }
 }
 
