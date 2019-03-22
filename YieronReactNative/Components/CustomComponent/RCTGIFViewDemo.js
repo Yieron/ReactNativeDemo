@@ -7,6 +7,7 @@ import {
     UIManager,
     findNodeHandle,
     Button,
+    Image,
 } from 'react-native';
 import LogoTitle from '../LogoTitle';
 
@@ -18,22 +19,32 @@ let GIF_IMAGE_ARRAY = [
     'https://cimili-cdn-gif-of-track.cimili.com/v2_gif_505_13547.gif'
 ];
 export default class RCTGIFViewDemo extends Component {
-    static navigationOptions = ({ navigation }) => {
-        return {
-            headerTitle: <LogoTitle />,
-            headerRight: (
-                <Button
-                    onPress={() => {
-                        let count = navigation.getParam('increaseCount') ? navigation.getParam('increaseCount') : 0;
-                        count++;
-                        alert(count)
-                    }
-                    }
-                    title="+1"
-                    color={YieronColor.colorBlue}
-                />
-            ),
-        };
+    // static navigationOptions = ({ navigation }) => {
+    //     return {
+    //         headerTitle: <LogoTitle />,
+    //         headerRight: (
+    //             <Button
+    //                 onPress={() => {
+    //                     let count = navigation.getParam('increaseCount') ? navigation.getParam('increaseCount') : 0;
+    //                     count++;
+    //                     alert(count)
+    //                 }
+    //                 }
+    //                 title="+1"
+    //                 color={YieronColor.colorBlue}
+    //             />
+    //         ),
+    //     };
+    // };
+
+    static navigationOptions = {
+        drawerLabel: 'Notifications',
+        drawerIcon: ({ tintColor }) => (
+            <Image
+                source={require('../../assets/img/origin_heart.jpeg')}
+                style={[{ width: 24, height: 24, }, { tintColor: tintColor }]}
+            />
+        ),
     };
 
     constructor(props) {
@@ -50,6 +61,11 @@ export default class RCTGIFViewDemo extends Component {
         }
     }
 
+    componentDidMount() {
+        const parent = this.props.navigation.dangerouslyGetParent();
+        const isDrawerOpen = parent && parent.state && parent.state.isDrawerOpen;
+        console.log('YINDONG_isDrawerOpen', isDrawerOpen);
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -73,6 +89,23 @@ export default class RCTGIFViewDemo extends Component {
                         style={styles.btn}
                         onPress={() => this.changeGifImage()}>
                         切换
+                    </Text>
+                </View>
+                <View style={styles.controller}>
+                    <Text
+                        style={styles.btn}
+                        onPress={() => this.openDrawer()}>
+                        打开抽屉
+                    </Text>
+                    <Text
+                        style={styles.btn}
+                        onPress={() => this.closeDrawer()}>
+                        关闭抽屉
+                    </Text>
+                    <Text
+                        style={styles.btn}
+                        onPress={() => this.toggleDrawer()}>
+                        切换抽屉
                     </Text>
                 </View>
             </View >
@@ -117,6 +150,18 @@ export default class RCTGIFViewDemo extends Component {
      */
     stopGif() {
         this.setState({ isPlaying: false })
+    }
+
+    openDrawer() {
+        this.props.navigation.openDrawer();
+    }
+
+    closeDrawer() {
+        this.props.navigation.closeDrawer();
+    }
+
+    toggleDrawer(){
+        this.props.navigation.toggleDrawer();
     }
 }
 

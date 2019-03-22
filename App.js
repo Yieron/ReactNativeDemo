@@ -1,8 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import {
     createStackNavigator, createAppContainer, createBottomTabNavigator,
-    createDrawerNavigator, createSwitchNavigator
+    createDrawerNavigator, createSwitchNavigator,
 } from "react-navigation";
 import ComponentRootScreen from './YieronReactNative/Components/ComponentRootScreen';
 import AndroidOnlyRootScreen from './YieronReactNative/Components/AndroidOnly/AndroidOnlyRootScreen';
@@ -55,7 +55,9 @@ import ActivityIndicatorDemo from './YieronReactNative/Components/progressbar/Ac
 import RCTGIFViewDemo from './YieronReactNative/Components/CustomComponent/RCTGIFViewDemo';
 import VideoViewDemo from './YieronReactNative/Components/CustomComponent/VideoViewDemo';
 import SampleAppMovies from './YieronReactNative/Components/List/SampleAppMovies';
+import SignInScreen from './YieronReactNative/Components/SignInScreen';
 
+//createStackNavigator
 const ComponentNavigator = createStackNavigator(
     {
         ComponentRootScreen: {
@@ -169,6 +171,7 @@ const ComponentNavigator = createStackNavigator(
     //**********************************************************
 );
 
+//createStackNavigator
 const AndroidOnlyNavigator = createStackNavigator(
     {
         AndroidOnlyRootScreen: {
@@ -233,6 +236,7 @@ const AndroidOnlyNavigator = createStackNavigator(
     //**********************************************************
 );
 
+//createStackNavigator
 const iOSOnlyNavigator = createStackNavigator(
     {
         iOSOnlyRootScreen: {
@@ -279,14 +283,15 @@ const iOSOnlyNavigator = createStackNavigator(
         navigationOptions: {
             tabBarLabel: 'iOS平台独有!',
         },
-        mode: 'modal',  
+        mode: 'modal',
     },
 
     //**********************************************************
     //**********************************************************
 );
 
-const CustomComponentNavigator = createStackNavigator(
+//createDrawerNavigator
+const CustomComponentNavigator = createDrawerNavigator(
     {
         CustomComponentRootScreen: {
             screen: CustomComponentRootScreen
@@ -323,6 +328,13 @@ const CustomComponentNavigator = createStackNavigator(
     //**********************************************************
 );
 
+const AuthStack = createStackNavigator({
+    SignInScreen: {
+        screen: SignInScreen
+    },
+}, {});
+
+//createBottomTabNavigator
 const TabNavigator = createBottomTabNavigator(
     {
         Yin: ComponentNavigator,
@@ -347,33 +359,13 @@ const TabNavigator = createBottomTabNavigator(
     },
 );
 
-const DrawerNavigator = createDrawerNavigator(
-    {
-        Welcome: WelcomeScreen,
-    },
-    {
-        initialRouteName: "Welcome",
-        defaultNavigationOptions: {
-            headerTintColor: '#fff',
-            headerStyle: {
-                backgroundColor: '#f4511e',
-            },
-            headerTitleStyle: {
-                fontWeight: 'bold',
-            },
-        },
-        navigationOptions: {
-            tabBarLabel: 'Home!',
-        },
-    },
-)
-
 const SwitchNavigator = createSwitchNavigator(
     {
-        Welcome: WelcomeScreen,
+        TabNavigator: TabNavigator,
+        AuthStack:AuthStack,
     },
     {
-        initialRouteName: "Welcome",
+        initialRouteName: "AuthStack",
         defaultNavigationOptions: {
             headerTintColor: '#fff',
             headerStyle: {
@@ -384,12 +376,12 @@ const SwitchNavigator = createSwitchNavigator(
             },
         },
         navigationOptions: {
-            tabBarLabel: 'Home!',
+            tabBarLabel: '登录注册模块!',
         },
     },
 )
 
-const AppContainer = createAppContainer(TabNavigator);
+const AppContainer = createAppContainer(SwitchNavigator);
 
 export default class App extends React.Component {
     render() {
