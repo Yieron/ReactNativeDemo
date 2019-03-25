@@ -56,7 +56,7 @@ import RCTGIFViewDemo from './YieronReactNative/Components/CustomComponent/RCTGI
 import VideoViewDemo from './YieronReactNative/Components/CustomComponent/VideoViewDemo';
 import SampleAppMovies from './YieronReactNative/Components/List/SampleAppMovies';
 import SignInScreen from './YieronReactNative/Components/SignInScreen';
-
+import MyBackButtonView from './YieronReactNative/Components/CustomComponent/MyBackButtonView';
 //createStackNavigator
 const ComponentNavigator = createStackNavigator(
     {
@@ -302,6 +302,9 @@ const CustomComponentNavigator = createDrawerNavigator(
         VideoViewDemo: {
             screen: VideoViewDemo
         },
+        MyBackButtonView: {
+            screen: MyBackButtonView
+        }
     },
     //**********************************************************
     //**********************************************************

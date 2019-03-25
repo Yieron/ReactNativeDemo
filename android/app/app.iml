@@ -163,8 +163,8 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:27.1.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:27.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.11.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.mob:MobCommons:2019.0306.1851@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0@jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.mob:MobCommons:2019.0321.1845@jar" level="project" />
     <orderEntry type="library" name="Gradle: __local_aars__:/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/libs/TencentLocationSdk_v7.1.4.3_r4aa8ac63_20180911_165428.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: cn.sharesdk:ShareSDK-QQ:3.5.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.microsoft.appcenter:appcenter:1.11.2@aar" level="project" />
@@ -184,9 +184,6 @@
     <orderEntry type="library" name="Gradle: com.mob:SDKWrapper:2018.0801.1824@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: cn.sharesdk:ShareSDK-Wechat:3.5.0@jar" level="project" />
-    <orderEntry type="module" module-name="react-native-code-push" />
-    <orderEntry type="module" module-name="appcenter" />
-    <orderEntry type="module" module-name="react-native-gesture-handler" />
     <orderEntry type="module" module-name="react-native-code-push" />
     <orderEntry type="module" module-name="appcenter" />
     <orderEntry type="module" module-name="react-native-gesture-handler" />

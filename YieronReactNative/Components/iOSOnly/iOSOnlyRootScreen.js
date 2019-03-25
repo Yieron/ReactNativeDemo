@@ -34,6 +34,7 @@ export default class iOSOnlyRootScreen extends React.Component {
             ),
             headerBackTitle: '返回',
             headerTruncatedBackTitle: '',
+            tabBarLabel: 'iOSOnlyRootScreen!',
         }
     };
 

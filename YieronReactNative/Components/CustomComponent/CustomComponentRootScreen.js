@@ -34,6 +34,7 @@ export default class CustomComponentRootScreen extends React.Component {
             ),
             headerBackTitle: '返回',
             headerTruncatedBackTitle: '',
+            tabBarLabel: 'CustomComponentRootScreen!',
         }
     };
 
@@ -59,6 +60,16 @@ export default class CustomComponentRootScreen extends React.Component {
                                 this.props.navigation.navigate('VideoViewDemo', {
                                     /* params go here */
                                     title: 'video'
+                                })
+                            }}
+                        />
+                        <Button
+                            title="MyBackButtonView"
+                            onPress={() => {
+                                console.log('YINDONG:MyBackButtonView')
+                                this.props.navigation.navigate('MyBackButtonView', {
+                                    /* params go here */
+                                    title: 'MyBackButtonView'
                                 })
                             }}
                         />
