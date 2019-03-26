@@ -181,7 +181,10 @@ export default class ComponentRootScreen extends React.Component {
                             title="TextDemo"
                             onPress={() => {
                                 console.log('YINDONG:TextDemo')
-                                this.props.navigation.navigate('TextDemo', { /* params go here */ })
+                                this.props.navigation.navigate('TextDemo', {
+                                    /* params go here */
+                                    count:"TextDemo"
+                                })
                             }}
                         />
                         <Button

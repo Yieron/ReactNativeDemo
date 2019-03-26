@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image,ActivityIndicator } from "react-native";
 import {
     createStackNavigator, createAppContainer, createBottomTabNavigator,
     createDrawerNavigator, createSwitchNavigator,
@@ -335,7 +335,9 @@ const AuthStack = createStackNavigator({
     SignInScreen: {
         screen: SignInScreen
     },
-}, {});
+}, {
+
+});
 
 //createBottomTabNavigator
 const TabNavigator = createBottomTabNavigator(
@@ -385,17 +387,20 @@ const SwitchNavigator = createSwitchNavigator(
 )
 
 const AppContainer = createAppContainer(SwitchNavigator);
+const navigationPersistenceKey = __DEV__ ? "NavigationStateDEV" : null;
 
 export default class App extends React.Component {
     render() {
         return <AppContainer
             uriPrefix="/app"
+            persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state
             onNavigationStateChange={(prevState, newState, action) => {
                 console.log('YINDONG_prevState, newState, action:', prevState, newState, action);
             }}
             ref={nav => {
                 this.navigator = nav;
             }}
+            renderLoadingExperimental={() => <ActivityIndicator />}
         />;
     }
 }

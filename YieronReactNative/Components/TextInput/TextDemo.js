@@ -19,7 +19,12 @@ const NativeTouchable = Platform.select({
     ios: TouchableHighlight,
     android: TouchableNativeFeedback,
 })
+
 class TextDemo extends Component {
+    static navigationOptions = ({ navigation }) => ({
+        title: navigation.getParam('count')
+    });
+
     constructor(props) {
         super(props);
         this.state = {
@@ -32,7 +37,7 @@ class TextDemo extends Component {
     }
 
     render() {
-        console.log('YINDONG-render');
+        console.log('YINDONG-render', this.props.navigation.getParam('count'));
 
         return (
             <View style={styles.container}>
@@ -53,12 +58,21 @@ class TextDemo extends Component {
 
                 >
                 </Switch>
+                <Text>
+                    {this.props.navigation.getParam('count')}
+                </Text>
             </View >
         )
     }
 
     componentDidMount() {
         console.log('YINDONG-componentDidMount');
+        const { navigation } = this.props;
+        this.focusListener = navigation.addListener("didFocus", () => {
+            // The screen is focused
+            // Call any action
+            console.log('YINDONG-didFocus');
+        });
     }
 
     componentWillReceiveProps(nextProps) {
@@ -78,16 +92,18 @@ class TextDemo extends Component {
 
     //在componentWillUpdate()和componentDidUpdate()方法中间，会执行render()，重新渲染界面
 
-    componentDidUpdate() {
+    componentDidUpdate(prevProps) {
         console.log('YINDONG-componentDidUpdate');
-        // if (prevProps.isFocused !== this.props.isFocused) {
-        //     // Use the `this.props.isFocused` boolean
-        //     // Call any action
-        // }
+        if (prevProps.isFocused !== this.props.isFocused) {
+            // Use the `this.props.isFocused` boolean
+            // Call any action
+            console.log('prevProps.isFocused !== this.props.isFocused');
+        }
     }
 
     componentWillUnmount() {
         console.log('YINDONG-componentWillUnmount');
+        this.focusListener.remove();
 
     }
 }
