@@ -10,7 +10,6 @@ import iOSOnlyRootScreen from './YieronReactNative/Components/iOSOnly/iOSOnlyRoo
 import CustomComponentRootScreen from './YieronReactNative/Components/CustomComponent/CustomComponentRootScreen';
 import WelcomeScreen from './YieronReactNative/Components/WelcomeScreen';
 import ModalScreen from './YieronReactNative/Components/ModalScreen';
-import SettingsScreen from './YieronReactNative/Components/SettingsScreen';
 import iphoneXSupportScreen from './YieronReactNative/Components/iOSOnly/iphoneXSupportScreen';
 import AssetExample from './YieronReactNative/Components/AssetExample';
 import ScreenWithCustomBackBehavior from './YieronReactNative/Components/hardware/ScreenWithCustomBackBehavior';
@@ -65,9 +64,6 @@ const ComponentNavigator = createStackNavigator(
         },
         Welcome: {
             screen: WelcomeScreen
-        },
-        Setting: {
-            screen: SettingsScreen
         },
         LayoutAnimationScreen: {
             screen: LayoutAnimationScreen
@@ -393,7 +389,7 @@ export default class App extends React.Component {
     render() {
         return <AppContainer
             uriPrefix="/app"
-            persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state
+            persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state，在reload时还回到原先的界面
             onNavigationStateChange={(prevState, newState, action) => {
                 console.log('YINDONG_prevState, newState, action:', prevState, newState, action);
             }}

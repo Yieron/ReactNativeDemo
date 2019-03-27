@@ -64,14 +64,6 @@ export default class ComponentRootScreen extends React.Component {
                             }}
                         />
                         <Button
-                            title="Go to Settings"
-                            onPress={() => {
-                                console.log('YINDONG:showModal')
-                                this.props.navigation.push('Setting', { /* params go here */ })
-                            }}
-                        />
-
-                        <Button
                             title="FrameAnimationDemoScreen"
                             onPress={() => {
                                 console.log('YINDONG:FrameAnimationDemoScreen')
