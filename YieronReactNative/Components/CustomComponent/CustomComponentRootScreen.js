@@ -73,6 +73,16 @@ export default class CustomComponentRootScreen extends React.Component {
                                 })
                             }}
                         />
+                        <Button
+                            title="LuckyCoffeeView"
+                            onPress={() => {
+                                console.log('YINDONG:LuckyCoffeeView')
+                                this.props.navigation.navigate('LuckyCoffeeView', {
+                                    /* params go here */
+                                    title: 'LuckyCoffeeView'
+                                })
+                            }}
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>

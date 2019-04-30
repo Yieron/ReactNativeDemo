@@ -56,6 +56,7 @@ import VideoViewDemo from './YieronReactNative/Components/CustomComponent/VideoV
 import SampleAppMovies from './YieronReactNative/Components/List/SampleAppMovies';
 import SignInScreen from './YieronReactNative/Components/SignInScreen';
 import MyBackButtonView from './YieronReactNative/Components/CustomComponent/MyBackButtonView';
+import LuckyCoffeeView from './YieronReactNative/Components/CustomComponent/LuckyCoffeeView';
 //createStackNavigator
 const ComponentNavigator = createStackNavigator(
     {
@@ -300,7 +301,10 @@ const CustomComponentNavigator = createDrawerNavigator(
         },
         MyBackButtonView: {
             screen: MyBackButtonView
-        }
+        },
+        LuckyCoffeeView:{
+            screen:LuckyCoffeeView
+        },
     },
     //**********************************************************
     //**********************************************************
@@ -389,7 +393,7 @@ export default class App extends React.Component {
     render() {
         return <AppContainer
             uriPrefix="/app"
-            persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state，在reload时还回到原先的界面
+            // persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state，在reload时还回到原先的界面
             onNavigationStateChange={(prevState, newState, action) => {
                 console.log('YINDONG_prevState, newState, action:', prevState, newState, action);
             }}
