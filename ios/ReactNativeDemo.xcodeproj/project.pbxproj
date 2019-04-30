@@ -47,6 +47,7 @@
 		C9AD7B3858AB4D17BFB60850 /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5F6BDC0256F4A3584324BEB /* antfill.ttf */; };
 		D719F7DC21EC202D003915C8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D719F7DB21EC202D003915C8 /* libz.tbd */; };
 		D719F7DE21EC203C003915C8 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D719F7DD21EC203C003915C8 /* libbz2.1.0.tbd */; };
+		D747FD08227823C4001B19AB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D747FCD5227823C3001B19AB /* JavaScriptCore.framework */; };
 		D753607E21F1B4BE00409F0C /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D753604D21F1ADFB00409F0C /* libCodePush.a */; };
 		D779899321FAFFA8003DC14D /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D779899221FAFF2B003DC14D /* libRNGestureHandler.a */; };
 		FDAEF6ED3A056EC5A7D97CDD /* libPods-ReactNativeDemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7636D55C18261BBF48A3DAF5 /* libPods-ReactNativeDemo-tvOSTests.a */; };
@@ -333,6 +334,13 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
+		D747FD06227823C4001B19AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D779895F21FAFF2B003DC14D /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5C32A36220C603B000FFB8D;
+			remoteInfo = "RNGestureHandler-tvOS";
+		};
 		D753604C21F1ADFB00409F0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D753604421F1ADFB00409F0C /* CodePush.xcodeproj */;
@@ -432,6 +440,7 @@
 		B691AA9F388C45E0B3485379 /* antoutline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
 		D719F7DB21EC202D003915C8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D719F7DD21EC203C003915C8 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		D747FCD5227823C3001B19AB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		D753604421F1ADFB00409F0C /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		D779895F21FAFF2B003DC14D /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		D7C65B1E21ED828D0011B999 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
@@ -455,6 +464,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D747FD08227823C4001B19AB /* JavaScriptCore.framework in Frameworks */,
 				D779899321FAFFA8003DC14D /* libRNGestureHandler.a in Frameworks */,
 				D753607E21F1B4BE00409F0C /* libCodePush.a in Frameworks */,
 				D719F7DE21EC203C003915C8 /* libbz2.1.0.tbd in Frameworks */,
@@ -623,6 +633,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D747FCD5227823C3001B19AB /* JavaScriptCore.framework */,
 				D719F7DD21EC203C003915C8 /* libbz2.1.0.tbd */,
 				D719F7DB21EC202D003915C8 /* libz.tbd */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
@@ -781,6 +792,7 @@
 			isa = PBXGroup;
 			children = (
 				D779899221FAFF2B003DC14D /* libRNGestureHandler.a */,
+				D747FD07227823C4001B19AB /* libRNGestureHandler-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1255,6 +1267,13 @@
 			fileType = archive.ar;
 			path = "libjsiexecutor-tvOS.a";
 			remoteRef = D747FCC12277E7AE001B19AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D747FD07227823C4001B19AB /* libRNGestureHandler-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNGestureHandler-tvOS.a";
+			remoteRef = D747FD06227823C4001B19AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D753604D21F1ADFB00409F0C /* libCodePush.a */ = {
