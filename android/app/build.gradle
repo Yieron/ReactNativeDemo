@@ -100,7 +100,6 @@ def enableProguardInReleaseBuilds = true  //Proguard 是一个 Java 字节码混
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "com.ReactNativeDemo"
@@ -197,11 +196,11 @@ dependencies {
     implementation project(':react-native-gesture-handler')
     implementation project(':react-native-code-push')
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:appcompat-v7:28.0.0"
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.amap.api:location:latest.integration'  //高德地图定位模块
-    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:design:28.0.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
     /**
      *
