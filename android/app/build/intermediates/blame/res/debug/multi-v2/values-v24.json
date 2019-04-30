@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/2d7d24d479857e84ec3b9f56e9dbcfdf/res/values-v24/values-v24.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/17b0da088341d4146fd6d0a96286ca1a/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/58a0142863178e161910add74e54b02a/res/values-v24/values-v24.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/d0fa5fbe44341d97a94b955688c14583/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
