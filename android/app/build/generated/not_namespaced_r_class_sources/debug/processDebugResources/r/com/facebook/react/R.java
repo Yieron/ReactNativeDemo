@@ -917,9 +917,9 @@ public final class R {
         public static final int image_button_description = 0x7f0e004e;
         public static final int image_description = 0x7f0e004f;
         public static final int link_description = 0x7f0e0050;
-        public static final int search_description = 0x7f0e0057;
-        public static final int search_menu_title = 0x7f0e0058;
-        public static final int status_bar_notification_info_overflow = 0x7f0e0102;
+        public static final int search_description = 0x7f0e0058;
+        public static final int search_menu_title = 0x7f0e0059;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0103;
     }
     public static final class style {
         private style() {}
