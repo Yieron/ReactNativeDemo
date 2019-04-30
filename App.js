@@ -366,7 +366,7 @@ const SwitchNavigator = createSwitchNavigator(
         AuthStack: AuthStack,
     },
     {
-        initialRouteName: "AuthStack",
+        initialRouteName: "TabNavigator",
         defaultNavigationOptions: {
             headerTintColor: '#fff',
             headerStyle: {
