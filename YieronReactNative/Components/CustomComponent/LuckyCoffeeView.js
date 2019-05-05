@@ -23,8 +23,8 @@ export default class LuckyCoffeeView extends Component {
         return (
             <SafeAreaView style={{flex: 1}}>
                 <View style={styles.container}>
-                    <LeftFlatListView dataSource={DataSource.food_spu_tags} />
-                    <RightSectionListView dataSource={DataSource.food_spu_tags} />
+                    <LeftFlatListView dataSource={DataSource} />
+                    <RightSectionListView dataSource={DataSource} />
                 </View>
             </SafeAreaView>
         )
