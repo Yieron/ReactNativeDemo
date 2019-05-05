@@ -56,8 +56,8 @@ export default class LeftFlatListView extends Component{
     }
     //点击某行
     cellAction =(item)=>{
-        // alert(item.index)
-        if(item.index < this.state.dataAry.length - 1){
+        alert(item.index)
+        if(item.index < this.state.dataAry.length ){
             this.setState({
                 cell:item.index
             })
