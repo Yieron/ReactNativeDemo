@@ -16,12 +16,8 @@ export default class LuckyCoffeeView extends Component {
         }
     }
     render() {
-        console.log('====================================');
-        console.log('YINDONG_DataSource', DataSource);
-        console.log('====================================');
-
         return (
-            <SafeAreaView style={{flex: 1}}>
+            <SafeAreaView style={{ flex: 1 }}>
                 <View style={styles.container}>
                     <LeftFlatListView dataSource={DataSource} />
                     <RightSectionListView dataSource={DataSource} />
