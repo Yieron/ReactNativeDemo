@@ -10,32 +10,43 @@ import {
     ActivityIndicator,
     SafeAreaView,
     ScrollView,
+    Image,
 } from "react-native";
 import LogoTitle from "../LogoTitle";
 
 export default class CustomComponentRootScreen extends React.Component {
-    static navigationOptions = ({ navigation, navigationOptions }) => {
-        return {
-            // title: 'Home',
-            /**
-             * 您可以通过navigationOptions中的headerLeft和headerRight属性在标题栏中设置按钮。
-             * 后退按钮可以通过headerLeft完全自定义，
-             * 但是如果你只想更改标题或图片，
-             * 那么还有其他navigationOptions 
-             * headerBackTitle，headerTruncatedBackTitle和headerBackImage
-             */
-            headerTitle: <LogoTitle />,
-            headerRight: (
-                <Button
-                    onPress={() => alert('This is a button!')}
-                    title="RNDemo"
-                    color={Platform.OS === 'ios' ? '#fff' : null}
-                />
-            ),
-            headerBackTitle: '返回',
-            headerTruncatedBackTitle: '',
-            tabBarLabel: 'CustomComponentRootScreen!',
-        }
+    // static navigationOptions = ({ navigation, navigationOptions }) => {
+    //     return {
+    //         // title: 'Home',
+    //         /**
+    //          * 您可以通过navigationOptions中的headerLeft和headerRight属性在标题栏中设置按钮。
+    //          * 后退按钮可以通过headerLeft完全自定义，
+    //          * 但是如果你只想更改标题或图片，
+    //          * 那么还有其他navigationOptions 
+    //          * headerBackTitle，headerTruncatedBackTitle和headerBackImage
+    //          */
+    //         headerTitle: <LogoTitle />,
+    //         headerRight: (
+    //             <Button
+    //                 onPress={() => alert('This is a button!')}
+    //                 title="RNDemo"
+    //                 color={Platform.OS === 'ios' ? '#fff' : null}
+    //             />
+    //         ),
+    //         headerBackTitle: '返回',
+    //         headerTruncatedBackTitle: '',
+    //         tabBarLabel: 'CustomComponentRootScreen!',
+    //     }
+    // };
+
+    static navigationOptions = {
+        drawerLabel: '自定义View',
+        drawerIcon: ({ tintColor }) => (
+            <Image
+                source={require('../../assets/img/origin_heart.jpeg')}
+                style={[styles.icon, { tintColor: tintColor }]}
+            />
+        ),
     };
 
     render() {
@@ -105,5 +116,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
+    },
+    icon: {
+        width: 24,
+        height: 24,
     },
 });
