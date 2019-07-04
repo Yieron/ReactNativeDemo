@@ -14,25 +14,25 @@ import {
     DeviceEventEmitter,
     ScrollView
 } from 'react-native';
-var {width,height} = Dimensions.get('window');
+var { width, height } = Dimensions.get('window');
 var dataAry = []
 
-export default class LeftFlatListView extends Component{
+export default class LeftFlatListView extends Component {
     // 构造
     constructor(props) {
         super(props);
         dataAry = this.props.dataSource.food_spu_tags;
         this.state = {
             dataAry: dataAry,
-            cell:0  //默认选中第一行
+            cell: 0  //默认选中第一行
         };
     }
 
     componentWillMount() {
-        this.listener = DeviceEventEmitter.addListener('right',(e)=>{
-            this.refs.FlatList.scrollToIndex({animated: true, index: e-1})
+        this.listener = DeviceEventEmitter.addListener('right', (e) => {
+            this.refs.FlatList.scrollToIndex({ animated: true, index: e - 1 })
             this.setState({
-                cell:e-1
+                cell: e - 1
             })
         });
     }
@@ -41,10 +41,10 @@ export default class LeftFlatListView extends Component{
         return (
             <FlatList
                 ref='FlatList'
-                style={{width:80}}
-                data = {this.state.dataAry} //数据源
-                renderItem = {(item) => this.renderRow(item)} //每一行render
-                ItemSeparatorComponent = {()=>{return(<View style={{height:1,backgroundColor:'black'}}/>)}} //分隔线
+                style={{ width: 80 }}
+                data={this.state.dataAry} //数据源
+                renderItem={(item) => this.renderRow(item)} //每一行render
+                ItemSeparatorComponent={() => { return (<View style={{ height: 1, backgroundColor: 'black' }} />) }} //分隔线
                 keyExtractor={this.keyExtractor}  //使用json中的title动态绑定key
             />
         );
@@ -54,28 +54,28 @@ export default class LeftFlatListView extends Component{
         return item.title
     }
     //每一行render
-    renderRow =(item) =>{
-        return(
-            <TouchableOpacity onPress={()=>this.cellAction(item)} style={{backgroundColor:item.index == this.state.cell ? 'white' : 'gray'}}>
-                <View style={{height:60,flexDirection:'row',alignItems:'center'}}>
+    renderRow = (item) => {
+        return (
+            <TouchableOpacity onPress={() => this.cellAction(item)} style={{ backgroundColor: item.index == this.state.cell ? 'white' : 'gray' }}>
+                <View style={{ height: 60, flexDirection: 'row', alignItems: 'center' }}>
                     {/* <View style={{height:50,width:5,backgroundColor: item.index == this.state.cell ? 'red' : 'rgba(0,0,0,0)'}}/> */}
-                    <Text style={{marginLeft:20}}>{item.item.title}</Text>
+                    <Text style={{ marginLeft: 20 }}>{item.item.title}</Text>
                 </View>
             </TouchableOpacity>
         )
     }
     //点击某行
-    cellAction =(item)=>{
-        if(item.index < this.state.dataAry.length ){
+    cellAction = (item) => {
+        if (item.index < this.state.dataAry.length) {
             this.setState({
-                cell:item.index
+                cell: item.index
             })
-            DeviceEventEmitter.emit('left',item.index); //发监听
+            DeviceEventEmitter.emit('left', item.index); //发监听
         }
 
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         // 移除监听
         this.listener.remove();
     }

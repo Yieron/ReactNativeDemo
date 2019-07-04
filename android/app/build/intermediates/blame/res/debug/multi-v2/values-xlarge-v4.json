@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/9bdd03bef24eddcefbb08e16d80d957b/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/05390a39873e69fa1f365f009a13cf6a/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

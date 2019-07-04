@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/9bdd03bef24eddcefbb08e16d80d957b/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/05390a39873e69fa1f365f009a13cf6a/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
