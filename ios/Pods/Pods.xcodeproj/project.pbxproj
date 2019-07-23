@@ -16,6 +16,7 @@
 				23928EA6AA6DA78594481B3CCD4EEE13 /* PBXTargetDependency */,
 			);
 			name = AppCenterReactNativeShared;
+			productName = AppCenterReactNativeShared;
 		};
 		6D67D5F97EB02D0465CE1CAD412255B3 /* AppCenter */ = {
 			isa = PBXAggregateTarget;
@@ -25,6 +26,7 @@
 			dependencies = (
 			);
 			name = AppCenter;
+			productName = AppCenter;
 		};
 /* End PBXAggregateTarget section */
 
@@ -75,16 +77,16 @@
 
 /* Begin PBXFileReference section */
 		09DBEAF074B29AF95A4F54C48101DAFA /* Pods-ReactNativeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactNativeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		101F350FE504FB26DEF2AB741D90FE34 /* libPods-ReactNativeDemo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactNativeDemo-tvOSTests.a"; path = "libPods-ReactNativeDemo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		101F350FE504FB26DEF2AB741D90FE34 /* libPods-ReactNativeDemo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeDemo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		156E2D95F4F654631B5F47872836A6E7 /* Pods-ReactNativeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactNativeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		20DBEBEA0BFEF4AEF721F9D6D1C5C0C6 /* Pods-ReactNativeDemo-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactNativeDemo-tvOSTests-dummy.m"; sourceTree = "<group>"; };
 		21F4BA10C787C78F55B04F5967C5C3FF /* Pods-ReactNativeDemo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactNativeDemo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		22CE6505CD46BB54DDE39282EE99CDA2 /* Pods-ReactNativeDemo-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactNativeDemo-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2344913E0E686CA8B09EEAC867D94936 /* Pods-ReactNativeDemo-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactNativeDemo-tvOS-dummy.m"; sourceTree = "<group>"; };
-		234608710E22FDE29E3864A211E199B9 /* libPods-ReactNativeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactNativeDemo.a"; path = "libPods-ReactNativeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		234608710E22FDE29E3864A211E199B9 /* libPods-ReactNativeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2586387B6CF48052E1AFF99F039C032B /* AppCenterReactNativeShared.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenterReactNativeShared.xcconfig; sourceTree = "<group>"; };
 		2EA892FBE9663CBB10F8EEEA7F2A5AF3 /* AppCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.xcconfig; sourceTree = "<group>"; };
-		34864D0AF900204D75EAAC9076CA238E /* libPods-ReactNativeDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactNativeDemoTests.a"; path = "libPods-ReactNativeDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34864D0AF900204D75EAAC9076CA238E /* libPods-ReactNativeDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7DECBF22D1CF54159C42B661A27192 /* Pods-ReactNativeDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactNativeDemoTests-dummy.m"; sourceTree = "<group>"; };
 		3D2C57D272E74774AD40CBDC51AF8955 /* Pods-ReactNativeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactNativeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4820E00861F867E5B688D5FE374004A4 /* Pods-ReactNativeDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactNativeDemo-dummy.m"; sourceTree = "<group>"; };
@@ -97,8 +99,8 @@
 		A8EFD5C25230D552FBC8206D07B40211 /* Pods-ReactNativeDemo-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactNativeDemo-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AB0AA8C9324E8797117477FFC90E12B7 /* Pods-ReactNativeDemo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactNativeDemo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B176FEF3A5C406551CB3AF45FF3EF7B7 /* Pods-ReactNativeDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactNativeDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B32FCD53C1AEA6E8815C5BFDB97C01EE /* libPods-ReactNativeDemo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactNativeDemo-tvOS.a"; path = "libPods-ReactNativeDemo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B32FCD53C1AEA6E8815C5BFDB97C01EE /* libPods-ReactNativeDemo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeDemo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B72426EBB943BE91F5B4DBCE1859AE7C /* Pods-ReactNativeDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactNativeDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		C0A89522EA51D460960272FC703839AE /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "AppCenter-SDK-Apple/iOS/AppCenter.framework"; sourceTree = "<group>"; };
 		C2875C5497EC98FE3B86178F9BB52DC1 /* Pods-ReactNativeDemo.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactNativeDemo.staging.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +203,6 @@
 				DA27ABED7A9E00D81D2EA4FD251645E8 /* Frameworks */,
 				BAAA23330AF4CC67D63449169180B32F /* Support Files */,
 			);
-			name = AppCenterReactNativeShared;
 			path = AppCenterReactNativeShared;
 			sourceTree = "<group>";
 		};
@@ -263,7 +264,6 @@
 				496BB5A058144BDAC490E691F705E5C2 /* Crashes */,
 				18D155EE5D65C07C96D6D7A9AF6F4C18 /* Support Files */,
 			);
-			name = AppCenter;
 			path = AppCenter;
 			sourceTree = "<group>";
 		};
@@ -464,6 +464,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -612,13 +613,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
@@ -782,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -866,13 +866,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
