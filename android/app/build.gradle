@@ -219,6 +219,8 @@ dependencies {
      *   // 如果只需要支持WebP格式而不需要动图
      *   compile 'com.facebook.fresco:webpsupport:1.10.0'
      */
+    // 支付宝 SDK AAR 包所需的配置
+    implementation (name: 'alipaySdk-15.6.5-20190718211148', ext: 'aar')
 }
 
 // Run this once to be able to run the application with BUCK

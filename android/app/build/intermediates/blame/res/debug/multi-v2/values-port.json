@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/bf3a923e2c82edb77072ec63177e5ba5/res/values-port/values-port.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/15eede0c184050376926ee7592de4f37/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

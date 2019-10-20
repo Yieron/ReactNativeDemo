@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 
+import com.alipay.sdk.app.EnvUtils;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactInstanceManager;
@@ -27,6 +28,8 @@ public class MainActivity extends ReactActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        EnvUtils.setEnv(EnvUtils.EnvEnum.SANDBOX);
+
         super.onCreate(savedInstanceState, persistentState);
         mReactInstanceManager = ReactInstanceManager.builder()
                 // ...

@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/bf3a923e2c82edb77072ec63177e5ba5/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/15eede0c184050376926ee7592de4f37/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

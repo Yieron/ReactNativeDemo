@@ -58,9 +58,9 @@ public final class R {
         public static final int ssdk_loading = 0x7f080082;
         public static final int ssdk_logo = 0x7f080083;
         public static final int ssdk_mobile_logo = 0x7f080084;
-        public static final int ssdk_title_div = 0x7f0800bd;
-        public static final int ssdk_weibo_common_shadow_top = 0x7f0800be;
-        public static final int ssdk_weibo_empty_failed = 0x7f0800bf;
+        public static final int ssdk_title_div = 0x7f0800be;
+        public static final int ssdk_weibo_common_shadow_top = 0x7f0800bf;
+        public static final int ssdk_weibo_empty_failed = 0x7f0800c0;
     }
     public static final class id {
         private id() {}
@@ -226,12 +226,13 @@ public final class R {
         public static final int ssdk_wechatmoments = 0x7f0e00f9;
         public static final int ssdk_weibo_oauth_regiseter = 0x7f0e00fa;
         public static final int ssdk_weibo_upload_content = 0x7f0e00fb;
-        public static final int ssdk_whatsapp = 0x7f0e00fc;
-        public static final int ssdk_whatsapp_client_inavailable = 0x7f0e00fd;
-        public static final int ssdk_yixin = 0x7f0e00fe;
-        public static final int ssdk_yixin_client_inavailable = 0x7f0e00ff;
-        public static final int ssdk_yixinmoments = 0x7f0e0100;
-        public static final int ssdk_youdao = 0x7f0e0101;
-        public static final int ssdk_youtube = 0x7f0e0102;
+        public static final int ssdk_wework = 0x7f0e00fc;
+        public static final int ssdk_whatsapp = 0x7f0e00fd;
+        public static final int ssdk_whatsapp_client_inavailable = 0x7f0e00fe;
+        public static final int ssdk_yixin = 0x7f0e00ff;
+        public static final int ssdk_yixin_client_inavailable = 0x7f0e0100;
+        public static final int ssdk_yixinmoments = 0x7f0e0101;
+        public static final int ssdk_youdao = 0x7f0e0102;
+        public static final int ssdk_youtube = 0x7f0e0103;
     }
 }

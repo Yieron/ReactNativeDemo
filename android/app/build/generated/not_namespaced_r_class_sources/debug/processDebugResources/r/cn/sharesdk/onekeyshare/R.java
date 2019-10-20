@@ -108,15 +108,16 @@ public final class R {
         public static final int ssdk_oks_classic_wechat = 0x7f0800b4;
         public static final int ssdk_oks_classic_wechatfavorite = 0x7f0800b5;
         public static final int ssdk_oks_classic_wechatmoments = 0x7f0800b6;
-        public static final int ssdk_oks_classic_whatsapp = 0x7f0800b7;
-        public static final int ssdk_oks_classic_yixin = 0x7f0800b8;
-        public static final int ssdk_oks_classic_yixinmoments = 0x7f0800b9;
-        public static final int ssdk_oks_classic_youdao = 0x7f0800ba;
-        public static final int ssdk_oks_classic_youtube = 0x7f0800bb;
-        public static final int ssdk_oks_ptr_ptr = 0x7f0800bc;
-        public static final int ssdk_title_div = 0x7f0800bd;
-        public static final int ssdk_weibo_common_shadow_top = 0x7f0800be;
-        public static final int ssdk_weibo_empty_failed = 0x7f0800bf;
+        public static final int ssdk_oks_classic_wework = 0x7f0800b7;
+        public static final int ssdk_oks_classic_whatsapp = 0x7f0800b8;
+        public static final int ssdk_oks_classic_yixin = 0x7f0800b9;
+        public static final int ssdk_oks_classic_yixinmoments = 0x7f0800ba;
+        public static final int ssdk_oks_classic_youdao = 0x7f0800bb;
+        public static final int ssdk_oks_classic_youtube = 0x7f0800bc;
+        public static final int ssdk_oks_ptr_ptr = 0x7f0800bd;
+        public static final int ssdk_title_div = 0x7f0800be;
+        public static final int ssdk_weibo_common_shadow_top = 0x7f0800bf;
+        public static final int ssdk_weibo_empty_failed = 0x7f0800c0;
     }
     public static final class id {
         private id() {}
@@ -294,12 +295,13 @@ public final class R {
         public static final int ssdk_wechatmoments = 0x7f0e00f9;
         public static final int ssdk_weibo_oauth_regiseter = 0x7f0e00fa;
         public static final int ssdk_weibo_upload_content = 0x7f0e00fb;
-        public static final int ssdk_whatsapp = 0x7f0e00fc;
-        public static final int ssdk_whatsapp_client_inavailable = 0x7f0e00fd;
-        public static final int ssdk_yixin = 0x7f0e00fe;
-        public static final int ssdk_yixin_client_inavailable = 0x7f0e00ff;
-        public static final int ssdk_yixinmoments = 0x7f0e0100;
-        public static final int ssdk_youdao = 0x7f0e0101;
-        public static final int ssdk_youtube = 0x7f0e0102;
+        public static final int ssdk_wework = 0x7f0e00fc;
+        public static final int ssdk_whatsapp = 0x7f0e00fd;
+        public static final int ssdk_whatsapp_client_inavailable = 0x7f0e00fe;
+        public static final int ssdk_yixin = 0x7f0e00ff;
+        public static final int ssdk_yixin_client_inavailable = 0x7f0e0100;
+        public static final int ssdk_yixinmoments = 0x7f0e0101;
+        public static final int ssdk_youdao = 0x7f0e0102;
+        public static final int ssdk_youtube = 0x7f0e0103;
     }
 }

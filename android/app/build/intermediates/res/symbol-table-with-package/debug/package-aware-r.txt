@@ -1151,6 +1151,7 @@ drawable ssdk_oks_classic_vkontakte
 drawable ssdk_oks_classic_wechat
 drawable ssdk_oks_classic_wechatfavorite
 drawable ssdk_oks_classic_wechatmoments
+drawable ssdk_oks_classic_wework
 drawable ssdk_oks_classic_whatsapp
 drawable ssdk_oks_classic_yixin
 drawable ssdk_oks_classic_yixinmoments
@@ -1740,6 +1741,7 @@ string ssdk_wechatfavorite
 string ssdk_wechatmoments
 string ssdk_weibo_oauth_regiseter
 string ssdk_weibo_upload_content
+string ssdk_wework
 string ssdk_whatsapp
 string ssdk_whatsapp_client_inavailable
 string ssdk_yixin
