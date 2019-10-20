@@ -46,4 +46,5 @@
 <Telecom Enable="false" />
 <Accountkit Enable="false" />
 <Douyin Enable="false" />
+<Wework Enable="false" />
 </DevInfor>
