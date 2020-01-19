@@ -62,8 +62,9 @@ import SampleAppMovies from './YieronReactNative/Components/List/SampleAppMovies
 import SignInScreen from './YieronReactNative/Components/SignInScreen';
 import MyBackButtonView from './YieronReactNative/Components/CustomComponent/MyBackButtonView';
 import LuckyCoffeeView from './YieronReactNative/Components/CustomComponent/LuckyCoffeeView';
+import reduxRootScreen from './YieronReactNative/Components/reduxDemo/reduxRootScreen';
 import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux';
+import { Provider, connect } from 'react-redux';
 import rootReducer from './YieronReactNative/reducers/index';
 import thunk from 'redux-thunk';
 
@@ -341,6 +342,30 @@ const CustomComponentNavigator = createDrawerNavigator(
     //**********************************************************
 );
 
+const reduxStackNavigator = createStackNavigator(
+    {
+        reduxRootScreen: {
+            screen: reduxRootScreen
+        }
+    },
+    {
+        initialRouteName: "reduxRootScreen",
+        defaultNavigationOptions: {
+            headerTintColor: '#fff',
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+        navigationOptions: {
+            tabBarLabel: 'redux',
+        },
+        mode: 'modal',
+    }
+);
+
 const AuthStack = createStackNavigator({
     SignInScreen: {
         screen: SignInScreen
@@ -356,6 +381,7 @@ const TabNavigator = createBottomTabNavigator(
         Dong: AndroidOnlyNavigator,
         Xia: iOSOnlyNavigator,
         Yully: CustomComponentNavigator,
+        redux: reduxStackNavigator,
     },
     {
         initialRouteName: "Yin",
