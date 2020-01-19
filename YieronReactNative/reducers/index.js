@@ -4,7 +4,10 @@ import {
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
   VisibilityFilters
-} from '../action/actions'
+} from '../action/actions';
+import counter from './gunReducer';
+import auth from './authReducer';
+
 const { SHOW_ALL } = VisibilityFilters
 
 function visibilityFilter(state = SHOW_ALL, action) {
@@ -40,6 +43,8 @@ function todos(state = [], action) {
   }
 }
 
+
+
 /**
  * combineReducers() 所做的只是生成一个函数，这个函数来调用你的一系列 reducer，
  * 每个 reducer 根据它们的 key 来筛选出 state 中的一部分数据并处理，
@@ -47,7 +52,9 @@ function todos(state = [], action) {
  */
 const todoApp = combineReducers({
   visibilityFilter,
-  todos
+  todos,
+  counter,
+  auth,
 })
 
 export default todoApp
