@@ -166,5 +166,14 @@
     <orderEntry type="module" module-name="appcenter" />
     <orderEntry type="module" module-name="react-native-gesture-handler" />
     <orderEntry type="module" module-name="react-native-code-push" />
+    <orderEntry type="module" module-name="appcenter" />
+    <orderEntry type="module" module-name="react-native-gesture-handler" />
+    <orderEntry type="module" module-name="react-native-code-push" />
+    <orderEntry type="module" module-name="appcenter" />
+    <orderEntry type="module" module-name="react-native-gesture-handler" />
+    <orderEntry type="module" module-name="react-native-code-push" />
+    <orderEntry type="module" module-name="appcenter" />
+    <orderEntry type="module" module-name="react-native-gesture-handler" />
+    <orderEntry type="module" module-name="react-native-code-push" />
   </component>
 </module>

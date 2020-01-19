@@ -1,5 +1,5 @@
-import React from "react";
-import { View, Text, Image,ActivityIndicator } from "react-native";
+import React, { Component } from "react";
+import { View, Text, Image, ActivityIndicator } from "react-native";
 import {
     createStackNavigator, createAppContainer, createBottomTabNavigator,
     createDrawerNavigator, createSwitchNavigator,
@@ -57,6 +57,11 @@ import SampleAppMovies from './YieronReactNative/Components/List/SampleAppMovies
 import SignInScreen from './YieronReactNative/Components/SignInScreen';
 import MyBackButtonView from './YieronReactNative/Components/CustomComponent/MyBackButtonView';
 import LuckyCoffeeView from './YieronReactNative/Components/CustomComponent/LuckyCoffeeView';
+import { createStore, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux';
+import rootReducer from './YieronReactNative/reducers/index';
+import thunk from 'redux-thunk';
+
 //createStackNavigator
 const ComponentNavigator = createStackNavigator(
     {
@@ -302,8 +307,8 @@ const CustomComponentNavigator = createDrawerNavigator(
         MyBackButtonView: {
             screen: MyBackButtonView
         },
-        LuckyCoffeeView:{
-            screen:LuckyCoffeeView
+        LuckyCoffeeView: {
+            screen: LuckyCoffeeView
         },
     },
     //**********************************************************
@@ -389,18 +394,21 @@ const SwitchNavigator = createSwitchNavigator(
 const AppContainer = createAppContainer(SwitchNavigator);
 const navigationPersistenceKey = __DEV__ ? "NavigationStateDEV" : null;
 
-export default class App extends React.Component {
+export default class App extends Component {
     render() {
-        return <AppContainer
-            uriPrefix="/app"
-            // persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state，在reload时还回到原先的界面
-            onNavigationStateChange={(prevState, newState, action) => {
-                console.log('YINDONG_prevState, newState, action:', prevState, newState, action);
-            }}
-            ref={nav => {
-                this.navigator = nav;
-            }}
-            renderLoadingExperimental={() => <ActivityIndicator />}
-        />;
+        const store = createStore(rootReducer, applyMiddleware(thunk));
+        return <Provider store={store}>
+            <AppContainer
+                uriPrefix="/app"
+                // persistenceKey={navigationPersistenceKey}  //这个功能在开发模式中特别有用，开发模式下，会记录当前的state，在reload时还回到原先的界面
+                onNavigationStateChange={(prevState, newState, action) => {
+                    console.log('YINDONG_prevState, newState, action:', prevState, newState, action);
+                }}
+                ref={nav => {
+                    this.navigator = nav;
+                }}
+                renderLoadingExperimental={() => <ActivityIndicator />}
+            />
+        </Provider>;
     }
 }
