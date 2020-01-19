@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { View, Text, Image, ActivityIndicator } from "react-native";
+import {
+    View,
+    Text,
+    Image,
+    ActivityIndicator,
+} from "react-native";
 import {
     createStackNavigator, createAppContainer, createBottomTabNavigator,
     createDrawerNavigator, createSwitchNavigator,
