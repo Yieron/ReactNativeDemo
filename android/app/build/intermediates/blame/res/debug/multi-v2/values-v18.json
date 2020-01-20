@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/15eede0c184050376926ee7592de4f37/res/values-v18/values-v18.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/9065c1f1f7e5fcbe45e392a408217eb4/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

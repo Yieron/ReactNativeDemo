@@ -16,6 +16,7 @@
     "react-native-code-push": "^5.5.1",
     "react-native-gesture-handler": "^1.2.0",
     "react-navigation": "^3.0.9",
+    "react-navigation-redux-helpers": "^4.0.1",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "redux-persist": "^6.0.0",

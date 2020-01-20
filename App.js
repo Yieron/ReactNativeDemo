@@ -67,6 +67,7 @@ import { createStore, applyMiddleware } from 'redux'
 import { Provider, connect } from 'react-redux';
 import rootReducer from './YieronReactNative/reducers/index';
 import thunk from 'redux-thunk';
+import { createReactNavigationReduxMiddleware, createReduxContainer } from 'react-navigation-redux-helpers';
 
 //createStackNavigator
 const ComponentNavigator = createStackNavigator(

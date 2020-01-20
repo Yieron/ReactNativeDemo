@@ -1119,6 +1119,7 @@ drawable ssdk_oks_classic_facebookmessenger
 drawable ssdk_oks_classic_flickr
 drawable ssdk_oks_classic_foursquare
 drawable ssdk_oks_classic_googleplus
+drawable ssdk_oks_classic_hwaccount
 drawable ssdk_oks_classic_instagram
 drawable ssdk_oks_classic_instapaper
 drawable ssdk_oks_classic_kaixin
@@ -1619,6 +1620,7 @@ string ssdk_gender_female
 string ssdk_gender_male
 string ssdk_google_plus_client_inavailable
 string ssdk_googleplus
+string ssdk_hwaccount
 string ssdk_instagram
 string ssdk_instagram_client_inavailable
 string ssdk_instapager_email_or_password_incorrect

@@ -4,7 +4,7 @@
             "outputFile": "/Users/yindong/ReactNativeProject/ReactNativeDemo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/15eede0c184050376926ee7592de4f37/res/values-land/values-land.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/9065c1f1f7e5fcbe45e392a408217eb4/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/a174ac85809b18d2e195af70dc1daf54/res/values-land/values-land.xml",
+                    "source": "/Users/yindong/.gradle/caches/transforms-2/files-2.1/9eb8b24d7f75e7c2ec870b4023b61383/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

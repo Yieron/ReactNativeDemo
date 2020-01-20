@@ -652,8 +652,8 @@ public final class R {
         public static final int notification_tile_bg = 0x7f080072;
         public static final int notify_panel_notification_icon_bg = 0x7f080073;
         public static final int redbox_top_border_background = 0x7f080074;
-        public static final int tooltip_frame_dark = 0x7f0800c1;
-        public static final int tooltip_frame_light = 0x7f0800c2;
+        public static final int tooltip_frame_dark = 0x7f0800c2;
+        public static final int tooltip_frame_light = 0x7f0800c3;
     }
     public static final class id {
         private id() {}
@@ -919,7 +919,7 @@ public final class R {
         public static final int link_description = 0x7f0e0050;
         public static final int search_description = 0x7f0e0058;
         public static final int search_menu_title = 0x7f0e0059;
-        public static final int status_bar_notification_info_overflow = 0x7f0e0104;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0105;
     }
     public static final class style {
         private style() {}
