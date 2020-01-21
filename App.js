@@ -68,8 +68,10 @@ import { Provider, connect } from 'react-redux';
 import rootReducer from './YieronReactNative/reducers/index';
 import thunk from 'redux-thunk';
 import { createReactNavigationReduxMiddleware, createReduxContainer } from 'react-navigation-redux-helpers';
+import logger from 'redux-logger';
 
 //createStackNavigator
+
 const ComponentNavigator = createStackNavigator(
     {
         ComponentRootScreen: {
@@ -428,7 +430,7 @@ const navigationPersistenceKey = __DEV__ ? "NavigationStateDEV" : null;
 
 export default class App extends Component {
     render() {
-        const store = createStore(rootReducer, applyMiddleware(thunk));
+        const store = createStore(rootReducer, applyMiddleware(thunk, logger));
         return <Provider store={store}>
             <AppContainer
                 uriPrefix="/app"
